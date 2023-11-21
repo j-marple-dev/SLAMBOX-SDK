@@ -5,9 +5,9 @@
 
 #include "include/flexxlam_client_example.hpp"
 
+#include <glog/logging.h>
 #include <memory>
 
-#include <glog/logging.h>
 #include <protocol/push/push_pointcloud_protocol.hpp>
 
 namespace flexxlam {
