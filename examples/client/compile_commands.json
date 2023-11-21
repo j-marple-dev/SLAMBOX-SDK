@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/user/catkin_ws/src/flexxlam_sdk/examples/client/build",
+  "command": "/usr/bin/c++  -DGLOG_CUSTOM_PREFIX_SUPPORT    -o CMakeFiles/flexxlam_client_example.dir/flexxlam_client_example.cpp.o -c /home/user/catkin_ws/src/flexxlam_sdk/examples/client/flexxlam_client_example.cpp",
+  "file": "/home/user/catkin_ws/src/flexxlam_sdk/examples/client/flexxlam_client_example.cpp"
+},
+{
+  "directory": "/home/user/catkin_ws/src/flexxlam_sdk/examples/client/build",
+  "command": "/usr/bin/c++  -DGLOG_CUSTOM_PREFIX_SUPPORT    -o CMakeFiles/flexxlam_client_example.dir/driver_client.cpp.o -c /home/user/catkin_ws/src/flexxlam_sdk/examples/client/driver_client.cpp",
+  "file": "/home/user/catkin_ws/src/flexxlam_sdk/examples/client/driver_client.cpp"
+}
+]

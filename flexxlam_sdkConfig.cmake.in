@@ -1,0 +1,8 @@
+include(CMakeFindDependencyMacro)
+
+find_dependency(ZLIB REQUIRED)
+find_dependency(Threads REQUIRED)
+
+include("${CMAKE_CURRENT_LIST_DIR}/flexxlam_sdkConfigVersion.cmake")
+
+set(flexxlam_sdk_LIBRARIES "flexxlam_sdk -lserial")

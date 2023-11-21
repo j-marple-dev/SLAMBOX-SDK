@@ -1,0 +1,64 @@
+name: docker-build-test
+
+on:
+  - pull_request
+  - push
+
+jobs:
+  docker-build:
+    runs-on: [self-hosted, flexxlam]
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+          ref: ${{ github.ref }}
+      - name: Docker build
+        run: docker build . -t jmarpledev/flexxlam_sdk:github_action -f docker/Dockerfile  --build-arg UID=$(id -u) --build-arg GID=$(id -g)
+
+  format-lint:
+    runs-on: [self-hosted, flexxlam]
+    needs: docker-build
+    steps:
+      - name: format-and-lint
+        uses: addnab/docker-run-action@v3
+        with:
+          image: jmarpledev/flexxlam_sdk:github_action
+          shell: bash
+          options: -v ${{ github.workspace }}:/home/user/flexxlam_sdk
+          run: |
+            cd ~/flexxlam_sdk && \
+            export PATH=$PATH:/home/user/.local/bin && \
+            ./run_check.sh all
+
+  build-test:
+    runs-on: [self-hosted, flexxlam]
+    needs: docker-build
+    steps:
+      - name: build-test
+        uses: addnab/docker-run-action@v3
+        with:
+          image: jmarpledev/flexxlam_sdk:github_action
+          shell: bash
+          options: -v ${{ github.workspace }}:/home/user/flexxlam_sdk
+          run: |
+            mkdir ~/flexxlam_sdk/build && \
+            cd ~/flexxlam_sdk/build && \
+            cmake .. && \
+            make -j
+
+  unit-test:
+    runs-on: [self-hosted, flexxlam]
+    needs: docker-build
+    steps:
+      - name: build-and-unittest
+        uses: addnab/docker-run-action@v3
+        with:
+          image: jmarpledev/flexxlam_sdk:github_action
+          shell: bash
+          options: -v ${{ github.workspace  }}:/home/user/flexxlam_sdk
+          run: |
+            mkdir ~/flexxlam_sdk/build && \
+            cd ~/flexxlam_sdk/build && \
+            cmake -Dtest=true .. && \
+            make -j && \
+            ctest
