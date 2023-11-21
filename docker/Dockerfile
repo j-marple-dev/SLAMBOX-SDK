@@ -44,7 +44,7 @@ RUN git clone https://github.com/google/glog.git -b v0.6.0 && \
     sudo cmake --build build --target install
 
 # Install formatter, linter
-RUN sudo apt-get install -y python3-pip cppcheck flex bison libserial-dev graphviz
+RUN sudo apt-get install -y python3-pip cppcheck flex bison libserial-dev graphviz libgtest-dev
 RUN python3 -m pip install cpplint clang-format
 RUN git clone https://github.com/doxygen/doxygen.git -b Release_1_9_8 \
     && mkdir -p doxygen/build \

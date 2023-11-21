@@ -16,6 +16,7 @@ option(test "Build unit tests." OFF)
 
 set(INSTALL_STATIC "Install static library" ON)
 set(INSTALL_SHARED "Install shared library" ON)
+set(BUILD_EXAMPLES "Build examples" ON)
 
 set (CPACK_PACKAGE_NAME ${PROJECT_NAME})
 set (CPACK_PACKAGE_DESCRIPTION_SUMMARY "FlexXlam SDK")
@@ -107,7 +108,9 @@ if (INSTALL_SHARED)
 endif()
 
 # Examples
-add_subdirectory(examples/client)
+if (BUILD_EXAMPLES)
+  add_subdirectory(examples/client)
+endif()
 
 # Unit test
 if (test)
