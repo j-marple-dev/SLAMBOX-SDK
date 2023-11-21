@@ -41,6 +41,7 @@ jobs:
           shell: bash
           options: -v ${{ github.workspace }}:/home/user/flexxlam_sdk
           run: |
+            rm -rf ~/flexxlam_sdk/build && \
             mkdir -p ~/flexxlam_sdk/build && \
             cd ~/flexxlam_sdk/build && \
             cmake .. && \
@@ -57,6 +58,7 @@ jobs:
           shell: bash
           options: -v ${{ github.workspace  }}:/home/user/flexxlam_sdk
           run: |
+            rm -rf ~/flexxlam_sdk/build && \
             mkdir -p ~/flexxlam_sdk/build && \
             cd ~/flexxlam_sdk/build && \
             cmake -Dtest=true .. && \
