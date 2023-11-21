@@ -5,15 +5,10 @@
 
 #include "include/flexxlam_client_example.hpp"
 
+#include <glog/logging.h>
 #include <memory>
 
-#include <communication/serial_communication.hpp>
-#include <protocol/base_protocol.hpp>
-#include <protocol/command/command_save_pcd_protocol.hpp>
 #include <protocol/push/push_pointcloud_protocol.hpp>
-#include <protocol/request/request_ethernet_communication_config.hpp>
-#include <protocol/request/request_mavlink_communication_config.hpp>
-#include <protocol/request/request_serial_communication_config.hpp>
 
 namespace flexxlam {
 
@@ -29,14 +24,14 @@ FlexXlamClientExample::FlexXlamClientExample()
 
 FlexXlamClientExample::~FlexXlamClientExample() {}
 
-void FlexXlamClientExample::on_get_odometry(
+void FlexXlamClientExample::on_push_odometry(
     const flexxlam_msgs::Odometry &odom) {
   LOG(INFO) << "[odom] x: " << odom.pose.position.x
             << ", y: " << odom.pose.position.y
             << ", z: " << odom.pose.position.z;
 }
 
-void FlexXlamClientExample::on_get_pointcloud(
+void FlexXlamClientExample::on_push_pointcloud(
     const flexxlam_msgs::PointCloud2 &pointcloud) {
   LOG(INFO) << "pointcloud: " << pointcloud.data.size();
   flexxlam::PushPointCloudProtocol protocol(pointcloud,

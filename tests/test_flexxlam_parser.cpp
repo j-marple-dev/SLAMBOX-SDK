@@ -47,7 +47,7 @@ TEST(FlexXlamParser, PushOdometryProtocolParse) {
 
   flexxlam::FlexXlamParser parser;
   struct TestParsedMessageInterface : public flexxlam::ParsedMessageInterface {
-    void on_get_odometry(const flexxlam_msgs::Odometry &odom) override {
+    void on_push_odometry(const flexxlam_msgs::Odometry &odom) override {
       is_odometry_same(expected_odom, odom);
     }
     flexxlam_msgs::Odometry expected_odom;
@@ -105,7 +105,7 @@ TEST(FlexXlamParser, PushOdometryProtocolParseBatch) {
 
   flexxlam::FlexXlamParser parser(102400);
   struct TestParsedMessageInterface : public flexxlam::ParsedMessageInterface {
-    void on_get_odometry(const flexxlam_msgs::Odometry &odom) override {
+    void on_push_odometry(const flexxlam_msgs::Odometry &odom) override {
       is_odometry_same(expected_odoms[odom_idx++], odom);
     }
     vector<flexxlam_msgs::Odometry> expected_odoms;

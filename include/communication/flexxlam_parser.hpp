@@ -22,13 +22,13 @@ struct ParsedMessageInterface {
   /// @brief Get odometry callback
   /// @param odom odometry
   /// @details This function is called when odometry is parsed.
-  virtual void on_get_odometry(const flexxlam_msgs::Odometry &odom) {}
+  virtual void on_push_odometry(const flexxlam_msgs::Odometry &odom) {}
 
   /// @brief Get pointcloud callback
   /// @param pointcloud pointcloud
   /// @details This function is called when pointcloud is parsed.
-  virtual void on_get_pointcloud(const flexxlam_msgs::PointCloud2 &pointcloud) {
-  }
+  virtual void on_push_pointcloud(
+      const flexxlam_msgs::PointCloud2 &pointcloud) {}
 
   /// @brief Request communication config callback
   /// @param type communication type. Please refer to `protocol::kCommType*`

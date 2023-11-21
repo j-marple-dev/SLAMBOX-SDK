@@ -11,7 +11,6 @@
 #include <vector>
 
 #include <communication/flexxlam_parser.hpp>
-#include <communication/serial_communication.hpp>
 #include <communication/udp_communication.hpp>
 #include <flexxlam_msgs/Odometry.hpp>
 #include <flexxlam_msgs/PointCloud2.hpp>
@@ -34,12 +33,13 @@ class FlexXlamClientExample : public ParsedMessageInterface {
   /// @param odom Odometry message
   ///
   /// This function is called when odometry message is received.
-  void on_get_odometry(const flexxlam_msgs::Odometry &odom) override;
+  void on_push_odometry(const flexxlam_msgs::Odometry &odom) override;
 
   /// @brief Callback function for pointcloud message
   /// @param pointcloud Pointcloud message
   /// @details This function is called when pointcloud message is received.
-  void on_get_pointcloud(const flexxlam_msgs::PointCloud2 &pointcloud) override;
+  void on_push_pointcloud(
+      const flexxlam_msgs::PointCloud2 &pointcloud) override;
 
   /// @brief UDP port number
   int udp_port_;
