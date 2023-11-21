@@ -14,7 +14,6 @@
 #include <protocol/request/request_ethernet_communication_config.hpp>
 #include <protocol/request/request_mavlink_communication_config.hpp>
 #include <protocol/request/request_serial_communication_config.hpp>
-#include <utils/string_utils.hpp>
 
 namespace flexxlam {
 

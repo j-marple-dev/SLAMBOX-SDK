@@ -11,7 +11,6 @@
 #include <vector>
 
 #include "protocol/base_protocol.hpp"
-#include "utils/string_utils.hpp"
 #include "utils/to_bytes.hpp"
 
 namespace flexxlam {
