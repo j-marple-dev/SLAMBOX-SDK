@@ -45,7 +45,7 @@ class PushOdometryProtocol : public BaseProtocol {
   void handle_callback(
       const vector<ParsedMessageInterface *> &callbacks) override {
     for (auto callback : callbacks) {
-      callback->on_get_odometry(this->odom);
+      callback->on_push_odometry(this->odom);
     }
   }
 

@@ -43,7 +43,7 @@ class PushPointCloudProtocol : public BaseProtocol {
   void handle_callback(
       const vector<ParsedMessageInterface *> &callbacks) override {
     for (auto callback : callbacks) {
-      callback->on_get_pointcloud(this->pointcloud_);
+      callback->on_push_pointcloud(this->pointcloud_);
     }
   }
 
