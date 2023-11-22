@@ -6,11 +6,12 @@
 
 # 2. Code check tool
 ## Environment setup
-- `clang-format` 17.0.2
+- `clang-format` 17.0.5
 - `cpplint` 1.6.1
-- `cppcheck` 1.90
+- `cppcheck` 2.7
 - `doxygen` v1.9.8
 - `cmake` >= 3.16.3
+
 ### Install CMake >= 3.16.3
 * Download CMake from https://cmake.org/download/ for the suitable platform
 ``` shell
@@ -29,7 +30,6 @@ sudo ln -s ${HOME}/cmake-3.16.3-linux-x86_64/bin/cmake /usr/bin/cmake
 sudo ln -s ${HOME}/cmake-3.16.3-linux-x86_64/bin/ctest /usr/bin/ctest
 sudo ln -s ${HOME}/cmake-3.16.3-linux-x86_64/bin/cpack /usr/bin/cpack
 ```
-
 
 ## 2.1. Formating
 ```shell
@@ -53,8 +53,11 @@ sudo ln -s ${HOME}/cmake-3.16.3-linux-x86_64/bin/cpack /usr/bin/cpack
 
 # 3. Unit testing
 ```shell
-cd ~/catkin_ws
-catkin test FlexXlam_driver
+mkdir -p build
+cd build
+cmake -Dtest=true ..
+make -j
+ctest
 ```
 
 # 4. Commit

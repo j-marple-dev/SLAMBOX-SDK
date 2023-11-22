@@ -1,118 +1,73 @@
-# FlexXlam Driver
-FlexXlam driver is a ROS package to communicate with FlexXlam device.
+# FlexXlam SDK
+FlexXlam SDK is a C++ library specifically designed for seamless communication with the FlexXlam device.
+The FlexXlam device empowers LiDAR devices with simultaneous localization and mapping (SLAM) algorithms.
+FlexXlam SDK allows developers to effortlessly integrate and control FlexXlam functionality in their C++ applications, offering advanced spatial awareness and navigation capabilities.
 
-Table of Contents
-=================
-
-TBD: Fix this document
-
-* [FlexXlam Driver](#flexxlam-driver)
-* [Table of Contents](#table-of-contents)
-* [1. Getting started](#1-getting-started)
-   * [1.1. Installation](#11-installation)
-      * [1.1.1. Requirements](#111-requirements)
-      * [1.1.2. (Optional) Building the docker image](#112-optional-building-the-docker-image)
-      * [1.1.3. Local ROS system](#113-local-ros-system)
-   * [1.2. Configuration](#12-configuration)
-      * [1.2.1. Client configuration](#121-client-configuration)
-      * [1.2.2. Server configuration](#122-server-configuration)
-   * [1.3. Usage](#13-usage)
-* [2. Features](#2-features)
-   * [2.1. Client features](#21-client-features)
-   * [2.2. Supported Communication Interfaces](#22-supported-communication-interfaces)
-      * [2.2.1. UART](#221-uart)
-      * [2.2.2. Ethernet](#222-ethernet)
-* [3. Contributing](#3-contributing)
-* [4. External resources](#4-external-resources)
 
 # 1. Getting started
-## 1.1. Installation
-### 1.1.1. Requirements
-- ROS noetic (Recommended)
+
+## 1.1. Prerequisites
+
+- Linux system (tested on Ubuntu 22.04)
+- CMake (>= 3.0.2)
+  - Please check on [CONTRIBUTING.md](CONTRIBUTING.md#Install-CMake->-3.16.3) for manual installiation.
 - glog (>=v0.6.0)
-- CMake (>= 3.16.3)
-- docker (Optional but highly recommended)
-- `dialout` group permission. Use below command to include `dialout` group to your linux account for UART communication.
-    ```shell
-    sudo usermod -aG dialout $USER
+    - How to install:
+    ```bash
+    git clone https://github.com/google/glog.git -b v0.6.0
+    cmake -S . -B build -G "Unix Makefiles"
+    cmake --build build
+    sudo cmake --build build --target install
+    ```
+- libserial (>= 1.0.0)
+    - How to install(Ubuntu >=20.04):
+    ```bash
+    sudo apt-get install libserial-dev
     ```
 
-### 1.1.2. (Optional) Building the docker image
-* Our docker image includes development environment. We highly recommend docker system.
-    ```shell
-    # Clone this repository
-    git clone https://github.com/j-marple-dev/FlexXlam_driver.git --recursive
-
-    # Build docker image
-    docker build . -t jmarpledev/flexxlam_driver -f docker/Dockerfile  --build-arg UID=$(id -u) --build-arg GID=$(id -u)
-
-    # Run docker container with shell (For development environment)
-    docker run -tid --privileged -e DISPLAY=:0 -e TERM=xterm-256color -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v /dev:/dev -v $PWD:/home/user/catkin_ws/src/flexxlam_driver --network host jmarpledev/flexxlam_driver /usr/bin/zsh
-
-    # Run docker container for running FlexXlam driver client
-    docker run -ti --privileged -e TERM=xterm-256color -v /dev:/dev -v $PWD:/home/user/catkin_ws/src/flexxlam_driver --network host jmarpledev/flexxlam_driver /usr/bin/bash -lic "roslaunch flexxlam_driver flexxlam_driver_server.launch"
+    - How to install manually:
+    ```bash
+    git clone https://github.com/crayzeewulf/libserial.git
+    cd libserial
+    git checkout f1504de092d94148e2ec690bbb1e7ee21889ede7
+    mkdir build
+    cd build
+    cmake ..
+    make -j
+    sudo make install
     ```
 
-### 1.1.3. Local ROS system
-```shell
-# Assuming that your ROS workspace is ~/catkin_ws
-mkdir -p ~/catkin_ws/src
-cd ~/catkin_ws/src
-git clone https://github.com/j-marple-dev/FlexXlam_driver.git --recursive
-cd ../
-catkin build flexxlam_driver
-# Choose the shell which you are using
-source devel/setup.{bash|zsh}
+
+## 1.2. Installiation
+
+1. Clone the FlexXlam SDK repository:
+```bash
+git clone https://github.com/j-marple-dev/FlexXlam-SDK.git
 ```
 
-## 1.2. Configuration
-### 1.2.1. Client configuration
-- Please refer to [config/client.yaml](config/client.yaml) for configuration on client side.
-```yaml
-serial_communication:
-  enabled: true
-  port_name: "/dev/ttyUSB0"
-  baudrate: 1500000
-
-ethernet_communication:
-  enabled: true
-  server_addr: "192.168.1.50"
-  port: 21580
-
-publish:
-  odom_topic: "/FlexXlam/odom"
-  pointcloud_topic: "/FlexXlam/pointcloud"
-
-subscribe:
-  request_topic: "/FlexXlam/request"
+2. Build and install FlexXlam SDK:
+```bash
+mkdir -p FlexXlam-SDK/build
+cd FlexXlam-SDK/build
+cmake ..
+make -j
+sudo make install
 ```
 
-### 1.2.2. Server configuration
-- **Note** that [config/server.yaml](config/server.yaml) is used in FlexXlam device. Thus modifying this will affect nothing.
-- Please connect UART port to your system and run `flexxlam_driver-config_cli ${UART_DEV} ${BAUDRATE}`
-    ```shell
-    # In ROS environment
-    rosrun flexxlam_driver flexxlam_driver-config_cli /dev/ttyUSB0 1152000
-    ```
+# 2. Examples
+Check the [examples](examples) directory for sample code.
+Each subdirectory within examples contains an example demonstrating the usage of FlexXlam SDK in different scenarios.
 
-## 1.3. Usage
-
-# 2. Features
-## 2.1. Client features
-- (TBD)
-
-## 2.2. Supported Communication Interfaces
-### 2.2.1. UART
-### 2.2.2. Ethernet
-
-# Examples
-- [Turtle Bot3 / ROS](examples/turtlebot/README.md)
 
 # 3. Contributing
-- For those who wish to contribute to this proejct please refer to the [CONTRIBUING.md](CONTRIBUTING.md).
+- We welcome contributions from the community. If you find a bug or have an enhancement in mind, please open an issue or submit a pull request. Check our [contribution guidelines](CONTRIBUTING.md) for more information.
+
 
 # 4. External resources
 - [glog](https://github.com/google/glog) - Google Logging Library
 - [libserial](https://github.com/crayzeewulf/libserial) - Serial Communication Library
-- [cli](https://github.com/daniele77/cli) - C++ CLI Library
 - [ducker](https://github.com/JeiKeiLim/ducker) - Docker Helper CLI application
+
+# 5. Contact
+For any inquiries or support, please contact us at limjk@jmarple.ai
+
