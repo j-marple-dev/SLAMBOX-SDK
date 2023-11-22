@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(flexxlam_sdk
-  VERSION 0.0.1
+  VERSION 0.0.2
   LANGUAGES CXX
   )
 
