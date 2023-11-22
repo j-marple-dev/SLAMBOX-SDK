@@ -30,7 +30,7 @@ PointCloud2::PointCloud2(const std::vector<uint8_t> &bytes) {
 
   if (compression_flag) {
     uint32_t original_length =
-        to_int(vector<uint8_t>(bytes.begin() + 1, bytes.begin() + idx + 5));
+        to_int(vector<uint8_t>(bytes.begin() + 1, bytes.begin() + 5));
     bytes_ptr = std::make_shared<vector<uint8_t>>(
         decompress_bytes(vector<uint8_t>(bytes.begin() + 5, bytes.end()),
                          /*original_size=*/original_length));
