@@ -27,6 +27,7 @@ FlexXlam SDK allows developers to effortlessly integrate and control FlexXlam fu
 
     - How to install manually:
     ```bash
+    sudo apt-get install libboost-dev libboost-test-dev
     git clone https://github.com/crayzeewulf/libserial.git
     cd libserial
     git checkout f1504de092d94148e2ec690bbb1e7ee21889ede7
