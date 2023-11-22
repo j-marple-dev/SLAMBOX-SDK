@@ -10,7 +10,7 @@ FlexXlam SDK allows developers to effortlessly integrate and control FlexXlam fu
 
 - Linux system (tested on Ubuntu 22.04)
 - CMake (>= 3.0.2)
-  - Please check on [CONTRIBUTING.md](CONTRIBUTING.md#Install-CMake->-3.16.3) for manual installiation.
+  - Please check on [CONTRIBUTING.md](CONTRIBUTING.md#install-cmake--3163) for manual installiation.
 - glog (>=v0.6.0)
     - How to install:
     ```bash
