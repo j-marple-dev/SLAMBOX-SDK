@@ -1,0 +1,6 @@
+<map id="flexxlam::SetMavlinkCommunicationConfigProtocol::SetMavlinkCommunicationConfigProtocol" name="flexxlam::SetMavlinkCommunicationConfigProtocol::SetMavlinkCommunicationConfigProtocol">
+<area shape="rect" id="Node000001" title="Set mavlink communication config protocol constructor." alt="" coords="5,22,305,77"/>
+<area shape="rect" id="Node000002" href="$namespaceflexxlam_1_1to__bytes.html#a3a4e276d701d00ad7432e6bdbba14340" title="Convert double to 4 bytes This function converts double to float and then convert it to 4 bytes." alt="" coords="353,29,496,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="306,47,339,47,339,52,306,52"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="375,30,372,20,380,10,398,5,425,3,456,5,473,13,471,18,455,11,425,8,399,10,383,15,377,21,380,28"/>
+</map>

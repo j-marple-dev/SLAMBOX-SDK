@@ -1,0 +1,7 @@
+<map id="flexxlam::BaseProtocol::encapsulate_" name="flexxlam::BaseProtocol::encapsulate_">
+<area shape="rect" id="Node000001" title="Create whole protocol message from payload." alt="" coords="5,35,177,75"/>
+<area shape="rect" id="Node000002" href="$classflexxlam_1_1BaseProtocol.html#aa522a89e9d4ccbb40a9171a173291735" title="Get checksum of protocol." alt="" coords="227,5,399,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,41,212,36,213,41,178,46"/>
+<area shape="rect" id="Node000003" href="$namespaceflexxlam_1_1to__bytes.html#ab5dcb7b82707dabad0a147c9eff13ed8" title="Convert int to 2 bytes with little endian." alt="" coords="225,70,400,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="178,63,212,67,212,73,177,68"/>
+</map>

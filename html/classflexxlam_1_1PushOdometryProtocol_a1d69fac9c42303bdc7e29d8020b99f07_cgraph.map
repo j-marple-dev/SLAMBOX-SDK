@@ -1,0 +1,5 @@
+<map id="flexxlam::PushOdometryProtocol::PushOdometryProtocol" name="flexxlam::PushOdometryProtocol::PushOdometryProtocol">
+<area shape="rect" id="Node000001" title="Get odometry protocol constructor." alt="" coords="5,5,241,45"/>
+<area shape="rect" id="Node000002" href="$namespaceflexxlam__msgs.html#ac2ecf4b7c50693f4a7514611ee62ed10" title="Serialize Odometry message." alt="" coords="289,13,473,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,23,276,23,276,28,241,28"/>
+</map>

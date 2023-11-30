@@ -1,0 +1,5 @@
+<map id="flexxlam::ResponseMavlinkCommunicationConfig::init_from_payload_" name="flexxlam::ResponseMavlinkCommunicationConfig::init_from_payload_">
+<area shape="rect" id="Node000001" title="Initialize enabled_ and baudrate_ from payload" alt="" coords="343,5,545,60"/>
+<area shape="rect" id="Node000002" href="$classflexxlam_1_1ResponseMavlinkCommunicationConfig.html#ac7bb1b6c5f9f001520c81c6dade2786e" title="Response data status protocol constructor." alt="" coords="5,5,295,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="329,35,295,35,295,30,329,30"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="flexxlam::PushPointCloudProtocol::PushPointCloudProtocol" name="flexxlam::PushPointCloudProtocol::PushPointCloudProtocol">
+<area shape="rect" id="Node000001" title="PushPointCloudProtocol constructor." alt="" coords="5,5,243,45"/>
+<area shape="rect" id="Node000002" href="$classflexxlam_1_1PushPointCloudProtocol.html#a4b9dcb8534b3f736fc93cf1d4c9811ed" title="Initialize pointcloud from payload" alt="" coords="291,5,499,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="243,23,277,23,277,28,243,28"/>
+<area shape="rect" id="Node000003" href="$classflexxlam_1_1BaseProtocol.html#a38447cf7f8d44a513e18010adb8b24ac" title="Get the validity of the protocol." alt="" coords="547,5,719,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="499,23,533,23,533,28,499,28"/>
+</map>

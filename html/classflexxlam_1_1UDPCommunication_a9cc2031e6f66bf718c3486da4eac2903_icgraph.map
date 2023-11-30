@@ -1,0 +1,5 @@
+<map id="flexxlam::UDPCommunication::close_" name="flexxlam::UDPCommunication::close_">
+<area shape="rect" id="Node000001" title="Close serial port." alt="" coords="272,5,491,45"/>
+<area shape="rect" id="Node000002" href="$classflexxlam_1_1UDPCommunication.html#a4f58ee977e7f78faa7c1b1fb354389e4" title="Stop UDP communication thread." alt="" coords="5,5,224,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="258,28,224,28,224,23,258,23"/>
+</map>

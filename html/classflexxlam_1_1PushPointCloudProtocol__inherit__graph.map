@@ -1,0 +1,5 @@
+<map id="flexxlam::PushPointCloudProtocol" name="flexxlam::PushPointCloudProtocol">
+<area shape="rect" id="Node000001" title="Get pointcloud protocol." alt="" coords="18,623,253,944"/>
+<area shape="rect" id="Node000002" href="$classflexxlam_1_1BaseProtocol.html" title="Base protocol for communication." alt="" coords="5,5,265,575"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,589,138,622,133,622,133,589"/>
+</map>
