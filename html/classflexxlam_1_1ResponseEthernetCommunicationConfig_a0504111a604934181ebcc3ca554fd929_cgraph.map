@@ -1,0 +1,6 @@
+<map id="flexxlam::ResponseEthernetCommunicationConfig::ResponseEthernetCommunicationConfig" name="flexxlam::ResponseEthernetCommunicationConfig::ResponseEthernetCommunicationConfig">
+<area shape="rect" id="Node000001" title="Response ethernet communication config protocol constructor." alt="" coords="5,22,297,77"/>
+<area shape="rect" id="Node000002" href="$namespaceflexxlam_1_1to__bytes.html#a3a4e276d701d00ad7432e6bdbba14340" title="Convert double to 4 bytes This function converts double to float and then convert it to 4 bytes." alt="" coords="345,29,488,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="297,47,331,47,331,52,297,52"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="368,30,365,20,373,10,390,5,417,3,447,5,464,13,462,18,446,11,417,8,391,10,376,15,370,21,373,28"/>
+</map>

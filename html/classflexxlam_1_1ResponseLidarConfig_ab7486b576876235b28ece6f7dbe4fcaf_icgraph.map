@@ -1,0 +1,5 @@
+<map id="flexxlam::ResponseLidarConfig::init_from_payload_" name="flexxlam::ResponseLidarConfig::init_from_payload_">
+<area shape="rect" id="Node000001" title="Initialize enabled_ and baudrate_ from payload" alt="" coords="276,5,499,45"/>
+<area shape="rect" id="Node000002" href="$classflexxlam_1_1ResponseLidarConfig.html#a68fbb15c5d5259bcc23433b4b6c54cb5" title="Response data status protocol constructor." alt="" coords="5,5,228,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="262,28,228,28,228,23,262,23"/>
+</map>

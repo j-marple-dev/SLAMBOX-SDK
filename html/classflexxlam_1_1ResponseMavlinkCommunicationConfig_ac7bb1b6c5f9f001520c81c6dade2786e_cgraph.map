@@ -1,0 +1,8 @@
+<map id="flexxlam::ResponseMavlinkCommunicationConfig::ResponseMavlinkCommunicationConfig" name="flexxlam::ResponseMavlinkCommunicationConfig::ResponseMavlinkCommunicationConfig">
+<area shape="rect" id="Node000001" title="Response data status protocol constructor." alt="" coords="5,22,295,77"/>
+<area shape="rect" id="Node000002" href="$classflexxlam_1_1ResponseMavlinkCommunicationConfig.html#a88e00f432b94518f1149c0a180b5dea2" title="Initialize enabled_ and baudrate_ from payload" alt="" coords="343,22,545,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="295,47,329,47,329,52,295,52"/>
+<area shape="rect" id="Node000003" href="$namespaceflexxlam_1_1from__bytes.html#ab8c3593a8c91bb527232a403823449e9" title="Convert 1~4 bytes to int." alt="" coords="593,29,755,69"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="546,47,580,47,580,52,546,52"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="631,30,629,20,635,10,651,5,674,3,701,6,715,13,713,18,699,11,674,8,652,10,639,15,634,21,636,28"/>
+</map>

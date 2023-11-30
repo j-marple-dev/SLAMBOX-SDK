@@ -1,0 +1,15 @@
+<map id="flexxlam::BaseProtocol::is_valid" name="flexxlam::BaseProtocol::is_valid">
+<area shape="rect" id="Node000001" title="Get the validity of the protocol." alt="" coords="635,69,807,109"/>
+<area shape="rect" id="Node000002" href="$classflexxlam_1_1CommandSavePCDProtocol.html#a938780e4b831b158fac7da2a5229e96b" title="initialize save_ and reset_ from payload" alt="" coords="320,5,587,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="623,69,537,48,538,43,624,63"/>
+<area shape="rect" id="Node000004" href="$classflexxlam_1_1PushOdometryProtocol.html#a4e8b63e90e05faab134c031c8889f31d" title="Initialize odom from payload" alt="" coords="335,69,571,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="621,92,571,92,571,87,621,87"/>
+<area shape="rect" id="Node000006" href="$classflexxlam_1_1PushPointCloudProtocol.html#a4b9dcb8534b3f736fc93cf1d4c9811ed" title="Initialize pointcloud from payload" alt="" coords="349,133,557,173"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="624,115,538,136,537,131,623,110"/>
+<area shape="rect" id="Node000003" href="$classflexxlam_1_1CommandSavePCDProtocol.html#a7f0f6ba4f7be86f304f9368ea9504284" title="Command save PCD protocoll constructor." alt="" coords="5,5,272,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="306,28,272,28,272,23,306,23"/>
+<area shape="rect" id="Node000005" href="$classflexxlam_1_1PushOdometryProtocol.html#ac01d14478663a33160a74bcf1809d1f4" title="Get odometry protocol constructor." alt="" coords="21,69,257,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="321,92,257,92,257,87,321,87"/>
+<area shape="rect" id="Node000007" href="$classflexxlam_1_1PushPointCloudProtocol.html#aa46030c98085966e0537562e80476560" title="PushPointCloudProtocol constructor." alt="" coords="20,133,257,173"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="335,156,257,156,257,151,335,151"/>
+</map>

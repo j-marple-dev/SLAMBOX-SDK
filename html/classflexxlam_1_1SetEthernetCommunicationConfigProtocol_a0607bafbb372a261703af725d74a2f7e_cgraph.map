@@ -1,0 +1,8 @@
+<map id="flexxlam::SetEthernetCommunicationConfigProtocol::SetEthernetCommunicationConfigProtocol" name="flexxlam::SetEthernetCommunicationConfigProtocol::SetEthernetCommunicationConfigProtocol">
+<area shape="rect" id="Node000001" title="Set ethernet communication config protocol constructor." alt="" coords="5,22,308,77"/>
+<area shape="rect" id="Node000002" href="$classflexxlam_1_1SetEthernetCommunicationConfigProtocol.html#a572cf36439a7eb1a1aee730c9a3f3f73" title="Initialize enabled_ and port_ from payload" alt="" coords="356,29,623,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="308,47,342,47,342,52,308,52"/>
+<area shape="rect" id="Node000003" href="$namespaceflexxlam_1_1from__bytes.html#ab8c3593a8c91bb527232a403823449e9" title="Convert 1~4 bytes to int." alt="" coords="671,29,832,69"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="623,47,657,47,657,52,623,52"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="703,30,700,20,708,10,725,5,751,3,782,6,798,13,796,18,780,11,751,8,726,10,711,15,705,21,708,28"/>
+</map>

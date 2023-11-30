@@ -1,0 +1,5 @@
+<map id="flexxlam::ResponseLidarConfig" name="flexxlam::ResponseLidarConfig">
+<area shape="rect" id="Node000001" title="Response lidar config protocol." alt="" coords="21,623,250,900"/>
+<area shape="rect" id="Node000002" href="$classflexxlam_1_1BaseProtocol.html" title="Base protocol for communication." alt="" coords="5,5,265,575"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,588,138,623,133,623,133,588"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="flexxlam::SetLidarConfigProtocol::SetLidarConfigProtocol" name="flexxlam::SetLidarConfigProtocol::SetLidarConfigProtocol">
+<area shape="rect" id="Node000001" title="Set lidar config protocol constructor." alt="" coords="5,5,236,45"/>
+<area shape="rect" id="Node000002" href="$classflexxlam_1_1SetLidarConfigProtocol.html#a2c13bc3cfddf785b87e62dee0a31de26" title="Initialize lidar_type from payload" alt="" coords="284,5,492,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,23,270,23,270,28,236,28"/>
+</map>

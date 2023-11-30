@@ -1,0 +1,24 @@
+<map id="flexxlam::to_bytes::four" name="flexxlam::to_bytes::four">
+<area shape="rect" id="Node000001" title="Convert double to 4 bytes This function converts double to float and then convert it to 4 bytes." alt="" coords="356,309,499,349"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="473,298,457,291,427,288,401,290,385,295,380,301,383,308,377,310,374,300,383,290,400,285,427,283,459,285,476,293"/>
+<area shape="rect" id="Node000002" href="$namespaceflexxlam_1_1to__bytes.html#a3172dd03455b5e86a981742f3b197f1a" title="Convert float to 4 bytes." alt="" coords="85,5,228,45"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="419,296,408,243,387,179,354,114,332,85,306,59,289,48,269,39,228,29,229,24,271,34,291,43,310,55,336,81,358,111,392,177,413,242,424,295"/>
+<area shape="rect" id="Node000003" href="$namespaceflexxlam_1_1to__bytes.html#ab0233d1a9764c46dbca2844bc67a22b5" title="Convert uint32_t to 4 bytes with little endian." alt="" coords="85,69,228,109"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="414,297,399,256,377,209,346,162,306,124,269,104,228,95,229,90,271,99,310,119,350,159,381,206,404,254,419,295"/>
+<area shape="rect" id="Node000004" href="$namespaceflexxlam_1_1to__bytes.html#abccfb0779f0981a698e1d86f3ad299cc" title="Convert double array to byte array This function converts double array to float array and then conver..." alt="" coords="85,133,228,173"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="406,299,366,241,338,212,307,188,268,171,227,161,229,156,270,166,309,183,342,208,370,237,411,296"/>
+<area shape="rect" id="Node000005" href="$namespaceflexxlam_1_1to__bytes.html#a1fbb42d86ce69087c50b8ba815562c37" title="Convert float array to byte array." alt="" coords="85,197,228,237"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="390,303,351,276,307,252,268,238,227,229,229,224,269,233,309,247,354,271,393,298"/>
+<area shape="rect" id="Node000006" href="$classflexxlam_1_1ResponseEthernetCommunicationConfig.html#a0504111a604934181ebcc3ca554fd929" title="Response ethernet communication config protocol constructor." alt="" coords="11,262,303,317"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="342,320,303,314,303,308,343,314"/>
+<area shape="rect" id="Node000007" href="$classflexxlam_1_1ResponseMavlinkCommunicationConfig.html#aebf8fa42c65cfd2c840a517a7e90e464" title="Response mavlink communication config protocol constructor." alt="" coords="12,341,301,395"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="343,344,302,350,301,345,342,339"/>
+<area shape="rect" id="Node000008" href="$classflexxlam_1_1ResponseSerialCommunicationConfig.html#a1089d9c4abe8f2bb8c96bc4a987c9b28" title="Response serial communication config protocol constructor." alt="" coords="38,419,275,474"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="391,360,353,386,309,409,277,422,275,417,307,404,350,381,388,355"/>
+<area shape="rect" id="Node000009" href="$classflexxlam_1_1SetEthernetCommunicationConfigProtocol.html#acd195aee4e5455982bb08ccc58317dfa" title="Set ethernet communication config protocol constructor." alt="" coords="5,498,308,553"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="412,363,372,427,343,460,310,488,287,500,284,496,306,483,339,456,367,423,408,360"/>
+<area shape="rect" id="Node000010" href="$classflexxlam_1_1SetMavlinkCommunicationConfigProtocol.html#af6fd95313595f0ba356bcb3308d0277d" title="Set mavlink communication config protocol constructor." alt="" coords="7,577,307,631"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="421,363,407,409,385,464,353,519,333,544,310,566,291,579,288,574,306,562,329,541,349,516,380,462,402,407,416,362"/>
+<area shape="rect" id="Node000011" href="$classflexxlam_1_1SetSerialCommunicationConfigProtocol.html#abee7908e23ad1a7ed9930e00b794c433" title="Set serial communication config protocol constructor." alt="" coords="14,655,299,710"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="426,364,416,424,397,500,382,539,362,578,339,613,310,645,293,657,290,653,306,641,334,610,358,575,377,537,392,498,411,423,421,363"/>
+</map>

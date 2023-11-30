@@ -1,0 +1,7 @@
+<map id="flexxlam_msgs::serialize" name="flexxlam_msgs::serialize">
+<area shape="rect" id="Node000001" title="Serialize Odometry message." alt="" coords="291,45,475,70"/>
+<area shape="rect" id="Node000002" href="$classflexxlam_1_1PushOdometryProtocol.html#a1d69fac9c42303bdc7e29d8020b99f07" title="Get odometry protocol constructor." alt="" coords="6,5,242,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="277,47,242,43,243,37,277,42"/>
+<area shape="rect" id="Node000003" href="$classflexxlam_1_1PushPointCloudProtocol.html#a2966ee563296ca39bc79364fb48008e3" title="PushPointCloudProtocol constructor." alt="" coords="5,69,243,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="277,73,243,77,243,72,277,68"/>
+</map>
