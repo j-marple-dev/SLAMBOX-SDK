@@ -26,6 +26,11 @@ bool UDPCommunication::open_() {
     return false;
   }
 
+  struct timeval socket_opt = {0, 100};
+  int socket_opt_len = sizeof(socket_opt);
+  setsockopt(this->socket_fd_, SOL_SOCKET, SO_RCVTIMEO, &socket_opt,
+             socket_opt_len);
+
   memset(&server_addr_, 0, sizeof(server_addr_));
   memset(&client_addr_, 0, sizeof(client_addr_));
 
