@@ -63,6 +63,15 @@ class SerialCommunication {
     this->callback_ = callback;
   }
 
+  /// @brief Set baud rate
+  /// @param baudrate baud rate
+  /// @return true if baud rate is set successfully
+  bool set_baudrate(int baudrate);
+
+  /// @brief Get baud rate
+  /// @return baud rate
+  int get_baudrate() { return this->baud_rate_; }
+
   /// @brief Set callback function for serial Serial Communication
   /// @param fp callback function
   /// @param obj object of callback function
