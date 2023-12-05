@@ -1,4 +1,4 @@
-# Serial Setting {#SerialSetting}
+# FlexXlam Setting {#FlexXlamSetting}
 LiDAR setting
 
 [TOC]
@@ -41,7 +41,7 @@ Working with Unix OS, use `minicom` to configure the **FlexXlam**
 
     First, plug in the USB2TTL module
 
-    ![USB2TTL to PC](serial_setting/usb2ttl.JPG){width=50%}
+    ![USB2TTL to PC](flexxlam_setting/usb2ttl.JPG){width=50%}
 
     Then, using command below connect with **FlexXlam**
 
@@ -56,7 +56,7 @@ Working with Unix OS, use `minicom` to configure the **FlexXlam**
 
     Install the *ComPortMaster* from the [link](http://withrobot.com/data/?mod=document&uid=12)
 
-    ![How to use ComPortMaster](serial_setting/comportmaster.png)
+    ![How to use ComPortMaster](flexxlam_setting/comportmaster.png)
 
 </details>
 
