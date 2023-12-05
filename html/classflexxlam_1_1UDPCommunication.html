@@ -32,7 +32,7 @@
  <tbody>
  <tr>
   <td style="padding-left: 0.5em; text-align: right;">
-   <span id="projectnumber">Version: 0.0.2</span>
+   <span id="projectnumber">Version: 0.0.3</span>
   </td>
  </tr>
  </tbody>
@@ -265,16 +265,16 @@ Public Member Functions</h2></td></tr>
 
 <p>Start UDP communication thread Once this function is called, UDP communication thread is started in the background and listens to the UDP port. </p>
 
-<p class="definition">Definition at line <a class="el" href="udp__communication_8cpp_source.html#l00077">77</a> of file <a class="el" href="udp__communication_8cpp_source.html">udp_communication.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   77</span>                           {</div>
-<div class="line"><span class="lineno">   78</span>  <span class="keywordflow">if</span> (!this-&gt;open_()) {</div>
-<div class="line"><span class="lineno">   79</span>    LOG(ERROR) &lt;&lt; <span class="stringliteral">&quot;Failed to open socket&quot;</span>;</div>
-<div class="line"><span class="lineno">   80</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   81</span>  }</div>
-<div class="line"><span class="lineno">   82</span> </div>
-<div class="line"><span class="lineno">   83</span>  this-&gt;is_running_ = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   84</span>  this-&gt;run_thread_ = std::thread(&amp;UDPCommunication::run_, <span class="keyword">this</span>);</div>
-<div class="line"><span class="lineno">   85</span>}</div>
+<p class="definition">Definition at line <a class="el" href="udp__communication_8cpp_source.html#l00082">82</a> of file <a class="el" href="udp__communication_8cpp_source.html">udp_communication.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   82</span>                           {</div>
+<div class="line"><span class="lineno">   83</span>  <span class="keywordflow">if</span> (!this-&gt;open_()) {</div>
+<div class="line"><span class="lineno">   84</span>    LOG(ERROR) &lt;&lt; <span class="stringliteral">&quot;Failed to open socket&quot;</span>;</div>
+<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   86</span>  }</div>
+<div class="line"><span class="lineno">   87</span> </div>
+<div class="line"><span class="lineno">   88</span>  this-&gt;is_running_ = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   89</span>  this-&gt;run_thread_ = std::thread(&amp;UDPCommunication::run_, <span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">   90</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -388,14 +388,14 @@ template&lt;class M , class T &gt; </div>
 
 <p>Stop UDP communication thread. </p>
 
-<p class="definition">Definition at line <a class="el" href="udp__communication_8cpp_source.html#l00087">87</a> of file <a class="el" href="udp__communication_8cpp_source.html">udp_communication.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   87</span>                            {</div>
-<div class="line"><span class="lineno">   88</span>  this-&gt;is_running_ = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   89</span>  <span class="keywordflow">if</span> (this-&gt;run_thread_.joinable()) {</div>
-<div class="line"><span class="lineno">   90</span>    this-&gt;run_thread_.join();</div>
-<div class="line"><span class="lineno">   91</span>  }</div>
-<div class="line"><span class="lineno">   92</span>  this-&gt;close_();</div>
-<div class="line"><span class="lineno">   93</span>}</div>
+<p class="definition">Definition at line <a class="el" href="udp__communication_8cpp_source.html#l00092">92</a> of file <a class="el" href="udp__communication_8cpp_source.html">udp_communication.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   92</span>                            {</div>
+<div class="line"><span class="lineno">   93</span>  this-&gt;is_running_ = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   94</span>  <span class="keywordflow">if</span> (this-&gt;run_thread_.joinable()) {</div>
+<div class="line"><span class="lineno">   95</span>    this-&gt;run_thread_.join();</div>
+<div class="line"><span class="lineno">   96</span>  }</div>
+<div class="line"><span class="lineno">   97</span>  this-&gt;close_();</div>
+<div class="line"><span class="lineno">   98</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -423,16 +423,16 @@ template&lt;class M , class T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="udp__communication_8cpp_source.html#l00095">95</a> of file <a class="el" href="udp__communication_8cpp_source.html">udp_communication.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   95</span>                                                    {</div>
-<div class="line"><span class="lineno">   96</span>  <span class="keywordflow">if</span> (this-&gt;socket_fd_ &lt; 0) {</div>
-<div class="line"><span class="lineno">   97</span>    LOG(ERROR) &lt;&lt; <span class="stringliteral">&quot;Socket is not opened&quot;</span>;</div>
-<div class="line"><span class="lineno">   98</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   99</span>  }</div>
-<div class="line"><span class="lineno">  100</span> </div>
-<div class="line"><span class="lineno">  101</span>  sendto(this-&gt;socket_fd_, data.data(), data.size(), MSG_CONFIRM,</div>
-<div class="line"><span class="lineno">  102</span>         (<span class="keyword">const</span> sockaddr *)listen_addr_, <span class="keyword">sizeof</span>(*listen_addr_));</div>
-<div class="line"><span class="lineno">  103</span>}</div>
+<p class="definition">Definition at line <a class="el" href="udp__communication_8cpp_source.html#l00100">100</a> of file <a class="el" href="udp__communication_8cpp_source.html">udp_communication.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  100</span>                                                    {</div>
+<div class="line"><span class="lineno">  101</span>  <span class="keywordflow">if</span> (this-&gt;socket_fd_ &lt; 0) {</div>
+<div class="line"><span class="lineno">  102</span>    LOG(ERROR) &lt;&lt; <span class="stringliteral">&quot;Socket is not opened&quot;</span>;</div>
+<div class="line"><span class="lineno">  103</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  104</span>  }</div>
+<div class="line"><span class="lineno">  105</span> </div>
+<div class="line"><span class="lineno">  106</span>  sendto(this-&gt;socket_fd_, data.data(), data.size(), MSG_CONFIRM,</div>
+<div class="line"><span class="lineno">  107</span>         (<span class="keyword">const</span> sockaddr *)listen_addr_, <span class="keyword">sizeof</span>(*listen_addr_));</div>
+<div class="line"><span class="lineno">  108</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
