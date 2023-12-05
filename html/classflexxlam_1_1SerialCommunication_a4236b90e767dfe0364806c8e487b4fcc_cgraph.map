@@ -1,7 +1,0 @@
-<map id="flexxlam::SerialCommunication::run" name="flexxlam::SerialCommunication::run">
-<area shape="rect" id="Node000001" title="Start serial communication thread Once this function is called, serial communication thread is starte..." alt="" coords="5,45,261,70"/>
-<area shape="rect" id="Node000002" href="$classflexxlam_1_1SerialCommunication.html#a2c341321799b5e08708f4b3ad7ed2e51" title="Open serial port." alt="" coords="309,5,536,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,42,295,37,296,42,249,47"/>
-<area shape="rect" id="Node000003" href="$classflexxlam_1_1SerialCommunication.html#a8c469439819de797dac7fad6556c9da9" title="Serial communication thread." alt="" coords="309,69,536,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="249,67,296,73,295,78,248,73"/>
-</map>

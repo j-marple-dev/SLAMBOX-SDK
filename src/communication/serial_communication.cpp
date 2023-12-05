@@ -6,6 +6,7 @@
 #include "communication/serial_communication.hpp"
 
 #include <libserial/SerialPortConstants.h>
+#include <exception>
 
 namespace flexxlam {
 
@@ -41,6 +42,32 @@ bool SerialCommunication::open_() {
   } catch (const LibSerial::OpenFailed &) {
     LOG(ERROR) << "Serial port " << this->port_name_ << " with baudrate "
                << this->baud_rate_ << " failed to open";
+    return false;
+  }
+
+  return true;
+}
+
+// cppcheck-suppress unusedFunction
+bool SerialCommunication::set_baudrate(int baud_rate) {
+  if (SerialCommunication::kBaudRateMap.find(baud_rate) ==
+      SerialCommunication::kBaudRateMap.end()) {
+    LOG(ERROR) << "Invalid baud rate: " << baud_rate;
+    return false;
+  }
+
+  if (!this->serial_port_.IsOpen()) {
+    LOG(ERROR) << "Serial port is not opened";
+    return false;
+  }
+
+  try {
+    this->serial_port_.SetBaudRate(
+        SerialCommunication::kBaudRateMap.at(baud_rate));
+    this->baud_rate_ = baud_rate;
+  } catch (std::exception &e) {
+    LOG(ERROR) << "Setting baudrate failed " << baud_rate << " with exception "
+               << e.what();
     return false;
   }
 

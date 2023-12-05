@@ -1,8 +1,0 @@
-<map id="flexxlam::ResponseSerialCommunicationConfig::ResponseSerialCommunicationConfig" name="flexxlam::ResponseSerialCommunicationConfig::ResponseSerialCommunicationConfig">
-<area shape="rect" id="Node000001" title="Response data status protocol constructor." alt="" coords="5,22,243,77"/>
-<area shape="rect" id="Node000002" href="$classflexxlam_1_1ResponseSerialCommunicationConfig.html#af1b5ab2da48eff49ce47bda0985bbc98" title="Initialize enabled_ and baudrate_ from payload" alt="" coords="291,22,485,77"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="243,47,277,47,277,52,243,52"/>
-<area shape="rect" id="Node000003" href="$namespaceflexxlam_1_1from__bytes.html#ab8c3593a8c91bb527232a403823449e9" title="Convert 1~4 bytes to int." alt="" coords="533,29,695,69"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="485,47,520,47,520,52,485,52"/>
-<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="572,30,570,20,576,10,591,5,614,3,640,6,654,13,652,18,639,11,614,8,592,10,580,15,575,21,577,28"/>
-</map>

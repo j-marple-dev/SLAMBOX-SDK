@@ -1,5 +1,0 @@
-<map id="flexxlam::SetSerialCommunicationConfigProtocol::init_from_payload_" name="flexxlam::SetSerialCommunicationConfigProtocol::init_from_payload_">
-<area shape="rect" id="Node000001" title="Initialize enabled_ and baudrate_ from payload" alt="" coords="339,5,587,60"/>
-<area shape="rect" id="Node000002" href="$classflexxlam_1_1SetSerialCommunicationConfigProtocol.html#a52c7590f068f76ba55dc0e5543e23942" title="Set serial communication config protocol constructor." alt="" coords="5,5,291,60"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="325,35,291,35,291,30,325,30"/>
-</map>

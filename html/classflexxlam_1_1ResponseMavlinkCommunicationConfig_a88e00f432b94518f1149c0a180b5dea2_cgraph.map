@@ -1,6 +1,0 @@
-<map id="flexxlam::ResponseMavlinkCommunicationConfig::init_from_payload_" name="flexxlam::ResponseMavlinkCommunicationConfig::init_from_payload_">
-<area shape="rect" id="Node000001" title="Initialize enabled_ and baudrate_ from payload" alt="" coords="5,22,208,77"/>
-<area shape="rect" id="Node000002" href="$namespaceflexxlam_1_1from__bytes.html#ab8c3593a8c91bb527232a403823449e9" title="Convert 1~4 bytes to int." alt="" coords="256,29,417,69"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,47,242,47,242,52,208,52"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="294,30,291,20,298,10,313,5,337,3,363,6,378,13,376,18,362,11,337,8,315,10,301,15,296,21,299,28"/>
-</map>

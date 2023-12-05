@@ -1,5 +1,0 @@
-<map id="flexxlam::PushOdometryProtocol::init_from_payload_" name="flexxlam::PushOdometryProtocol::init_from_payload_">
-<area shape="rect" id="Node000001" title="Initialize odom from payload" alt="" coords="5,5,241,45"/>
-<area shape="rect" id="Node000002" href="$classflexxlam_1_1BaseProtocol.html#a38447cf7f8d44a513e18010adb8b24ac" title="Get the validity of the protocol." alt="" coords="289,5,461,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,23,276,23,276,28,242,28"/>
-</map>
