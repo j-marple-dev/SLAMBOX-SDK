@@ -1,0 +1,5 @@
+<map id="flexxlam::RequestEthernetCommunicationConfigProtocol" name="flexxlam::RequestEthernetCommunicationConfigProtocol">
+<area shape="rect" id="Node000001" title="Request ethernet communication config protocol." alt="" coords="15,623,255,880"/>
+<area shape="rect" id="Node000002" href="$classflexxlam_1_1BaseProtocol.html" title="Base protocol for communication." alt="" coords="5,5,265,575"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,589,138,622,133,622,133,589"/>
+</map>

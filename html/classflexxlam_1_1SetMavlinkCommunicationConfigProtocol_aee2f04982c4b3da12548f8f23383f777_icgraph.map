@@ -1,0 +1,5 @@
+<map id="flexxlam::SetMavlinkCommunicationConfigProtocol::init_from_payload_" name="flexxlam::SetMavlinkCommunicationConfigProtocol::init_from_payload_">
+<area shape="rect" id="Node000001" title="Initialize enabled_ and baudrate_ from payload" alt="" coords="353,13,616,53"/>
+<area shape="rect" id="Node000002" href="$classflexxlam_1_1SetMavlinkCommunicationConfigProtocol.html#a64dc6fff0dd0e1fc8ea7efba0ff91a50" title="Set mavlink communication config protocol constructor." alt="" coords="5,5,305,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="340,35,306,35,306,30,340,30"/>
+</map>

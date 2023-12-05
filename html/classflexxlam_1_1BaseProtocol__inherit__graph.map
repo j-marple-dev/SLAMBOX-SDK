@@ -1,0 +1,37 @@
+<map id="flexxlam::BaseProtocol" name="flexxlam::BaseProtocol">
+<area shape="rect" id="Node000001" title="Base protocol for communication." alt="" coords="2091,5,2351,575"/>
+<area shape="rect" id="Node000002" href="$classflexxlam_1_1AcknowledgeProtocol.html" title="Acknowledge protocol." alt="" coords="5,657,235,929"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2078,304,1667,341,1405,369,1129,405,857,449,608,500,497,528,399,558,315,591,248,625,206,659,203,655,245,620,313,586,397,553,496,523,607,494,856,443,1128,400,1404,364,1666,335,2078,299"/>
+<area shape="rect" id="Node000003" href="$classflexxlam_1_1CommandSavePCDProtocol.html" title="Save PCD protocol." alt="" coords="259,652,517,935"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="2078,310,1721,354,1500,386,1268,424,1041,468,833,516,740,542,658,568,587,596,531,625,492,654,489,649,528,620,585,591,656,563,739,537,831,511,1040,462,1267,419,1499,381,1721,349,2077,304"/>
+<area shape="rect" id="Node000004" href="$classflexxlam_1_1PingProtocol.html" title="Ping protocol." alt="" coords="541,679,771,907"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="2078,295,1960,301,1818,313,1657,332,1483,362,1303,405,1212,431,1122,461,1034,495,947,534,864,577,784,625,753,650,725,681,721,677,749,646,781,620,861,572,945,529,1031,490,1120,456,1211,426,1301,399,1482,357,1656,327,1818,307,1960,296,2077,290"/>
+<area shape="rect" id="Node000005" href="$classflexxlam_1_1PushOdometryProtocol.html" title="Get odometry protocol." alt="" coords="795,647,1024,939"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="2078,304,1979,316,1862,333,1731,357,1592,389,1448,431,1305,483,1166,548,1101,585,1038,625,1008,649,1005,645,1034,621,1098,580,1164,543,1303,479,1446,426,1590,384,1730,352,1861,327,1978,310,2077,299"/>
+<area shape="rect" id="Node000006" href="$classflexxlam_1_1PushPointCloudProtocol.html" title="Get pointcloud protocol." alt="" coords="1048,633,1283,954"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="2078,319,1909,358,1810,386,1706,420,1599,460,1493,508,1391,562,1296,625,1284,634,1281,630,1293,620,1389,558,1491,503,1597,456,1704,415,1808,381,1907,353,2077,314"/>
+<area shape="rect" id="Node000007" href="$classflexxlam_1_1RequestEthernetCommunicationConfigProtocol.html" title="Request ethernet communication config protocol." alt="" coords="1307,665,1547,922"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="2080,344,1961,392,1826,456,1688,534,1622,578,1560,625,1517,667,1514,663,1557,621,1619,573,1686,529,1824,451,1959,387,2078,339"/>
+<area shape="rect" id="Node000008" href="$classflexxlam_1_1RequestLidarConfigProtocol.html" title="Request lidar config protocol." alt="" coords="1571,672,1800,915"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="2082,394,1948,500,1879,561,1814,624,1771,674,1767,670,1810,621,1875,557,1944,496,2079,390"/>
+<area shape="rect" id="Node000009" href="$classflexxlam_1_1RequestMavlinkCommunicationConfigProtocol.html" title="Request mavlink communication config protocol." alt="" coords="1824,665,2061,922"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="2087,538,2016,666,2011,663,2082,536"/>
+<area shape="rect" id="Node000010" href="$classflexxlam_1_1RequestSerialCommunicationConfigProtocol.html" title="Request serial communication config protocol." alt="" coords="2085,665,2357,922"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="2224,588,2224,664,2219,664,2219,588"/>
+<area shape="rect" id="Node000011" href="$classflexxlam_1_1ResponseEthernetCommunicationConfig.html" title="Response ethernet communication config protocol." alt="" coords="2382,630,2663,957"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="2361,518,2427,628,2423,631,2356,521"/>
+<area shape="rect" id="Node000012" href="$classflexxlam_1_1ResponseLidarConfig.html" title="Response lidar config protocol." alt="" coords="2688,655,2917,932"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="2365,377,2521,486,2602,552,2678,621,2707,653,2704,656,2674,625,2598,556,2518,491,2362,381"/>
+<area shape="rect" id="Node000013" href="$classflexxlam_1_1ResponseMavlinkCommunicationConfig.html" title="Response mavlink communication config protocol." alt="" coords="2942,630,3223,957"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="2366,337,2492,385,2638,450,2789,528,2862,573,2931,621,2943,630,2940,634,2928,625,2859,577,2786,533,2635,455,2490,390,2364,342"/>
+<area shape="rect" id="Node000014" href="$classflexxlam_1_1ResponseSerialCommunicationConfig.html" title="Response serial communication config protocol." alt="" coords="3248,623,3480,964"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="2365,308,2551,344,2661,370,2778,404,2897,445,3016,494,3131,553,3238,620,3250,630,3246,634,3234,625,3128,557,3014,499,2895,450,2776,409,2660,375,2550,349,2364,313"/>
+<area shape="rect" id="Node000015" href="$classflexxlam_1_1SetEthernetCommunicationConfigProtocol.html" title="Set ethernet communication config protocol." alt="" coords="3504,623,3763,964"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="2365,298,2470,308,2595,325,2735,349,2886,381,3042,423,3199,476,3351,541,3424,579,3493,620,3505,629,3502,633,3491,625,3421,584,3349,546,3197,481,3041,428,2885,386,2734,354,2594,330,2469,314,2365,303"/>
+<area shape="rect" id="Node000016" href="$classflexxlam_1_1SetLidarConfigProtocol.html" title="Set lidar config protocol." alt="" coords="3787,630,4016,957"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="2365,306,2695,352,2898,385,3109,423,3315,466,3503,514,3661,565,3725,592,3776,620,3788,629,3785,633,3773,625,3723,597,3659,570,3502,519,3314,471,3108,428,2897,390,2694,358,2364,312"/>
+<area shape="rect" id="Node000017" href="$classflexxlam_1_1SetMavlinkCommunicationConfigProtocol.html" title="Set mavlink communication config protocol." alt="" coords="4041,623,4295,964"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="2366,302,2744,344,2982,375,3232,413,3477,456,3702,505,3802,532,3891,560,3968,590,4029,620,4042,628,4039,633,4027,625,3966,594,3890,565,3801,537,3701,511,3476,461,3231,418,2982,381,2744,350,2365,308"/>
+<area shape="rect" id="Node000018" href="$classflexxlam_1_1SetSerialCommunicationConfigProtocol.html" title="Set serial communication config protocol." alt="" coords="4319,630,4601,957"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="2366,299,2797,337,3073,366,3366,402,3654,446,3921,497,4039,525,4145,555,4236,587,4309,620,4322,628,4319,632,4307,625,4234,592,4144,560,4038,530,3919,502,3654,451,3365,408,3073,371,2796,342,2365,304"/>
+</map>
