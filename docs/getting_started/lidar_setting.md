@@ -101,5 +101,53 @@ Modify IP Settings to `Static IP` and IP Address: `192.168.1.100`, Subnet Mask: 
 Click on Confirm and REBOOT. Make sure the LiDAR connects after reboot procedure.
 Now AVIA is ready to connect with FlexXlam device. Connect AVIA to FlexXlam device via ethernet cable.
 
-# 3. Ouster OS0 Famly (OS0-32, OS0-64, and OS0-128) {#LIDARSetting-OusterOS0}
+# 3. Ouster OS0 Family (OS0-32, OS0-64, and OS0-128) {#LIDARSetting-OusterOS0}
 
+## 3.1. Preparing for LiDAR setup
+
+Before starting the setup process, make sure you have following:
+
+* LiDAR configuration software
+
+* Computer with Ethernet ports (Ubuntu, MacOS,or Windows)
+
+## 3.2. OS0 Configuration Steps
+
+### 3.2.1. Download Ouster Studio
+
+Please visit [Ouster Studio](https://ouster.com/products/software/ouster-studio) and download Ouster Studio compatible with your operating system.
+
+### 3.2.2. Conecting OS0 to the Computer
+
+Connect the OS0 LiDAR to your computer using the Ethernet cable.
+
+### 3.2.3. Setting Computer IP Address
+
+Set the computer's IPv4 Method to Link-Local only.
+
+![IP Address Setting](getting_started/lidar_setting/ip_setting_link_local.png){width=800px}
+
+
+### 3.2.4. Launching LiDAR Viewer Software
+
+Launch Ouster Studio downloaded from in 3.2.1.
+Make sure the LiDAR is detected on LIDAR SENSOR FOUND.
+
+![Setting LiDAR IP](getting_started/lidar_setting/Ouster_Studio_setting.png)
+
+### 3.2.5. Setting LiDAR IP Address
+
+Once the Lidar is found, enter IP address `192.168.1.100` and click Set.
+
+### 3.2.6. Check LiDAR connection (Optional)
+
+Set the computer's IP Address to `192.168.1.50`
+
+![IP Address Setting](getting_started/lidar_setting/ip_setting_192_168_1_50.png)
+
+Select detected LiDAR on Ouster Studio and click Configure and visualize.
+Make sure LiDAR data is visible in Ouster Studio.
+
+![Ouster Studio visualization](getting_started/lidar_setting/Ouster_Studio_working.png)
+
+Now OS0 is ready to connect with FlexXlam device. Connect OS0 FlexXlam device via ethernet cable.
