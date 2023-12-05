@@ -1,6 +1,0 @@
-<map id="flexxlam::SetSerialCommunicationConfigProtocol::SetSerialCommunicationConfigProtocol" name="flexxlam::SetSerialCommunicationConfigProtocol::SetSerialCommunicationConfigProtocol">
-<area shape="rect" id="Node000001" title="Set serial communication config protocol constructor." alt="" coords="5,22,291,77"/>
-<area shape="rect" id="Node000002" href="$namespaceflexxlam_1_1to__bytes.html#a3a4e276d701d00ad7432e6bdbba14340" title="Convert double to 4 bytes This function converts double to float and then convert it to 4 bytes." alt="" coords="339,29,481,69"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="291,47,325,47,325,52,291,52"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="362,30,359,20,366,10,384,5,410,3,440,6,457,13,455,18,439,11,410,8,385,10,369,15,364,21,367,28"/>
-</map>

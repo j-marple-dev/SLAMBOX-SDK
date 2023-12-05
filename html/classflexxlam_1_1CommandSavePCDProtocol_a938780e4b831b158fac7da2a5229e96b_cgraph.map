@@ -1,5 +1,0 @@
-<map id="flexxlam::CommandSavePCDProtocol::init_from_payload_" name="flexxlam::CommandSavePCDProtocol::init_from_payload_">
-<area shape="rect" id="Node000001" title="initialize save_ and reset_ from payload" alt="" coords="5,5,272,45"/>
-<area shape="rect" id="Node000002" href="$classflexxlam_1_1BaseProtocol.html#a38447cf7f8d44a513e18010adb8b24ac" title="Get the validity of the protocol." alt="" coords="320,5,492,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="272,23,306,23,306,28,272,28"/>
-</map>
