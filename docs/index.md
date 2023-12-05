@@ -7,7 +7,7 @@ Wecome to FlexXlam documentation. FlexXlam is your all-in-one solution for seaml
 # How do I get started?
 
 Ensure your [LiDAR settings](LiDARSetting.html) are configured.
-Customize FlexXlam settings as needed.
+Customize [FlexXlam settings](FlexXlamSetting.html) as needed.
 Connect LiDAR to FlexXlam using provided cables.
 You're now ready to dive into your project with seamless SLAM processing.
 
@@ -26,3 +26,4 @@ You're now ready to dive into your project with seamless SLAM processing.
 
 # Getting help
 For any assistance, consult the documentation or reach out to our support team.
+
