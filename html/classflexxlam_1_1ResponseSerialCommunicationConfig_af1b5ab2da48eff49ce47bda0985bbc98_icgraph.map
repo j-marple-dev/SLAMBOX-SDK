@@ -1,5 +1,0 @@
-<map id="flexxlam::ResponseSerialCommunicationConfig::init_from_payload_" name="flexxlam::ResponseSerialCommunicationConfig::init_from_payload_">
-<area shape="rect" id="Node000001" title="Initialize enabled_ and baudrate_ from payload" alt="" coords="291,5,485,60"/>
-<area shape="rect" id="Node000002" href="$classflexxlam_1_1ResponseSerialCommunicationConfig.html#a257e92bc8951b66afcaef4e25f9aeaf0" title="Response data status protocol constructor." alt="" coords="5,5,243,60"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="277,35,243,35,243,30,277,30"/>
-</map>
