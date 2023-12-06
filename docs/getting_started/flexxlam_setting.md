@@ -145,14 +145,18 @@ $MAVLINK_BAUD 921600#
 ### FlexXlam Sensor Configuration {#FlexXlamSettingsWithSerial-ConfigureFlexXlam-FlexXlamSensorConfiguration}
 - `LIDAR_TYPE` with option `0` to `5`
 
-| option   | sensor |
-|:---------------: | :---------------: |
-|  0  |  Flexx2  |
+|  option  | sensor |
+|:--------:|:-------:| 
 |  1  |  mid360  |
 |  2  |  ouster32  |
 |  3  |  ouster64  |
 |  4  |  ouster128  |
 |  5  |  avia  |
+
+```
+# Set MID-360 LiDAR
+$LIDAR_TYPE 1#
+```
 
 ### Save Configurations {#FlexXlamSettingsWithSerial-ConfigureFlexXlam-SaveConfigurations}
 
