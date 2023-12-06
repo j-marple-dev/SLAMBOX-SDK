@@ -1,7 +1,7 @@
 # Welcome
 Wecome to FlexXlam documentation. FlexXlam is your all-in-one solution for seamlessly connecting LiDAR devices, processing SLAM algorithms, and effortlessly transmitting results through serial or Ethernet communication. Designed with simplicity in mind, FlexXlam empowers you to focus on your application, unleashing the true potential of LiDAR technology.
 
-![FlexXlam](flexxlam_crop.png){width=40%}
+![SLAM BOX](sbox_board_rev1.jpg){width=40%}
 
 # How do I get started?
 

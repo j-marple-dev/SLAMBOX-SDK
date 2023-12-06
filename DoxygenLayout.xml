@@ -6,6 +6,7 @@
     <tab type="mainpage" visible="yes" title="HOME"/>
     <!-- Custom pages START -->
     <tab type="usergroup" visible="yes" title="Getting started">
+      <tab type="user" url="@ref HardwareOverview" title="Hardware Overview"/>
       <tab type="user" url="@ref LiDARSetting" title="LiDAR Setting"/>
       <tab type="user" url="@ref FlexXlamSetting" title="FlexXlam Setting"/>
     </tab>
