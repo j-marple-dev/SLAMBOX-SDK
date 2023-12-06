@@ -1,11 +1,8 @@
 # FlexXlam Setting {#FlexXlamSetting}
-LiDAR setting
-
-[TOC]
-
-# FlexXlam Settings With Serial {#FlexXlamSettingsWithSerial}
 
 The `FlexXlam` configuration can be configured by *serial commands*
+
+[TOC]
 
 ## Install Serial Communication Tools {#FlexXlamSettingsWithSerial-InstallSerialCommunicationTools}
 
@@ -71,6 +68,8 @@ Using ascii command to change configuration of **FlexXlam**
 - Regardless of changing configuration of **FlexXlam**, the serial communication for settings operates
 
 - The following commands below, type the commands in *minicom* or *ComPortMaster*
+
+**NOTE** The **Baud rate** of serial connection for setting is fixed to **115200**
 
 ### FlexXlam Serial Configuration {#FlexXlamSettingsWithSerial-ConfigureFlexXlam-FlexXlamSerialConfiguration}
 
