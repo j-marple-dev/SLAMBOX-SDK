@@ -8,11 +8,11 @@
 
 - The *QGroundControl* also can be used but not recommended
 
-### 1.1. Install Mission Planner
+## 1.1. Install Mission Planner
 
 - Install Ardupilot *Mission Planner* from the [link](https://ardupilot.org/planner/docs/mission-planner-installation.html)
 
-### 1.2. Install the Ardupilot Firmware
+## 1.2. Install the Ardupilot Firmware
 
 - Install *Ardupilot OS* with matching version of your flight controller
 
@@ -47,7 +47,7 @@
 <!-- ![ekf2 aid mask](EKF2_AID_MASK.png){width=50%} -->
 <!-- ![ekf2 height mode](EKF3_HGT_MODE.png){width=50%} -->
 
-### 1.3. Connect RC and calibrate the Remote Controller
+## 1.3. Connect RC and calibrate the Remote Controller
 
 - Connect RC controller receiver to FC
 
@@ -59,7 +59,7 @@
 
 
 
-## 2. Connect Ardupilot with UART
+# 2. Connect Ardupilot with UART
 - To connect Ardupilot and companion board with uart, use usb-to-tts and connect it to `TEL1` on px4 board
 
 ![Companion Board and Pixhawk Connection](companion_px4_connection.jpg){width=50%}

@@ -2,13 +2,13 @@
 
 [TOC]
 
-## 1. Setup PX4
+# 1. Setup PX4
 
-### 1.1. Install QGroundControl
+## 1.1. Install QGroundControl
 
   - Install QGroundControl from the [link](https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.html)
 
-### 1.2. Install the PX4 Firmware
+## 1.2. Install the PX4 Firmware
 
 - **NOTE**: Should use specific version of PX4([1.12.3](https://github.com/PX4/PX4-Autopilot/releases/tag/v1.12.3))
 
@@ -36,7 +36,7 @@
 
 ![Set Height Mode Parameter](px4/EKF2_HGT_MODE.png){width=100%}
 
-## 2. Connect PX4 with UART
+# 2. Connect PX4 with UART
 - To connect PX4 and companion board with uart, use usb-to-tts and connect it to `TEL1` on px4 board
 
 ![Connect Companion Board with PixHawk](companion_px4_connection.jpg){width=50%}
