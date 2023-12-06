@@ -139,6 +139,14 @@ $ETH_IP 192.168.1.50#
 
 - `MAVLINK_BAUD` with option *baudrate*.
 
+- `MAVLINK_TYPE` with options `0` to `1`
+
+| option   | type |
+|:---------------: | :---------------: |
+| 0  | px4   |
+| 1  | ardupilot (apm)   |
+
+
 **NOTE** Please check the *Avaiable baud rate* table
 
 ```
@@ -147,6 +155,9 @@ $MAVLINK_ENABLE 1#
 
 # Set baudrate
 $MAVLINK_BAUD 921600#
+
+# Set Mavlink mode for PX4
+$MAVLINK_TYPE 0#
 ```
 
 ### FlexXlam Sensor Configuration {#FlexXlamSettingsWithSerial-ConfigureFlexXlam-FlexXlamSensorConfiguration}
