@@ -1,5 +1,4 @@
 # Welcome
-
 Wecome to FlexXlam documentation. FlexXlam is your all-in-one solution for seamlessly connecting LiDAR devices, processing SLAM algorithms, and effortlessly transmitting results through serial or Ethernet communication. Designed with simplicity in mind, FlexXlam empowers you to focus on your application, unleashing the true potential of LiDAR technology.
 
 ![FlexXlam](flexxlam_crop.png){width=40%}
@@ -10,6 +9,13 @@ Ensure your [LiDAR settings](LiDARSetting.html) are configured.
 Customize [FlexXlam settings](FlexXlamSetting.html) as needed.
 Connect LiDAR to FlexXlam using provided cables.
 You're now ready to dive into your project with seamless SLAM processing.
+
+## Getting started on ROS1
+Please follow instructions on https://github.com/j-marple-dev/FlexXlam_driver 
+
+## Getting started on your own
+Please look at [examples](https://github.com/j-marple-dev/FlexXlam-SDK/tree/main/examples) on https://github.com/j-marple-dev/FlexXlam-SDK for C++ development
+
 
 # Key Features
 
