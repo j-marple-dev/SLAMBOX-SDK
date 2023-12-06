@@ -2,20 +2,17 @@
 
 [TOC]
 
-
-# 1. Setup environment
-
-## 1.1. Setup Ardupilot
+# 1. Setup Ardupilot
 
 - **NOTE**: For Ardupilot, recommend to use *Mission planner* with **Windows**
 
 - The *QGroundControl* also can be used but not recommended
 
-### 1.1.1. Install Mission Planner
+## 1.1. Install Mission Planner
 
 - Install Ardupilot *Mission Planner* from the [link](https://ardupilot.org/planner/docs/mission-planner-installation.html)
 
-### 1.1.2. Install the Ardupilot Firmware
+## 1.2. Install the Ardupilot Firmware
 
 - Install *Ardupilot OS* with matching version of your flight controller
 
@@ -50,22 +47,22 @@
 <!-- ![ekf2 aid mask](EKF2_AID_MASK.png){width=50%} -->
 <!-- ![ekf2 height mode](EKF3_HGT_MODE.png){width=50%} -->
 
-### 1.1.3. Connect RC and calibrate the Remote Controller
+## 1.3. Connect RC and calibrate the Remote Controller
 
 - Connect RC controller receiver to FC
 
-![RC receiver with Pixhawk](ardupilot/rc_connection.jpeg){width=30%}
+![RC receiver with Pixhawk](ardupilot/rc_connection.jpeg){width=50%}
 
 - Calibrate RC with Ardupilot *Mission Planner*
 
-![RC Calibration with Mission Planner](ardupilot/mp_radio_calibration.png){width=50%}
+![RC Calibration with Mission Planner](ardupilot/mp_radio_calibration.png){width=100%}
 
 
 
-## 1.2. Connect Ardupilot with UART
+# 2. Connect Ardupilot with UART
 - To connect Ardupilot and companion board with uart, use usb-to-tts and connect it to `TEL1` on px4 board
 
-![Companion Board and Pixhawk Connection](companion_px4_connection.jpg){width=30%}
+![Companion Board and Pixhawk Connection](companion_px4_connection.jpg){width=50%}
 
 - Then set the port with *QGroundContol*
 
@@ -79,18 +76,4 @@
 
 - Note that the SR1 means the telem1 port of FC
 
-![Set Parameters to get data from Ardupilot](ardupilot/SR_set_hz.png){width=50%}
-
-# 2. Using MavROS
-- If you are using our docker, You do not need to follow this part
-
-## 2.1. Install MavROS binary
-
-```bash
-# Install mavros ros packages
-sudo apt-get install ros-${ROS_DISTRO}-mavros ros-${ROS_DISTRO}-mavros-extras ros-${ROS_DISTRO}-mavros-msgs
-
-# Install GeographicLib
-wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
-sudo bash ./install_geographiclib_datasets.sh   
-```
+![Set Parameters to get data from Ardupilot](ardupilot/SR_set_hz.png){width=100%}
