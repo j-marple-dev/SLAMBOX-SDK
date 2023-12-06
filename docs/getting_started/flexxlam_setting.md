@@ -36,6 +36,7 @@ Working with Unix OS, use `minicom` to configure the **FlexXlam**
 3. Set port and baudrate
 
     First, plug in the USB2TTL module
+
     ![USB2TTL to PC](flexxlam_setting/usb2ttl.JPG){width=50%}
 
     Set the serial port and baudrate of your PC
