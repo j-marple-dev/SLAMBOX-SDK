@@ -10,7 +10,15 @@
   }
 }
 
-div.contents .toc {
-    background-color: rgba(33, 33, 33, 0.2);
+#side-nav {
+  visibility: hidden;
 }
+
+#doc-content {
+    margin-left: 0 !important;
+}
+
+/* div.contents .toc { */
+/*     background-color: rgba(33, 33, 33, 0.2); */
+/* } */
 
