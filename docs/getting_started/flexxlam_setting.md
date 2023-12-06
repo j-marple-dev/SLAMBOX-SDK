@@ -1,10 +1,11 @@
 # FlexXlam Setting {#FlexXlamSetting}
 
-The `FlexXlam` configuration can be configured by *serial commands*
+The `FlexXlam` configuration can be configured via *serial communication with ascii texts*
 
 [TOC]
 
 ## Install Serial Communication Tools {#FlexXlamSettingsWithSerial-InstallSerialCommunicationTools}
+
 
 <details open>
 <summary> Unix OS </summary>
@@ -34,13 +35,19 @@ Working with Unix OS, use `minicom` to configure the **FlexXlam**
 
 3. Set port and baudrate
 
-    Set the serial port and baudrate of your PC
-
     First, plug in the USB2TTL module
-
     ![USB2TTL to PC](flexxlam_setting/usb2ttl.JPG){width=50%}
 
-    Then, using command below connect with **FlexXlam**
+    Set the serial port and baudrate of your PC
+
+    ```bash
+    minicom -D ${SERIAL_PORT} -b 115200
+    ```
+
+    And set Hardware Flow Control to `No`. It can be done by pressing `<Ctrl>+A o` -> Serial port setup -> Press `f`.
+    For your convinience, turn Local echo on by pressing `<Ctrl>+A z e`
+
+    Then, start configuration as your needs by following [below section](#FlexXlamSettingsWithSerial-ConfigureFlexXlam).
 
 </details>
 
