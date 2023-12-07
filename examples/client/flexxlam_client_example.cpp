@@ -15,7 +15,7 @@ FlexXlamClientExample::FlexXlamClientExample()
   udp_communication_ =
       std::make_unique<sbox::UDPCommunication>(false, udp_ip_, udp_port_);
   udp_parser_.add_parsed_message_callback(this);
-  udp_communication_->set_callback(&sbox::SlamBoxParser::parse, &udp_parser_);
+  udp_communication_->set_callback(&sbox::SBoxParser::parse, &udp_parser_);
   udp_communication_->run();
   udp_communication_->write({0x01, 0x02, 0x03, 0x04, 0x05});
 }

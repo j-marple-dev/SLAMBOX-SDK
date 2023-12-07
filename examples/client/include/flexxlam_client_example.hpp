@@ -10,7 +10,7 @@
 #include <string>
 #include <vector>
 
-#include <sbox/communication/slambox_parser.hpp>
+#include <sbox/communication/sbox_parser.hpp>
 #include <sbox/communication/udp_communication.hpp>
 #include <sbox/flexxlam_msgs/Odometry.hpp>
 #include <sbox/flexxlam_msgs/PointCloud2.hpp>
@@ -45,7 +45,7 @@ class FlexXlamClientExample : public sbox::ParsedMessageInterface {
   std::string udp_ip_;
 
   /// @brief Parser for UDP communication
-  sbox::SlamBoxParser udp_parser_;
+  sbox::SBoxParser udp_parser_;
 
   /// @brief UDP communication
   std::unique_ptr<sbox::UDPCommunication> udp_communication_ = nullptr;

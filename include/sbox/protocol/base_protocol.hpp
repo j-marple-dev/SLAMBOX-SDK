@@ -13,7 +13,7 @@
 #include <string>
 #include <vector>
 
-#include "sbox/communication/slambox_parser.hpp"
+#include "sbox/communication/sbox_parser.hpp"
 
 using std::vector;
 
@@ -157,7 +157,7 @@ class BaseProtocol {
 
   /// @brief Call callback functions from parsed message interface
   /// @param callbacks parsed message interfaces
-  /// @details This function is called from `SlamBoxParser::parse`.
+  /// @details This function is called from `SBoxParser::parse`.
   virtual void handle_callback(
       const vector<ParsedMessageInterface *> &callbacks) = 0;
 

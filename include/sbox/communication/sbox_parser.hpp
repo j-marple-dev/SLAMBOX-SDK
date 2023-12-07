@@ -3,8 +3,8 @@
 /// @copyright 2023 J.Marple
 /// @brief Base parser for FlexXlam Driver
 
-#ifndef SLAMBOX_SDK_INCLUDE_SBOX_COMMUNICATION_SLAMBOX_PARSER_HPP_
-#define SLAMBOX_SDK_INCLUDE_SBOX_COMMUNICATION_SLAMBOX_PARSER_HPP_
+#ifndef SLAMBOX_SDK_INCLUDE_SBOX_COMMUNICATION_SBOX_PARSER_HPP_
+#define SLAMBOX_SDK_INCLUDE_SBOX_COMMUNICATION_SBOX_PARSER_HPP_
 
 #include <cstdint>
 #include <vector>
@@ -110,12 +110,11 @@ struct ParsedMessageInterface {
 };
 
 /// @brief Protocol parser for FlexXlam Driver
-class SlamBoxParser {
+class SBoxParser {
  public:
   /// @brief Protocol parser constructor
   /// @param buffer_size size of buffer
-  explicit SlamBoxParser(size_t buffer_size = 1024)
-      : buffer_size_(buffer_size) {
+  explicit SBoxParser(size_t buffer_size = 1024) : buffer_size_(buffer_size) {
     buffer_.reserve(buffer_size_ * 2);
   }
 
@@ -163,4 +162,4 @@ class SlamBoxParser {
 
 }  // namespace sbox
 
-#endif  // SLAMBOX_SDK_INCLUDE_SBOX_COMMUNICATION_SLAMBOX_PARSER_HPP_
+#endif  // SLAMBOX_SDK_INCLUDE_SBOX_COMMUNICATION_SBOX_PARSER_HPP_
