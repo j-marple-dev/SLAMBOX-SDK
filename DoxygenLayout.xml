@@ -8,7 +8,7 @@
     <tab type="usergroup" visible="yes" title="Getting started">
       <tab type="user" url="@ref HardwareOverview" title="Hardware Overview"/>
       <tab type="user" url="@ref LiDARSetting" title="LiDAR Setting"/>
-      <tab type="user" url="@ref FlexXlamSetting" title="FlexXlam Setting"/>
+      <tab type="user" url="@ref SLAMBOXSetting" title="SLAMBOX Setting"/>
     </tab>
     <!-- <tab type="user" url="todo.html" visible="yes" title="TODO"/> -->
     <tab type="usergroup" visible="yes" title="Examples">

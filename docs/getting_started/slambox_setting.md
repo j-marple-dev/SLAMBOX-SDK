@@ -1,16 +1,16 @@
-# FlexXlam Setting {#FlexXlamSetting}
+# SLAMBOX Setting {#SLAMBOXSetting}
 
-The `FlexXlam` configuration can be configured via *serial communication with ascii texts*
+The `SLAMBOX` configuration can be configured via *serial communication with ascii texts*
 
 [TOC]
 
-## Install Serial Communication Tools {#FlexXlamSettingsWithSerial-InstallSerialCommunicationTools}
+## Install Serial Communication Tools {#SLAMBOXSettingsWithSerial-InstallSerialCommunicationTools}
 
 
 <details open>
 <summary> Unix OS </summary>
 
-Working with Unix OS, use `minicom` to configure the **FlexXlam**
+Working with Unix OS, use `minicom` to configure the **SLAMBOX**
 
 1. Install minicom
 
@@ -37,7 +37,7 @@ Working with Unix OS, use `minicom` to configure the **FlexXlam**
 
     First, plug in the USB2TTL module
 
-    ![USB2TTL to PC](flexxlam_setting/usb2ttl.JPG){width=50%}
+    ![USB2TTL to PC](getting_started/slambox_setting/usb2ttl.JPG){width=50%}
 
     Set the serial port and baudrate of your PC
 
@@ -48,7 +48,7 @@ Working with Unix OS, use `minicom` to configure the **FlexXlam**
     And set Hardware Flow Control to `No`. It can be done by pressing `<Ctrl>+A o` -> Serial port setup -> Press `f`.
     For your convinience, turn Local echo on by pressing `<Ctrl>+A z e`
 
-    Then, start configuration as your needs by following [below section](#FlexXlamSettingsWithSerial-ConfigureFlexXlam).
+    Then, start configuration as your needs by following [below section](#SLAMBOXSettingsWithSerial-ConfigureSLAMBOX).
 
 </details>
 
@@ -57,29 +57,29 @@ Working with Unix OS, use `minicom` to configure the **FlexXlam**
 
 1. Install ComPortMaster
 
-    Working with Windows OS, use *ComPortMaster* to configure the **FlexXlam**
+    Working with Windows OS, use *ComPortMaster* to configure the **SLAMBOX**
 
     Install the *ComPortMaster* from the [link](http://withrobot.com/data/?mod=document&uid=12)
 
-    ![How to use ComPortMaster](flexxlam_setting/comportmaster.png)
+    ![How to use ComPortMaster](getting_started/slambox_setting/comportmaster.png)
 
 </details>
 
-## Configure FlexXlam {#FlexXlamSettingsWithSerial-ConfigureFlexXlam}
+## Configure SLAMBOX {#SLAMBOXSettingsWithSerial-ConfigureSLAMBOX}
 
-Using ascii command to change configuration of **FlexXlam**
+Using ascii command to change configuration of **SLAMBOX**
 
 - The commands must be start with `$` and ends with `#` which is header and ender of the command
 
 - No matter using *upper case* or *lower case* it works
 
-- Regardless of changing configuration of **FlexXlam**, the serial communication for settings operates
+- Regardless of changing configuration of **SLAMBOX**, the serial communication for settings operates
 
 - The following commands below, type the commands in *minicom* or *ComPortMaster*
 
 **NOTE** The **Baud rate** of serial connection for setting is fixed to **115200**
 
-### FlexXlam Serial Configuration {#FlexXlamSettingsWithSerial-ConfigureFlexXlam-FlexXlamSerialConfiguration}
+### SLAMBOX Serial Configuration {#SLAMBOXSettingsWithSerial-ConfigureSLAMBOX-SLAMBOXSerialConfiguration}
 
 - `SERIAL_ENABLE` with option `0` or `1`. `0` means to disable and `1` means enable this option
 
@@ -115,7 +115,7 @@ $SERIAL_ENABLE 1#
 $SERIAL_BAUD 921600#
 ```
 
-### FlexXlam Ethernet Configuration {#FlexXlamSettingsWithSerial-ConfigureFlexXlam-FlexXlamEthernetConfiguration}
+### SLAMBOX Ethernet Configuration {#SLAMBOXSettingsWithSerial-ConfigureSLAMBOX-SLAMBOXEthernetConfiguration}
 
 - `ETH_ENABLE` with option `0` or `1`. `0` means to disable and `1` means enable this option
 
@@ -130,11 +130,11 @@ $ETH_ENABLE 1#
 # Change ethernet port number
 $ETH_PORT 25180#
 
-# Change ethernet IP address of FlexXlam
+# Change ethernet IP address of SLAMBOX
 $ETH_IP 192.168.1.50#
 ```
 
-### FlexXlam Mavlink Configuration {#FlexXlamSettingsWithSerial-ConfigureFlexXlam-FlexXlamMavlinkConfiguration}
+### SLAMBOX Mavlink Configuration {#SLAMBOXSettingsWithSerial-ConfigureSLAMBOX-SLAMBOXMavlinkConfiguration}
 
 - `MAVLINK_ENABLE` with option `0` or `1`. `0` means to disable and `1` means enable this option
 
@@ -161,7 +161,7 @@ $MAVLINK_BAUD 921600#
 $MAVLINK_TYPE 0#
 ```
 
-### FlexXlam Sensor Configuration {#FlexXlamSettingsWithSerial-ConfigureFlexXlam-FlexXlamSensorConfiguration}
+### SLAMBOX Sensor Configuration {#SLAMBOXSettingsWithSerial-ConfigureSLAMBOX-SLAMBOXSensorConfiguration}
 - `LIDAR_TYPE` with option `0` to `5`
 
 |  option  | sensor |
@@ -177,18 +177,18 @@ $MAVLINK_TYPE 0#
 $LIDAR_TYPE 1#
 ```
 
-### Save Configurations {#FlexXlamSettingsWithSerial-ConfigureFlexXlam-SaveConfigurations}
+### Save Configurations {#SLAMBOXSettingsWithSerial-ConfigureSLAMBOX-SaveConfigurations}
 
 - Configurtaion can be saved by command `SAVE` or `START`
 
 - The command `SAVE` just save the configuration
 
-- The command `START` finish the configuration and start the *FlexXlam*
+- The command `START` finish the configuration and start the *SLAMBOX*
 
 ```
 # save configuration
 $SAVE#
 
-# save and start FlexXlam
+# save and start SLAMBOX
 $START#
 ```

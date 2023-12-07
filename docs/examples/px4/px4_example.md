@@ -45,8 +45,8 @@
 
 ![Set Communication Port](px4/set_port.png){width=100%}
 
-- Setting baud rate as same as the FlexXlam configuration
-- See how to configure FlexXlam ([link](https://github.com/j-marple-dev/FlexXlam_driver#122-server-configuration))
-- **NOTE**: the *FlexXlam's baud rate* and *PX4's baud rate* should be **SAME**
+- Setting baud rate as same as the SLAMBOX configuration
+- See how to configure SLAMBOX ([link](https://github.com/j-marple-dev/SLAMBOX_driver#122-server-configuration))
+- **NOTE**: the *SLAMBOX's baud rate* and *PX4's baud rate* should be **SAME**
 
 ![Set Baud Rate](px4/set_baud_rate.png){width=100%}

@@ -66,9 +66,9 @@
 
 - Then set the port with *QGroundContol*
 
-- Setting baud rate as same as the FlexXlam configuration
-- See how to configure FlexXlam ([link](https://github.com/j-marple-dev/FlexXlam_driver#122-server-configuration))
-- **NOTE**: the *FlexXlam's baud rate* and *Ardupilot's baud rate* should be **SAME**
+- Setting baud rate as same as the SLAMBOX configuration
+- See how to configure SLAMBOX ([link](https://github.com/j-marple-dev/SLAMBOX_driver#122-server-configuration))
+- **NOTE**: the *SLAMBOX's baud rate* and *Ardupilot's baud rate* should be **SAME**
 
 <!-- ![Set Serial Baud Rate and Serial Protocol](ardupilot/set_serial1.png){width=50%} -->
 

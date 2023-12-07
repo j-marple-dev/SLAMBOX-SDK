@@ -1,7 +1,7 @@
 # LiDAR Setting {#LiDARSetting}
 
-Welcome to the LiDAR Setting Manual for FlexXlam.
-This guide will walk you through the necessary steps to successfully connect LiDAR with FlexXlam.
+Welcome to the LiDAR Setting Manual for SLAMBOX.
+This guide will walk you through the necessary steps to successfully connect LiDAR with SLAMBOX.
 
 [TOC]
 
@@ -49,7 +49,7 @@ Modify IP Settings as follow. Lidar IP: `192.168.1.100`, Subnet Mask: `255.255.2
 ![Modify IP Settings](getting_started/lidar_setting/Livox_Viewer_2_setting.png)
 
 Click on Confirm and REBOOT. Make sure the LiDAR connects after reboot procedure.
-Now MID-360 is ready to connect with FlexXlam device. Connect MID-360 to FlexXlam device via ethernet cable.
+Now MID-360 is ready to connect with SLAMBOX device. Connect MID-360 to SLAMBOX device via ethernet cable.
 
 # 2. Livox AVIA {#LiDARSetting-AVIA}
 
@@ -99,7 +99,7 @@ Modify IP Settings to `Static IP` and IP Address: `192.168.1.100`, Subnet Mask: 
 
 
 Click on Confirm and REBOOT. Make sure the LiDAR connects after reboot procedure.
-Now AVIA is ready to connect with FlexXlam device. Connect AVIA to FlexXlam device via ethernet cable.
+Now AVIA is ready to connect with SLAMBOX device. Connect AVIA to SLAMBOX device via ethernet cable.
 
 # 3. Ouster OS0 Family (OS0-32, OS0-64, and OS0-128) {#LIDARSetting-OusterOS0}
 
@@ -150,4 +150,4 @@ Make sure LiDAR data is visible in Ouster Studio.
 
 ![Ouster Studio visualization](getting_started/lidar_setting/Ouster_Studio_working.png)
 
-Now OS0 is ready to connect with FlexXlam device. Connect OS0 FlexXlam device via ethernet cable.
+Now OS0 is ready to connect with SLAMBOX device. Connect OS0 SLAMBOX device via ethernet cable.

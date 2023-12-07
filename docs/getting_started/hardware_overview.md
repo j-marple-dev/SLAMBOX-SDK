@@ -1,9 +1,9 @@
 # Hardware Overview {#HardwareOverview}
 
-![SLAM BOX Hardware](getting_started/sbox_board_rev1_numbering.jpg){width=50%}
+![SLAMBOX Hardware](getting_started/sbox_board_rev1_numbering.jpg){width=50%}
 
 
-1. Power 
+1. Power (3.8v ~ 40v)
 
 2. OTG port
 
