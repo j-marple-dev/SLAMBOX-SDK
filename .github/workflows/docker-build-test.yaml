@@ -13,7 +13,7 @@ jobs:
           submodules: true
           ref: ${{ github.ref }}
       - name: Docker build
-        run: docker build . -t jmarpledev/slambox_sdk:github_action -f docker/Dockerfile  --build-arg UID=$(id -u) --build-arg GID=$(id -g)
+        run: docker build . -t jmarpledev/slambox-sdk:github_action -f docker/Dockerfile  --build-arg UID=$(id -u) --build-arg GID=$(id -g)
 
   format-lint:
     runs-on: [self-hosted, slambox]
@@ -22,11 +22,11 @@ jobs:
       - name: format-and-lint
         uses: addnab/docker-run-action@v3
         with:
-          image: jmarpledev/slambox_sdk:github_action
+          image: jmarpledev/slambox-sdk:github_action
           shell: bash
-          options: -v ${{ github.workspace }}:/home/user/slambox_sdk
+          options: -v ${{ github.workspace }}:/home/user/slambox-sdk
           run: |
-            cd ~/slambox_sdk && \
+            cd ~/slambox-sdk && \
             export PATH=$PATH:/home/user/.local/bin && \
             ./run_check.sh all
 
@@ -37,13 +37,13 @@ jobs:
       - name: build-test
         uses: addnab/docker-run-action@v3
         with:
-          image: jmarpledev/slambox_sdk:github_action
+          image: jmarpledev/slambox-sdk:github_action
           shell: bash
-          options: -v ${{ github.workspace }}:/home/user/slambox_sdk
+          options: -v ${{ github.workspace }}:/home/user/slambox-sdk
           run: |
-            rm -rf ~/slambox_sdk/build && \
-            mkdir -p ~/slambox_sdk/build && \
-            cd ~/slambox_sdk/build && \
+            rm -rf ~/slambox-sdk/build && \
+            mkdir -p ~/slambox-sdk/build && \
+            cd ~/slambox-sdk/build && \
             cmake .. && \
             make -j
 
@@ -54,13 +54,13 @@ jobs:
       - name: build-and-unittest
         uses: addnab/docker-run-action@v3
         with:
-          image: jmarpledev/slambox_sdk:github_action
+          image: jmarpledev/slambox-sdk:github_action
           shell: bash
-          options: -v ${{ github.workspace  }}:/home/user/slambox_sdk
+          options: -v ${{ github.workspace  }}:/home/user/slambox-sdk
           run: |
-            rm -rf ~/slambox_sdk/build && \
-            mkdir -p ~/slambox_sdk/build && \
-            cd ~/slambox_sdk/build && \
+            rm -rf ~/slambox-sdk/build && \
+            mkdir -p ~/slambox-sdk/build && \
+            cd ~/slambox-sdk/build && \
             cmake -Dtest=true .. && \
             make -j && \
             ctest
