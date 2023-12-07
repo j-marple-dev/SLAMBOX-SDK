@@ -13,7 +13,7 @@
 
 using std::vector;
 
-namespace flexxlam {
+namespace sbox {
 
 /// @brief Acknowledge protocol
 class AcknowledgeProtocol : public BaseProtocol {
@@ -66,6 +66,6 @@ class AcknowledgeProtocol : public BaseProtocol {
   uint8_t status_;
 };
 
-}  // namespace flexxlam
+}  // namespace sbox
 
 #endif  // SLAMBOX_SDK_INCLUDE_SBOX_PROTOCOL_ACKNOWLEDGE_ACKNOWLEDGE_PROTOCOL_HPP_

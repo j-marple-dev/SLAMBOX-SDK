@@ -13,8 +13,8 @@
 
 using std::vector;
 
-bool is_pointcloud_same(const flexxlam_msgs::PointCloud2 &a,
-                        const flexxlam_msgs::PointCloud2 &b) {
+bool is_pointcloud_same(const sbox_msgs::PointCloud2 &a,
+                        const sbox_msgs::PointCloud2 &b) {
   EXPECT_EQ(a.timestamp_sec, b.timestamp_sec);
   EXPECT_EQ(a.timestamp_nsec, b.timestamp_nsec);
 
@@ -63,7 +63,7 @@ TEST(PushPointCloudProtocol, ConstructorTest) {
   std::uniform_int_distribution<uint8_t> dis_char(33, 126);
 
   for (int i = 0; i < 100; i++) {
-    flexxlam_msgs::PointCloud2 pointcloud;
+    sbox_msgs::PointCloud2 pointcloud;
 
     pointcloud.timestamp_sec = dis_uint32(gen);
     pointcloud.timestamp_nsec = dis_uint32(gen);
@@ -97,22 +97,22 @@ TEST(PushPointCloudProtocol, ConstructorTest) {
     pointcloud.is_dense = dis_bool(gen);
 
     // PointCloud2 to Protocol
-    flexxlam::PushPointCloudProtocol protocol1(pointcloud);
+    sbox::PushPointCloudProtocol protocol1(pointcloud);
     // Protocol to bytes
     vector<uint8_t> bytes = protocol1.encapsulate();
     // Bytes to Protocol
-    flexxlam::PushPointCloudProtocol protocol2(bytes, /*payload_only=*/false);
+    sbox::PushPointCloudProtocol protocol2(bytes, /*payload_only=*/false);
     // Decapsulated bytes to Protocol
-    flexxlam::PushPointCloudProtocol protocol3(protocol2.get_payload(),
+    sbox::PushPointCloudProtocol protocol3(protocol2.get_payload(),
                                                /*payload_only=*/true);
 
     EXPECT_TRUE(protocol1.is_valid());
     EXPECT_TRUE(protocol2.is_valid());
     EXPECT_TRUE(protocol3.is_valid());
 
-    flexxlam_msgs::PointCloud2 pointcloud1 = protocol1.get_pointcloud();
-    flexxlam_msgs::PointCloud2 pointcloud2 = protocol2.get_pointcloud();
-    flexxlam_msgs::PointCloud2 pointcloud3 = protocol3.get_pointcloud();
+    sbox_msgs::PointCloud2 pointcloud1 = protocol1.get_pointcloud();
+    sbox_msgs::PointCloud2 pointcloud2 = protocol2.get_pointcloud();
+    sbox_msgs::PointCloud2 pointcloud3 = protocol3.get_pointcloud();
 
     is_pointcloud_same(pointcloud, pointcloud1);
     is_pointcloud_same(pointcloud, pointcloud2);

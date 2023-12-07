@@ -11,7 +11,7 @@
 #include <vector>
 
 /// @brief FlexXlam Messages
-namespace flexxlam_msgs {
+namespace sbox_msgs {
 
 /// @brief Odometry message that is equivalent to nav_msgs/Odometry in ROS
 struct Odometry {
@@ -99,6 +99,6 @@ struct Odometry {
 /// @return serialized bytes
 std::vector<uint8_t> serialize(const Odometry &odom);
 
-}  // namespace flexxlam_msgs
+}  // namespace sbox_msgs
 
 #endif  // SLAMBOX_SDK_INCLUDE_SBOX_FLEXXLAM_MSGS_ODOMETRY_HPP_

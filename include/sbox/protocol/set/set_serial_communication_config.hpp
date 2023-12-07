@@ -11,7 +11,7 @@
 #include "sbox/protocol/base_protocol.hpp"
 #include "sbox/utils/to_bytes.hpp"
 
-namespace flexxlam {
+namespace sbox {
 
 /// @brief Set serial communication config protocol
 class SetSerialCommunicationConfigProtocol : public BaseProtocol {
@@ -71,6 +71,6 @@ class SetSerialCommunicationConfigProtocol : public BaseProtocol {
   /// @brief baudrate of serial communication
   uint32_t baudrate_;
 };
-}  // namespace flexxlam
+}  // namespace sbox
 
 #endif  // SLAMBOX_SDK_INCLUDE_SBOX_PROTOCOL_SET_SET_SERIAL_COMMUNICATION_CONFIG_HPP_

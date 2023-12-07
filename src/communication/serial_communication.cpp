@@ -8,7 +8,7 @@
 #include <libserial/SerialPortConstants.h>
 #include <exception>
 
-namespace flexxlam {
+namespace sbox {
 
 bool SerialCommunication::open_() {
   LibSerial::BaudRate baud_rate_libserial = LibSerial::BaudRate::BAUD_115200;
@@ -145,4 +145,4 @@ const std::map<int, LibSerial::BaudRate> SerialCommunication::kBaudRateMap = {
     {4000000, LibSerial::BaudRate::BAUD_4000000},
 };
 
-}  // namespace flexxlam
+}  // namespace sbox

@@ -10,7 +10,7 @@
 
 #include "sbox/utils/to_bytes.hpp"
 
-namespace flexxlam {
+namespace sbox {
 
 vector<uint8_t> BaseProtocol::encapsulate_(vector<uint8_t> payload) {
   int length = payload.size();
@@ -65,4 +65,4 @@ vector<uint8_t> BaseProtocol::decapsulate_(vector<uint8_t> bytes) {
   return payload;
 }
 
-}  // namespace flexxlam
+}  // namespace sbox

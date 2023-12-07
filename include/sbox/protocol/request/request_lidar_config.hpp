@@ -10,7 +10,7 @@
 
 #include "sbox/protocol/base_protocol.hpp"
 
-namespace flexxlam {
+namespace sbox {
 
 /// @brief Request lidar config protocol
 class RequestLidarConfigProtocol : public BaseProtocol {
@@ -39,6 +39,6 @@ class RequestLidarConfigProtocol : public BaseProtocol {
   void init_from_payload_() override {}
 };
 
-}  // namespace flexxlam
+}  // namespace sbox
 
 #endif  // SLAMBOX_SDK_INCLUDE_SBOX_PROTOCOL_REQUEST_REQUEST_LIDAR_CONFIG_HPP_

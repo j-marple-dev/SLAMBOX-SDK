@@ -13,7 +13,7 @@
 
 using std::vector;
 
-bool is_odometry_same(flexxlam_msgs::Odometry a, flexxlam_msgs::Odometry b) {
+bool is_odometry_same(sbox_msgs::Odometry a, sbox_msgs::Odometry b) {
   EXPECT_EQ(a.timestamp_sec, b.timestamp_sec);
   EXPECT_EQ(a.timestamp_nsec, b.timestamp_nsec);
 
@@ -48,7 +48,7 @@ TEST(PushOdometryProtocol, ConstructorTest) {
   std::uniform_int_distribution<uint32_t> dis_uint32(0, 4294967295);
 
   for (int i = 0; i < 1000; i++) {
-    flexxlam_msgs::Odometry odom;
+    sbox_msgs::Odometry odom;
 
     odom.timestamp_sec = dis_uint32(gen);
     odom.timestamp_nsec = dis_uint32(gen);
@@ -73,19 +73,19 @@ TEST(PushOdometryProtocol, ConstructorTest) {
     }
 
     // Odom to protocol
-    flexxlam::PushOdometryProtocol protocol1(odom);
+    sbox::PushOdometryProtocol protocol1(odom);
     vector<uint8_t> bytes = protocol1.encapsulate();
 
     // Encapsulated bytes to protocol
-    flexxlam::PushOdometryProtocol protocol2(bytes, /*payload_only=*/false);
+    sbox::PushOdometryProtocol protocol2(bytes, /*payload_only=*/false);
 
     // Decapsulated bytes to protocol
-    flexxlam::PushOdometryProtocol protocol3(protocol1.get_payload(),
+    sbox::PushOdometryProtocol protocol3(protocol1.get_payload(),
                                              /*payload_only=*/true);
 
-    flexxlam_msgs::Odometry odom1 = protocol1.get_odometry();
-    flexxlam_msgs::Odometry odom2 = protocol2.get_odometry();
-    flexxlam_msgs::Odometry odom3 = protocol3.get_odometry();
+    sbox_msgs::Odometry odom1 = protocol1.get_odometry();
+    sbox_msgs::Odometry odom2 = protocol2.get_odometry();
+    sbox_msgs::Odometry odom3 = protocol3.get_odometry();
 
     is_odometry_same(odom, odom1);
     is_odometry_same(odom, odom2);

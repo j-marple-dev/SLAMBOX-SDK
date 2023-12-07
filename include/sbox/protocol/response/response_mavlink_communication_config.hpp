@@ -11,7 +11,7 @@
 #include "sbox/protocol/base_protocol.hpp"
 #include "sbox/utils/to_bytes.hpp"
 
-namespace flexxlam {
+namespace sbox {
 
 /// @brief Response mavlink communication config protocol
 class ResponseMavlinkCommunicationConfig : public BaseProtocol {
@@ -71,6 +71,6 @@ class ResponseMavlinkCommunicationConfig : public BaseProtocol {
   /// @brief baudrate of mavlink communication
   uint32_t baudrate_;
 };
-}  // namespace flexxlam
+}  // namespace sbox
 
 #endif  // SLAMBOX_SDK_INCLUDE_SBOX_PROTOCOL_RESPONSE_RESPONSE_MAVLINK_COMMUNICATION_CONFIG_HPP_

@@ -9,12 +9,12 @@
 
 #include "sbox/utils/to_bytes.hpp"
 
-namespace flexxlam_msgs {
+namespace sbox_msgs {
 
-using flexxlam::from_bytes::to_float;
-using flexxlam::from_bytes::to_int;
+using sbox::from_bytes::to_float;
+using sbox::from_bytes::to_int;
 
-using flexxlam::to_bytes::four;
+using sbox::to_bytes::four;
 
 Odometry::Odometry(const std::vector<uint8_t> &bytes) {
   this->timestamp_sec =
@@ -75,4 +75,4 @@ std::vector<uint8_t> serialize(const Odometry &odom) {
   return bytes;
 }
 
-}  // namespace flexxlam_msgs
+}  // namespace sbox_msgs

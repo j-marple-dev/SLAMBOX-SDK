@@ -20,8 +20,8 @@ TEST(ToBytes, ByteConversionFloat) {
 
   for (int i = 0; i < 1000; i++) {
     float x = dis(gen);
-    vector<uint8_t> bytes = flexxlam::to_bytes::four(x);
-    float y = flexxlam::from_bytes::to_float(bytes);
+    vector<uint8_t> bytes = sbox::to_bytes::four(x);
+    float y = sbox::from_bytes::to_float(bytes);
 
     EXPECT_FLOAT_EQ(x, y);
   }
@@ -35,8 +35,8 @@ TEST(ToBytes, ByteConversionDouble) {
 
   for (int i = 0; i < 1000; i++) {
     double x = dis(gen);
-    vector<uint8_t> bytes = flexxlam::to_bytes::four(x);
-    float y = flexxlam::from_bytes::to_float(bytes);
+    vector<uint8_t> bytes = sbox::to_bytes::four(x);
+    float y = sbox::from_bytes::to_float(bytes);
 
     EXPECT_FLOAT_EQ(x, y);
   }
@@ -56,10 +56,10 @@ TEST(ToBytes, ByteConversionFloatArray) {
       x[j] = dis(gen);
     }
 
-    vector<uint8_t> bytes = flexxlam::to_bytes::four(x);
+    vector<uint8_t> bytes = sbox::to_bytes::four(x);
     vector<float> y(length);
     for (int j = 0; j < length; j++) {
-      y[j] = flexxlam::from_bytes::to_float(bytes, j * 4);
+      y[j] = sbox::from_bytes::to_float(bytes, j * 4);
     }
 
     for (int j = 0; j < length; j++) {
@@ -80,13 +80,13 @@ TEST(ToBytes, ByteConversionFloatOffset) {
     float x = dis(gen);
     int offset = dis_offset(gen);
 
-    vector<uint8_t> data = flexxlam::to_bytes::four(x);
+    vector<uint8_t> data = sbox::to_bytes::four(x);
 
     for (int j = 0; j < 4; j++) {
       bytes[j + offset] = data[j];
     }
 
-    float y = flexxlam::from_bytes::to_float(bytes, offset);
+    float y = sbox::from_bytes::to_float(bytes, offset);
 
     EXPECT_FLOAT_EQ(x, y);
   }
@@ -101,15 +101,15 @@ TEST(ToBytes, ToInt) {
 
   for (int i = 0; i < 1000; i++) {
     uint32_t x2 = dis_2bytes(gen);
-    vector<uint8_t> bytes2 = flexxlam::to_bytes::two(x2);
-    uint32_t y2 = flexxlam::from_bytes::to_int(bytes2);
+    vector<uint8_t> bytes2 = sbox::to_bytes::two(x2);
+    uint32_t y2 = sbox::from_bytes::to_int(bytes2);
 
     EXPECT_EQ(bytes2.size(), 2);
     EXPECT_EQ(x2, y2);
 
     uint32_t x4 = dis_4bytes(gen);
-    vector<uint8_t> bytes4 = flexxlam::to_bytes::four(x4);
-    uint32_t y4 = flexxlam::from_bytes::to_int(bytes4);
+    vector<uint8_t> bytes4 = sbox::to_bytes::four(x4);
+    uint32_t y4 = sbox::from_bytes::to_int(bytes4);
 
     EXPECT_EQ(bytes4.size(), 4);
     EXPECT_EQ(x4, y4);
@@ -136,8 +136,8 @@ TEST(ToBytes, ToString) {
       }
     }
 
-    vector<uint8_t> bytes = flexxlam::to_bytes::from_string(str);
-    std::string str2 = flexxlam::from_bytes::to_string(bytes);
+    vector<uint8_t> bytes = sbox::to_bytes::from_string(str);
+    std::string str2 = sbox::from_bytes::to_string(bytes);
 
     EXPECT_EQ(str, str2);
   }
@@ -157,14 +157,14 @@ TEST(ToBytes, ToString) {
         str[0] = 'a' + dis_char(gen);
       }
 
-      vector<uint8_t> append_bytes = flexxlam::to_bytes::from_string(str);
+      vector<uint8_t> append_bytes = sbox::to_bytes::from_string(str);
       bytes.insert(bytes.end(), append_bytes.begin(), append_bytes.end());
       answers.push_back(str);
     }
 
     size_t offset = 0;
     for (int j = 0; j < append_length; j++) {
-      std::string str = flexxlam::from_bytes::to_string(bytes, offset);
+      std::string str = sbox::from_bytes::to_string(bytes, offset);
       EXPECT_EQ(str, answers[j]);
       offset += str.size() + 1;
     }

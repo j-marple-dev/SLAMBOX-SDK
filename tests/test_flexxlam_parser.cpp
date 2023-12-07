@@ -14,7 +14,7 @@
 
 using std::vector;
 
-bool is_odometry_same(flexxlam_msgs::Odometry a, flexxlam_msgs::Odometry b) {
+bool is_odometry_same(sbox_msgs::Odometry a, sbox_msgs::Odometry b) {
   EXPECT_FLOAT_EQ(a.pose.position.x, b.pose.position.x);
   EXPECT_FLOAT_EQ(a.pose.position.y, b.pose.position.y);
   EXPECT_FLOAT_EQ(a.pose.position.z, b.pose.position.z);
@@ -45,17 +45,17 @@ TEST(FlexXlamParser, PushOdometryProtocolParse) {
   std::uniform_int_distribution<int> dis_int(0, 100);
   std::uniform_int_distribution<uint8_t> dis_uint8(0, 255);
 
-  flexxlam::FlexXlamParser parser;
-  struct TestParsedMessageInterface : public flexxlam::ParsedMessageInterface {
-    void on_push_odometry(const flexxlam_msgs::Odometry &odom) override {
+  sbox::FlexXlamParser parser;
+  struct TestParsedMessageInterface : public sbox::ParsedMessageInterface {
+    void on_push_odometry(const sbox_msgs::Odometry &odom) override {
       is_odometry_same(expected_odom, odom);
     }
-    flexxlam_msgs::Odometry expected_odom;
+    sbox_msgs::Odometry expected_odom;
   } test_parsed_message_interface;
   parser.add_parsed_message_callback(&test_parsed_message_interface);
 
   for (int i = 0; i < 100; i++) {
-    flexxlam_msgs::Odometry odom;
+    sbox_msgs::Odometry odom;
     odom.pose.position.x = dis(gen);
     odom.pose.position.y = dis(gen);
     odom.pose.position.z = dis(gen);
@@ -77,7 +77,7 @@ TEST(FlexXlamParser, PushOdometryProtocolParse) {
     }
     test_parsed_message_interface.expected_odom = odom;
 
-    flexxlam::PushOdometryProtocol protocol(odom);
+    sbox::PushOdometryProtocol protocol(odom);
     vector<uint8_t> pre_random_bytes;
     vector<uint8_t> post_random_bytes;
     for (int j = 0; j < dis_int(gen); j++) {
@@ -103,12 +103,12 @@ TEST(FlexXlamParser, PushOdometryProtocolParseBatch) {
   std::uniform_int_distribution<int> dis_int(1, 100);
   std::uniform_int_distribution<uint8_t> dis_uint8(0, 255);
 
-  flexxlam::FlexXlamParser parser(102400);
-  struct TestParsedMessageInterface : public flexxlam::ParsedMessageInterface {
-    void on_push_odometry(const flexxlam_msgs::Odometry &odom) override {
+  sbox::FlexXlamParser parser(102400);
+  struct TestParsedMessageInterface : public sbox::ParsedMessageInterface {
+    void on_push_odometry(const sbox_msgs::Odometry &odom) override {
       is_odometry_same(expected_odoms[odom_idx++], odom);
     }
-    vector<flexxlam_msgs::Odometry> expected_odoms;
+    vector<sbox_msgs::Odometry> expected_odoms;
     int odom_idx = 0;
   } test_parsed_message_interface;
   parser.add_parsed_message_callback(&test_parsed_message_interface);
@@ -116,10 +116,10 @@ TEST(FlexXlamParser, PushOdometryProtocolParseBatch) {
   for (int i = 0; i < 100; i++) {
     int batch_size = dis_int(gen);
     vector<uint8_t> bytes;
-    vector<flexxlam_msgs::Odometry> odoms(batch_size);
+    vector<sbox_msgs::Odometry> odoms(batch_size);
 
     for (int j = 0; j < batch_size; j++) {
-      flexxlam_msgs::Odometry odom;
+      sbox_msgs::Odometry odom;
       odom.pose.position.x = dis(gen);
       odom.pose.position.y = dis(gen);
       odom.pose.position.z = dis(gen);
@@ -140,7 +140,7 @@ TEST(FlexXlamParser, PushOdometryProtocolParseBatch) {
         odom.twist.covariance[k] = dis(gen);
       }
       odoms[j] = odom;
-      flexxlam::PushOdometryProtocol protocol(odom);
+      sbox::PushOdometryProtocol protocol(odom);
 
       vector<uint8_t> pre_random_bytes(dis_int(gen));
       for (int k = 0; k < pre_random_bytes.size(); k++) {

@@ -11,7 +11,7 @@
 #include "sbox/protocol/base_protocol.hpp"
 #include "sbox/utils/to_bytes.hpp"
 
-namespace flexxlam {
+namespace sbox {
 
 /// @brief Response lidar config protocol
 class ResponseLidarConfig : public BaseProtocol {
@@ -53,6 +53,6 @@ class ResponseLidarConfig : public BaseProtocol {
   /// @brief LiDAR type defined in `protocol::kLidar*`
   uint8_t lidar_type_;
 };
-}  // namespace flexxlam
+}  // namespace sbox
 
 #endif  // SLAMBOX_SDK_INCLUDE_SBOX_PROTOCOL_RESPONSE_RESPONSE_LIDAR_CONFIG_HPP_

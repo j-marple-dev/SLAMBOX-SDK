@@ -9,7 +9,7 @@
 
 #include <cstring>
 
-namespace flexxlam::to_bytes {
+namespace sbox::to_bytes {
 
 vector<uint8_t> from_string(std::string str) {
   int size = str.size();
@@ -75,9 +75,9 @@ vector<uint8_t> two(uint32_t x) {
   return bytes;
 }
 
-}  // namespace flexxlam::to_bytes
+}  // namespace sbox::to_bytes
 
-namespace flexxlam::from_bytes {
+namespace sbox::from_bytes {
 
 float to_float(vector<uint8_t> bytes, int offset) {
   float x;
@@ -127,4 +127,4 @@ std::string to_string(vector<uint8_t> bytes, size_t offset) {
   return str;
 }
 
-}  // namespace flexxlam::from_bytes
+}  // namespace sbox::from_bytes

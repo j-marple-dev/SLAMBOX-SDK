@@ -10,7 +10,7 @@
 
 #include "sbox/protocol/base_protocol.hpp"
 
-namespace flexxlam {
+namespace sbox {
 
 /// @brief Request mavlink communication config protocol
 class RequestMavlinkCommunicationConfigProtocol : public BaseProtocol {
@@ -41,6 +41,6 @@ class RequestMavlinkCommunicationConfigProtocol : public BaseProtocol {
   void init_from_payload_() override {}
 };
 
-}  // namespace flexxlam
+}  // namespace sbox
 
 #endif  // SLAMBOX_SDK_INCLUDE_SBOX_PROTOCOL_REQUEST_REQUEST_MAVLINK_COMMUNICATION_CONFIG_HPP_

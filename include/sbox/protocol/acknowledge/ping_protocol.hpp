@@ -10,7 +10,7 @@
 
 #include "sbox/protocol/base_protocol.hpp"
 
-namespace flexxlam {
+namespace sbox {
 
 /// @brief Ping protocol
 class PingProtocol : public BaseProtocol {
@@ -40,6 +40,6 @@ class PingProtocol : public BaseProtocol {
   void init_from_payload_() override {}
 };
 
-}  // namespace flexxlam
+}  // namespace sbox
 
 #endif  // SLAMBOX_SDK_INCLUDE_SBOX_PROTOCOL_ACKNOWLEDGE_PING_PROTOCOL_HPP_

@@ -11,7 +11,7 @@
 #include "sbox/protocol/base_protocol.hpp"
 #include "sbox/utils/to_bytes.hpp"
 
-namespace flexxlam {
+namespace sbox {
 
 /// @brief Response ethernet communication config protocol
 class ResponseEthernetCommunicationConfig : public BaseProtocol {
@@ -72,6 +72,6 @@ class ResponseEthernetCommunicationConfig : public BaseProtocol {
   /// @brief baudrate of ethernet communication
   uint32_t port_;
 };
-}  // namespace flexxlam
+}  // namespace sbox
 
 #endif  // SLAMBOX_SDK_INCLUDE_SBOX_PROTOCOL_RESPONSE_RESPONSE_ETHERNET_COMMUNICATION_CONFIG_HPP_

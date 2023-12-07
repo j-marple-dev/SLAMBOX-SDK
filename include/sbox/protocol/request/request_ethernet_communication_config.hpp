@@ -10,7 +10,7 @@
 
 #include "sbox/protocol/base_protocol.hpp"
 
-namespace flexxlam {
+namespace sbox {
 
 /// @brief Request ethernet communication config protocol
 class RequestEthernetCommunicationConfigProtocol : public BaseProtocol {
@@ -41,6 +41,6 @@ class RequestEthernetCommunicationConfigProtocol : public BaseProtocol {
   void init_from_payload_() override {}
 };
 
-}  // namespace flexxlam
+}  // namespace sbox
 
 #endif  // SLAMBOX_SDK_INCLUDE_SBOX_PROTOCOL_REQUEST_REQUEST_ETHERNET_COMMUNICATION_CONFIG_HPP_

@@ -13,7 +13,7 @@
 
 using std::vector;
 
-namespace flexxlam {
+namespace sbox {
 /// @brief Compress bytes
 /// @param bytes bytes to compress
 /// @return compressed bytes
@@ -30,6 +30,6 @@ vector<uint8_t> compress_bytes(const vector<uint8_t> &bytes);
 /// If decompression is failed, it returns empty vector.
 vector<uint8_t> decompress_bytes(const vector<uint8_t> &bytes,
                                  uint32_t original_size = 0);
-}  // namespace flexxlam
+}  // namespace sbox
 
 #endif  // SLAMBOX_SDK_INCLUDE_SBOX_UTILS_COMPRESS_BYTES_HPP_

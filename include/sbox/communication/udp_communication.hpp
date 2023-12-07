@@ -13,7 +13,7 @@
 #include <thread>  // NOLINT
 #include <vector>
 
-namespace flexxlam {
+namespace sbox {
 
 /// @brief UDP communication
 class UDPCommunication {
@@ -111,6 +111,6 @@ class UDPCommunication {
   /// @brief Callback function for serial communication
   std::function<void(std::vector<uint8_t>)> callback_ = nullptr;
 };
-}  // namespace flexxlam
+}  // namespace sbox
 
 #endif  // SLAMBOX_SDK_INCLUDE_SBOX_COMMUNICATION_UDP_COMMUNICATION_HPP_

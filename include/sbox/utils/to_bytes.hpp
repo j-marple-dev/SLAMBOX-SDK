@@ -13,7 +13,7 @@
 using std::vector;
 
 /// @brief Convert data into byte array
-namespace flexxlam::to_bytes {
+namespace sbox::to_bytes {
 
 /// @brief Convert string to byte array
 /// @param str string to convert
@@ -63,10 +63,10 @@ vector<uint8_t> four(uint32_t x);
 /// @return 2 bytes
 vector<uint8_t> two(uint32_t x);
 
-}  // namespace flexxlam::to_bytes
+}  // namespace sbox::to_bytes
 
 /// @brief Convert byte array into data
-namespace flexxlam::from_bytes {
+namespace sbox::from_bytes {
 
 /// @brief Convert 4 bytes to float
 /// @param bytes bytes to convert
@@ -84,6 +84,6 @@ uint32_t to_int(vector<uint8_t> bytes);
 /// @param offset offset index to start converting
 /// @return string
 std::string to_string(vector<uint8_t> bytes, size_t offset = 0);
-}  // namespace flexxlam::from_bytes
+}  // namespace sbox::from_bytes
 
 #endif  // SLAMBOX_SDK_INCLUDE_SBOX_UTILS_TO_BYTES_HPP_

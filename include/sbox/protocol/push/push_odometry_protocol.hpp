@@ -15,7 +15,7 @@
 #include "sbox/protocol/base_protocol.hpp"
 #include "sbox/utils/to_bytes.hpp"
 
-namespace flexxlam {
+namespace sbox {
 
 /// @brief Get odometry protocol
 class PushOdometryProtocol : public BaseProtocol {
@@ -23,10 +23,10 @@ class PushOdometryProtocol : public BaseProtocol {
   /// @brief Get odometry protocol constructor
   /// @param odom odometry
   /// @details This constructor initialize `mode` and `payload` from `odom`
-  explicit PushOdometryProtocol(const flexxlam_msgs::Odometry &odom)
+  explicit PushOdometryProtocol(const sbox_msgs::Odometry &odom)
       : BaseProtocol(protocol::kModePushOdometry) {
     this->odom = odom;
-    this->payload_ = flexxlam_msgs::serialize(odom);
+    this->payload_ = sbox_msgs::serialize(odom);
   }
 
   /// @brief Get odometry protocol constructor
@@ -51,7 +51,7 @@ class PushOdometryProtocol : public BaseProtocol {
 
   /// @brief Get odometry
   /// @return odometry
-  flexxlam_msgs::Odometry get_odometry() { return this->odom; }
+  sbox_msgs::Odometry get_odometry() { return this->odom; }
 
  protected:
   /// @brief Initialize `odom` from `payload`
@@ -60,14 +60,14 @@ class PushOdometryProtocol : public BaseProtocol {
       return;
     }
 
-    this->odom = flexxlam_msgs::Odometry(this->payload_);
+    this->odom = sbox_msgs::Odometry(this->payload_);
   }
 
  private:
   /// @brief odometry
-  flexxlam_msgs::Odometry odom;
+  sbox_msgs::Odometry odom;
 };
 
-}  // namespace flexxlam
+}  // namespace sbox
 
 #endif  // SLAMBOX_SDK_INCLUDE_SBOX_PROTOCOL_PUSH_PUSH_ODOMETRY_PROTOCOL_HPP_

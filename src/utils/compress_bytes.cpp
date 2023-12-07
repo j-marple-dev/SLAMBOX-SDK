@@ -7,7 +7,7 @@
 
 #include <glog/logging.h>
 
-namespace flexxlam {
+namespace sbox {
 
 vector<uint8_t> compress_bytes(const vector<uint8_t>& bytes) {
   uint8_t* bytes_ptr = const_cast<uint8_t*>(bytes.data());
@@ -50,4 +50,4 @@ vector<uint8_t> decompress_bytes(const vector<uint8_t>& bytes,
   return vector<uint8_t>();
 }
 
-}  // namespace flexxlam
+}  // namespace sbox

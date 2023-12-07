@@ -15,20 +15,20 @@
 using std::vector;
 
 /// @brief FlexXlam Driver namespace
-namespace flexxlam {
+namespace sbox {
 
 /// @brief Parsed message interface
 struct ParsedMessageInterface {
   /// @brief Get odometry callback
   /// @param odom odometry
   /// @details This function is called when odometry is parsed.
-  virtual void on_push_odometry(const flexxlam_msgs::Odometry &odom) {}
+  virtual void on_push_odometry(const sbox_msgs::Odometry &odom) {}
 
   /// @brief Get pointcloud callback
   /// @param pointcloud pointcloud
   /// @details This function is called when pointcloud is parsed.
   virtual void on_push_pointcloud(
-      const flexxlam_msgs::PointCloud2 &pointcloud) {}
+      const sbox_msgs::PointCloud2 &pointcloud) {}
 
   /// @brief Request communication config callback
   /// @param type communication type. Please refer to `protocol::kCommType*`
@@ -162,6 +162,6 @@ class FlexXlamParser {
   vector<ParsedMessageInterface *> parsed_message_interfaces_;
 };
 
-}  // namespace flexxlam
+}  // namespace sbox
 
 #endif  // SLAMBOX_SDK_INCLUDE_SBOX_COMMUNICATION_FLEXXLAM_PARSER_HPP_

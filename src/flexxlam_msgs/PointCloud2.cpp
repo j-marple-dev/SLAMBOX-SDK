@@ -10,16 +10,16 @@
 #include "sbox/utils/compress_bytes.hpp"
 #include "sbox/utils/to_bytes.hpp"
 
-namespace flexxlam_msgs {
+namespace sbox_msgs {
 
-using flexxlam::from_bytes::to_int;
-using flexxlam::from_bytes::to_string;
+using sbox::from_bytes::to_int;
+using sbox::from_bytes::to_string;
 
-using flexxlam::to_bytes::four;
-using flexxlam::to_bytes::from_string;
+using sbox::to_bytes::four;
+using sbox::to_bytes::from_string;
 
-using flexxlam::compress_bytes;
-using flexxlam::decompress_bytes;
+using sbox::compress_bytes;
+using sbox::decompress_bytes;
 
 using std::vector;
 
@@ -141,4 +141,4 @@ std::vector<uint8_t> serialize(const PointCloud2 &pointcloud, bool compress) {
   }
 }
 
-}  // namespace flexxlam_msgs
+}  // namespace sbox_msgs

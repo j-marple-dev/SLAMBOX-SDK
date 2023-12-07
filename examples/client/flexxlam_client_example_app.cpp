@@ -17,7 +17,7 @@ int main(int argc, char **argv) {
   FLAGS_colorlogtostderr = true;
   google::InitGoogleLogging(argv[0]);
 
-  flexxlam::FlexXlamClientExample driver_client;
+  FlexXlamClientExample driver_client;
 
   LOG(INFO) << "FlexXlam client node is running.";
 

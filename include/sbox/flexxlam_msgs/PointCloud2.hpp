@@ -10,7 +10,7 @@
 #include <string>
 #include <vector>
 
-namespace flexxlam_msgs {
+namespace sbox_msgs {
 
 /// @brief Point field description
 /// Please refer to
@@ -78,6 +78,6 @@ struct PointCloud2 {
 std::vector<uint8_t> serialize(const PointCloud2 &pointcloud,
                                bool compress = false);
 
-}  // namespace flexxlam_msgs
+}  // namespace sbox_msgs
 
 #endif  // SLAMBOX_SDK_INCLUDE_SBOX_FLEXXLAM_MSGS_POINTCLOUD2_HPP_

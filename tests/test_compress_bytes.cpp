@@ -24,9 +24,9 @@ TEST(CompressBytes, CompressDecompressWithZeros) {
       bytes[j] = dis_bool(gen) ? dis_uint8(gen) : 0;
     }
 
-    std::vector<uint8_t> compressed_bytes = flexxlam::compress_bytes(bytes);
+    std::vector<uint8_t> compressed_bytes = sbox::compress_bytes(bytes);
 
-    std::vector<uint8_t> decompressed_bytes = flexxlam::decompress_bytes(
+    std::vector<uint8_t> decompressed_bytes = sbox::decompress_bytes(
         compressed_bytes, /*original_size=*/bytes.size());
 
     EXPECT_LT(compressed_bytes.size(), bytes.size());
@@ -50,9 +50,9 @@ TEST(CompressBytes, CompressDecompress) {
       bytes[j] = dis_uint8(gen);
     }
 
-    std::vector<uint8_t> compressed_bytes = flexxlam::compress_bytes(bytes);
+    std::vector<uint8_t> compressed_bytes = sbox::compress_bytes(bytes);
     std::vector<uint8_t> decompressed_bytes =
-        flexxlam::decompress_bytes(compressed_bytes);
+        sbox::decompress_bytes(compressed_bytes);
 
     EXPECT_EQ(bytes.size(), decompressed_bytes.size());
     for (int j = 0; j < bytes.size(); j++) {

@@ -27,7 +27,7 @@
 #include "sbox/protocol/set/set_serial_communication_config.hpp"
 #include "sbox/utils/to_bytes.hpp"
 
-namespace flexxlam {
+namespace sbox {
 
 void FlexXlamParser::parse(vector<uint8_t> data) {
   // 1. Add data to buffer
@@ -176,4 +176,4 @@ void FlexXlamParser::add_parsed_message_callback(
   this->parsed_message_interfaces_.push_back(parsed_message_interface);
 }
 
-}  // namespace flexxlam
+}  // namespace sbox

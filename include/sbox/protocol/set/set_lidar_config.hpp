@@ -12,7 +12,7 @@
 #include "sbox/protocol/base_protocol.hpp"
 #include "sbox/utils/to_bytes.hpp"
 
-namespace flexxlam {
+namespace sbox {
 
 /// @brief Set lidar config protocol
 class SetLidarConfigProtocol : public BaseProtocol {
@@ -69,6 +69,6 @@ class SetLidarConfigProtocol : public BaseProtocol {
   /// @brief enabled or not
   uint8_t lidar_type_;
 };
-}  // namespace flexxlam
+}  // namespace sbox
 
 #endif  // SLAMBOX_SDK_INCLUDE_SBOX_PROTOCOL_SET_SET_LIDAR_CONFIG_HPP_

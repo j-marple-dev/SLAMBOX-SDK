@@ -17,7 +17,7 @@
 
 using LibSerial::SerialPort;
 
-namespace flexxlam {
+namespace sbox {
 
 /// @brief Serial communication
 class SerialCommunication {
@@ -117,6 +117,6 @@ class SerialCommunication {
   std::function<void(std::vector<uint8_t>)> callback_ = nullptr;
 };
 
-}  // namespace flexxlam
+}  // namespace sbox
 
 #endif  // SLAMBOX_SDK_INCLUDE_SBOX_COMMUNICATION_SERIAL_COMMUNICATION_HPP_

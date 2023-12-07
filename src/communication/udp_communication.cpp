@@ -8,7 +8,7 @@
 #include <glog/logging.h>
 #include <sys/socket.h>
 
-namespace flexxlam {
+namespace sbox {
 UDPCommunication::UDPCommunication(bool is_server, const std::string &ip,
                                    uint16_t port)
     : is_server_(is_server), ip_(ip), port_(port) {
@@ -107,4 +107,4 @@ void UDPCommunication::write(std::vector<uint8_t> data) {
          (const sockaddr *)listen_addr_, sizeof(*listen_addr_));
 }
 
-}  // namespace flexxlam
+}  // namespace sbox

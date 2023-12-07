@@ -18,7 +18,7 @@
 using std::vector;
 
 /// @brief Protocol constants namespace
-namespace flexxlam::protocol {
+namespace sbox::protocol {
 /// @brief Header of protocol
 constexpr std::array<uint8_t, 2> kHeader = {0xFA, 0x5A};
 
@@ -105,9 +105,9 @@ const std::map<std::array<uint8_t, 2>, uint16_t> kModeToPayloadLengthGt = {
     {kModePushPointcloud, 300},
 };
 
-}  // namespace flexxlam::protocol
+}  // namespace sbox::protocol
 
-namespace flexxlam {
+namespace sbox {
 /// @brief Base protocol for communication
 class BaseProtocol {
  public:
@@ -218,6 +218,6 @@ class BaseProtocol {
   /// @brief Initialize members of the derived class from payload
   virtual void init_from_payload_() = 0;
 };
-}  // namespace flexxlam
+}  // namespace sbox
 
 #endif  // SLAMBOX_SDK_INCLUDE_SBOX_PROTOCOL_BASE_PROTOCOL_HPP_

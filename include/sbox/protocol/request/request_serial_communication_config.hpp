@@ -10,7 +10,7 @@
 
 #include "sbox/protocol/base_protocol.hpp"
 
-namespace flexxlam {
+namespace sbox {
 
 /// @brief Request serial communication config protocol
 class RequestSerialCommunicationConfigProtocol : public BaseProtocol {
@@ -40,6 +40,6 @@ class RequestSerialCommunicationConfigProtocol : public BaseProtocol {
   void init_from_payload_() override {}
 };
 
-}  // namespace flexxlam
+}  // namespace sbox
 
 #endif  // SLAMBOX_SDK_INCLUDE_SBOX_PROTOCOL_REQUEST_REQUEST_SERIAL_COMMUNICATION_CONFIG_HPP_

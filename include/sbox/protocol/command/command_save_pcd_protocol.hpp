@@ -13,7 +13,7 @@
 #include "sbox/protocol/base_protocol.hpp"
 #include "sbox/utils/to_bytes.hpp"
 
-namespace flexxlam {
+namespace sbox {
 
 /// @brief Save PCD protocol
 class CommandSavePCDProtocol : public BaseProtocol {
@@ -68,6 +68,6 @@ class CommandSavePCDProtocol : public BaseProtocol {
   /// @brief a flag used for reset the pointcloud buffer of odometry algorithm
   bool reset_;
 };
-}  // namespace flexxlam
+}  // namespace sbox
 
 #endif  // SLAMBOX_SDK_INCLUDE_SBOX_PROTOCOL_COMMAND_COMMAND_SAVE_PCD_PROTOCOL_HPP_

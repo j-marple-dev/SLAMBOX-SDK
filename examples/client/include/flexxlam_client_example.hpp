@@ -15,10 +15,8 @@
 #include <sbox/flexxlam_msgs/Odometry.hpp>
 #include <sbox/flexxlam_msgs/PointCloud2.hpp>
 
-namespace flexxlam {
-
 /// @brief FlexXlam Driver Client
-class FlexXlamClientExample : public ParsedMessageInterface {
+class FlexXlamClientExample : public sbox::ParsedMessageInterface {
  public:
   /// @brief Constructor
   /// @param nh ROS NodeHandle
@@ -33,13 +31,13 @@ class FlexXlamClientExample : public ParsedMessageInterface {
   /// @param odom Odometry message
   ///
   /// This function is called when odometry message is received.
-  void on_push_odometry(const flexxlam_msgs::Odometry &odom) override;
+  void on_push_odometry(const sbox_msgs::Odometry &odom) override;
 
   /// @brief Callback function for pointcloud message
   /// @param pointcloud Pointcloud message
   /// @details This function is called when pointcloud message is received.
   void on_push_pointcloud(
-      const flexxlam_msgs::PointCloud2 &pointcloud) override;
+      const sbox_msgs::PointCloud2 &pointcloud) override;
 
   /// @brief UDP port number
   int udp_port_;
@@ -48,12 +46,10 @@ class FlexXlamClientExample : public ParsedMessageInterface {
   std::string udp_ip_;
 
   /// @brief Parser for UDP communication
-  flexxlam::FlexXlamParser udp_parser_;
+  sbox::FlexXlamParser udp_parser_;
 
   /// @brief UDP communication
-  std::unique_ptr<UDPCommunication> udp_communication_ = nullptr;
+  std::unique_ptr<sbox::UDPCommunication> udp_communication_ = nullptr;
 };
-
-}  // namespace flexxlam
 
 #endif  // SLAMBOX_SDK_EXAMPLES_CLIENT_INCLUDE_FLEXXLAM_CLIENT_EXAMPLE_HPP_
