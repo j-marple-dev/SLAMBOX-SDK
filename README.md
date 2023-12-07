@@ -1,7 +1,7 @@
-# FlexXlam SDK
-FlexXlam SDK is a C++ library specifically designed for seamless communication with the FlexXlam device.
-The FlexXlam device empowers LiDAR devices with simultaneous localization and mapping (SLAM) algorithms.
-FlexXlam SDK allows developers to effortlessly integrate and control FlexXlam functionality in their C++ applications, offering advanced spatial awareness and navigation capabilities.
+# SLAMBOX SDK
+SLAMBOX SDK is a C++ library specifically designed for seamless communication with the SLAMBOX device.
+The SLAMBOX device empowers LiDAR devices with simultaneous localization and mapping (SLAM) algorithms.
+SLAMBOX SDK allows developers to effortlessly integrate and control SLAMBOX functionality in their C++ applications, offering advanced spatial awareness and navigation capabilities.
 
 
 # 1. Getting started
@@ -41,15 +41,15 @@ FlexXlam SDK allows developers to effortlessly integrate and control FlexXlam fu
 
 ## 1.2. Installiation
 
-1. Clone the FlexXlam SDK repository:
+1. Clone the SLAMBOX SDK repository:
 ```bash
-git clone https://github.com/j-marple-dev/FlexXlam-SDK.git
+git clone https://github.com/j-marple-dev/SLAMBOX-SDK.git
 ```
 
-2. Build and install FlexXlam SDK:
+2. Build and install SLAMBOX SDK:
 ```bash
-mkdir -p FlexXlam-SDK/build
-cd FlexXlam-SDK/build
+mkdir -p SLAMBOX-SDK/build
+cd SLAMBOX-SDK/build
 cmake ..
 make -j
 sudo make install
@@ -57,7 +57,7 @@ sudo make install
 
 # 2. Examples
 Check the [examples](examples) directory for sample code.
-Each subdirectory within examples contains an example demonstrating the usage of FlexXlam SDK in different scenarios.
+Each subdirectory within examples contains an example demonstrating the usage of SLAMBOX SDK in different scenarios.
 
 
 # 3. Contributing
