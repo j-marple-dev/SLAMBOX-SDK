@@ -67,7 +67,9 @@
 - Then set the port with *QGroundContol*
 
 - Setting baud rate as same as the SLAMBOX configuration
-- See how to configure SLAMBOX ([link](https://github.com/j-marple-dev/SLAMBOX_driver#122-server-configuration))
+
+- See how to configure SLAMBOX ([link](SLAMBOXSetting.html))
+
 - **NOTE**: the *SLAMBOX's baud rate* and *Ardupilot's baud rate* should be **SAME**
 
 <!-- ![Set Serial Baud Rate and Serial Protocol](ardupilot/set_serial1.png){width=50%} -->
@@ -77,3 +79,20 @@
 - Note that the SR1 means the telem1 port of FC
 
 ![Set Parameters to get data from Ardupilot](ardupilot/SR_set_hz.png){width=100%}
+
+# 3. Update SLAM BOX Setting
+
+- Update SLAMBOX Mavlink setting with command below
+
+- Check the details [here](SLAMBOXSetting.html#SLAMBOXSettingsWithSerial-ConfigureSLAMBOX-SLAMBOXMavlinkConfiguration)
+
+```
+# Enable Mavlink
+$MAVLINK_ENABLE 1#
+
+# Change baudrate
+$MAVLINK_BAUD 921600#
+
+# Set Mavlink type to px4
+$MAVLINK_TYPE 1#
+```

@@ -80,15 +80,22 @@ curl https://raw.githubusercontent.com/JeiKeiLim/ducker/main/install.sh | bash -
 
 ## 1.2. Driver setup
 ### 1.2.1. Build the Driver on TurtleBot Raspberry Pi
+
 - Should build the driver on TurtleBot raspberry pi for get data from SLAMBOX with ROS message
+
 - Please check the [README](https://github.com/j-marple-dev/SLAMBOX_driver/blob/main/README.md) for building SLAMBOX driver
 
 -----
 # 2. Run client
+
 - The SLAMBOX driver for server will be launched automatically.
+
 - To check the result of SLAMBOX, use **Remote server** of turtlebot to run rviz
+
 - **NOTE**: The RPi of turtlebot and the remote server must be connected with same network
+
 - **NOTE**: The command below should be type inside the docker container
+
 ```bash
 # 1. Set the ROS master ip of Remote server
 $ export ROS_MASTER_URI=http://{remote_server_ip}:11311
@@ -102,7 +109,9 @@ $ rviz -d {SLAMBOX_driver_dir}/docs/examples/turtlebot/config/rviz.rviz
 ```
 
 - Set the remote server ip to turtlebot Raspberry Pi
+
 - If the remote server ip is `192.168.0.3` the `ROS_MASTER_URI` will be `http://192.168.0.3:11311`
+
 ```bash
 # if using docker, the command below run inside the docker
 # 1. Setup the master ip of ROS and the host name
@@ -114,7 +123,7 @@ $ roslaunch slambox_driver slambox_driver_client.launch
 ```
 
 # 3. Configure SLAMBOX Configurations
-- Check the [Server Configuration](https://github.com/j-marple-dev/SLAMBOX_driver/blob/main/README.md#122-server-configuration)
+- Check the [SLAM BOX setting](SLAMBOXSetting.html)
 
 ---
 
@@ -128,11 +137,6 @@ $ roslaunch slambox_driver slambox_driver_client.launch
 - Connect SLAMBOX with *TurtleBot RPi*, use serial module and connect like below
 
 ![Serial with flexlam and turtlebot3 rpi](turtlebot3-rpi-connection.jpg){ width=50% }
-
-## 4.2. Eternet Connection
-**TODO(ulken94)**: Fill this part
-- Connect the *TurtleBot RPi* with SLAMBOX module with ethernet, make 
-
 
 ---
 
