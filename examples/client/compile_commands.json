@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/user/slambox_sdk/examples/client/build",
+  "command": "/usr/bin/c++ -DGLOG_CUSTOM_PREFIX_SUPPORT   -o CMakeFiles/slambox_client_example.dir/slambox_client_example_app.cpp.o -c /home/user/slambox_sdk/examples/client/slambox_client_example_app.cpp",
+  "file": "/home/user/slambox_sdk/examples/client/slambox_client_example_app.cpp"
+},
+{
+  "directory": "/home/user/slambox_sdk/examples/client/build",
+  "command": "/usr/bin/c++ -DGLOG_CUSTOM_PREFIX_SUPPORT   -o CMakeFiles/slambox_client_example.dir/slambox_client_example.cpp.o -c /home/user/slambox_sdk/examples/client/slambox_client_example.cpp",
+  "file": "/home/user/slambox_sdk/examples/client/slambox_client_example.cpp"
+}
+]
