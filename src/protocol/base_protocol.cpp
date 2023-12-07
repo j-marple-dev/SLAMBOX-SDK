@@ -3,12 +3,12 @@
 /// @copyright 2023 J.Marple
 /// @brief Base protocol for communication
 
-#include "protocol/base_protocol.hpp"
+#include "sbox/protocol/base_protocol.hpp"
 
 #include <cstring>
 #include <vector>
 
-#include "utils/to_bytes.hpp"
+#include "sbox/utils/to_bytes.hpp"
 
 namespace flexxlam {
 

@@ -8,7 +8,7 @@
 #include <random>
 #include <vector>
 
-#include "utils/to_bytes.hpp"
+#include "sbox/utils/to_bytes.hpp"
 
 using std::vector;
 

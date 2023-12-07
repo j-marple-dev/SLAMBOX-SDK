@@ -3,7 +3,7 @@
 /// @copyright 2023 J.Marple
 /// @brief Converting data into byte array
 
-#include "utils/to_bytes.hpp"
+#include "sbox/utils/to_bytes.hpp"
 
 #include <glog/logging.h>
 

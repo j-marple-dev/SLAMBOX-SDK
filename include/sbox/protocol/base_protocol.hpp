@@ -13,7 +13,7 @@
 #include <string>
 #include <vector>
 
-#include "communication/flexxlam_parser.hpp"
+#include "sbox/communication/flexxlam_parser.hpp"
 
 using std::vector;
 

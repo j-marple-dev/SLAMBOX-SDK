@@ -3,7 +3,7 @@
 /// @copyright 2023 J.Marple
 /// @brief UDP communication
 
-#include "communication/udp_communication.hpp"
+#include "sbox/communication/udp_communication.hpp"
 
 #include <glog/logging.h>
 #include <sys/socket.h>

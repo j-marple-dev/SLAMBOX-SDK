@@ -10,10 +10,10 @@
 #include <string>
 #include <vector>
 
-#include <communication/flexxlam_parser.hpp>
-#include <communication/udp_communication.hpp>
-#include <flexxlam_msgs/Odometry.hpp>
-#include <flexxlam_msgs/PointCloud2.hpp>
+#include <sbox/communication/flexxlam_parser.hpp>
+#include <sbox/communication/udp_communication.hpp>
+#include <sbox/flexxlam_msgs/Odometry.hpp>
+#include <sbox/flexxlam_msgs/PointCloud2.hpp>
 
 namespace flexxlam {
 

@@ -3,7 +3,7 @@
 /// @copyright 2023 J.Marple
 /// @brief Serial communication
 
-#include "communication/serial_communication.hpp"
+#include "sbox/communication/serial_communication.hpp"
 
 #include <libserial/SerialPortConstants.h>
 #include <exception>

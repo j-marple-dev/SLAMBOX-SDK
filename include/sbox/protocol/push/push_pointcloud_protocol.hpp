@@ -8,8 +8,8 @@
 
 #include <vector>
 
-#include "flexxlam_msgs/PointCloud2.hpp"
-#include "protocol/base_protocol.hpp"
+#include "sbox/flexxlam_msgs/PointCloud2.hpp"
+#include "sbox/protocol/base_protocol.hpp"
 
 namespace flexxlam {
 

@@ -8,7 +8,7 @@
 #include <random>
 #include <vector>
 
-#include "utils/compress_bytes.hpp"
+#include "sbox/utils/compress_bytes.hpp"
 
 TEST(CompressBytes, CompressDecompressWithZeros) {
   std::random_device rd;

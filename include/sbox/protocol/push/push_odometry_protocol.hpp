@@ -10,10 +10,10 @@
 #include <memory>
 #include <vector>
 
-#include "communication/flexxlam_parser.hpp"
-#include "flexxlam_msgs/Odometry.hpp"
-#include "protocol/base_protocol.hpp"
-#include "utils/to_bytes.hpp"
+#include "sbox/communication/flexxlam_parser.hpp"
+#include "sbox/flexxlam_msgs/Odometry.hpp"
+#include "sbox/protocol/base_protocol.hpp"
+#include "sbox/utils/to_bytes.hpp"
 
 namespace flexxlam {
 

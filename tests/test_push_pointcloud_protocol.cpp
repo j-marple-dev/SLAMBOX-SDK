@@ -8,8 +8,8 @@
 #include <random>
 #include <vector>
 
-#include "flexxlam_msgs/PointCloud2.hpp"
-#include "protocol/push/push_pointcloud_protocol.hpp"
+#include "sbox/flexxlam_msgs/PointCloud2.hpp"
+#include "sbox/protocol/push/push_pointcloud_protocol.hpp"
 
 using std::vector;
 

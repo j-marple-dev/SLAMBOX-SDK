@@ -9,7 +9,7 @@
 #include <array>
 #include <vector>
 
-#include "protocol/base_protocol.hpp"
+#include "sbox/protocol/base_protocol.hpp"
 
 using std::vector;
 

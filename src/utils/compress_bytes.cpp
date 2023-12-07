@@ -3,7 +3,7 @@
 /// @copyright 2023 J.Marple
 /// @brief Compress bytes
 
-#include "utils/compress_bytes.hpp"
+#include "sbox/utils/compress_bytes.hpp"
 
 #include <glog/logging.h>
 

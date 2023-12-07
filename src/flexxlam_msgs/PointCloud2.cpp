@@ -3,12 +3,12 @@
 /// @copyright 2023 J.Marple
 /// @brief Equivalent message of sensor_msgs/PointCloud2 in ROS
 
-#include "flexxlam_msgs/PointCloud2.hpp"
+#include "sbox/flexxlam_msgs/PointCloud2.hpp"
 
 #include <memory>
 
-#include "utils/compress_bytes.hpp"
-#include "utils/to_bytes.hpp"
+#include "sbox/utils/compress_bytes.hpp"
+#include "sbox/utils/to_bytes.hpp"
 
 namespace flexxlam_msgs {
 

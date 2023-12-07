@@ -9,8 +9,8 @@
 #include <string>
 #include <vector>
 
-#include "protocol/base_protocol.hpp"
-#include "utils/to_bytes.hpp"
+#include "sbox/protocol/base_protocol.hpp"
+#include "sbox/utils/to_bytes.hpp"
 
 namespace flexxlam {
 

@@ -3,11 +3,11 @@
 /// @copyright 2023 J.Marple
 /// @brief Equivalent message of nav_msgs/Odometry in ROS
 
-#include "flexxlam_msgs/Odometry.hpp"
+#include "sbox/flexxlam_msgs/Odometry.hpp"
 
 #include <cstring>
 
-#include "utils/to_bytes.hpp"
+#include "sbox/utils/to_bytes.hpp"
 
 namespace flexxlam_msgs {
 

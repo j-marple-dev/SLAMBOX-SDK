@@ -1,26 +1,26 @@
 /// @file
 /// @author Jongkuk Lim <limjk@jmarple.ai>
 /// @copyright 2023 J.Marple
-/// @brief Set mavlink communication config protocol
+/// @brief Set serial communication config protocol
 
-#ifndef FLEXXLAM_SDK_INCLUDE_PROTOCOL_SET_SET_MAVLINK_COMMUNICATION_CONFIG_HPP_
-#define FLEXXLAM_SDK_INCLUDE_PROTOCOL_SET_SET_MAVLINK_COMMUNICATION_CONFIG_HPP_
+#ifndef FLEXXLAM_SDK_INCLUDE_PROTOCOL_SET_SET_SERIAL_COMMUNICATION_CONFIG_HPP_
+#define FLEXXLAM_SDK_INCLUDE_PROTOCOL_SET_SET_SERIAL_COMMUNICATION_CONFIG_HPP_
 
 #include <vector>
 
-#include "protocol/base_protocol.hpp"
-#include "utils/to_bytes.hpp"
+#include "sbox/protocol/base_protocol.hpp"
+#include "sbox/utils/to_bytes.hpp"
 
 namespace flexxlam {
 
-/// @brief Set mavlink communication config protocol
-class SetMavlinkCommunicationConfigProtocol : public BaseProtocol {
+/// @brief Set serial communication config protocol
+class SetSerialCommunicationConfigProtocol : public BaseProtocol {
  public:
-  /// @brief Set mavlink communication config protocol constructor
+  /// @brief Set serial communication config protocol constructor
   /// @param enabled enabled or not
-  /// @param baudrate baudrate of mavlink communication
-  SetMavlinkCommunicationConfigProtocol(bool enabled, uint32_t baudrate)
-      : BaseProtocol(protocol::kModeSetMavlinkCommConfig),
+  /// @param baudrate baudrate of serial communication
+  SetSerialCommunicationConfigProtocol(bool enabled, uint32_t baudrate)
+      : BaseProtocol(protocol::kModeSetSerialCommConfig),
         enabled_(enabled),
         baudrate_(baudrate) {
     vector<uint8_t> baudrate_bytes = to_bytes::four(baudrate);
@@ -30,12 +30,12 @@ class SetMavlinkCommunicationConfigProtocol : public BaseProtocol {
                           baudrate_bytes.end());
   }
 
-  /// @brief Set mavlink communication config protocol constructor
+  /// @brief Set serial communication config protocol constructor
   /// @param bytes byte array of whole protocol or payload only
   /// @param payload_only if true, then `bytes` is not decapsulated
-  explicit SetMavlinkCommunicationConfigProtocol(const vector<uint8_t> &bytes,
-                                                 bool payload_only = false)
-      : BaseProtocol(bytes, protocol::kModeSetMavlinkCommConfig, payload_only) {
+  explicit SetSerialCommunicationConfigProtocol(const vector<uint8_t> &bytes,
+                                                bool payload_only = false)
+      : BaseProtocol(bytes, protocol::kModeSetSerialCommConfig, payload_only) {
     this->init_from_payload_();
   }
 
@@ -43,8 +43,8 @@ class SetMavlinkCommunicationConfigProtocol : public BaseProtocol {
   void handle_callback(
       const vector<ParsedMessageInterface *> &callbacks) override {
     for (auto callback : callbacks) {
-      callback->on_set_mavlink_communication_config(this->enabled_,
-                                                    this->baudrate_);
+      callback->on_set_serial_communication_config(this->enabled_,
+                                                   this->baudrate_);
     }
   }
 
@@ -52,8 +52,8 @@ class SetMavlinkCommunicationConfigProtocol : public BaseProtocol {
   /// @return enabled or not
   bool get_enabled() const { return enabled_; }
 
-  /// @brief Get baudrate of mavlink communication
-  /// @return baudrate of mavlink communication
+  /// @brief Get baudrate of serial communication
+  /// @return baudrate of serial communication
   uint32_t get_baudrate() const { return baudrate_; }
 
  protected:
@@ -68,9 +68,9 @@ class SetMavlinkCommunicationConfigProtocol : public BaseProtocol {
   /// @brief enabled or not
   bool enabled_;
 
-  /// @brief baudrate of mavlink communication
+  /// @brief baudrate of serial communication
   uint32_t baudrate_;
 };
 }  // namespace flexxlam
 
-#endif  // FLEXXLAM_SDK_INCLUDE_PROTOCOL_SET_SET_MAVLINK_COMMUNICATION_CONFIG_HPP_
+#endif  // FLEXXLAM_SDK_INCLUDE_PROTOCOL_SET_SET_SERIAL_COMMUNICATION_CONFIG_HPP_

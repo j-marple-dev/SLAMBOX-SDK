@@ -3,29 +3,29 @@
 /// @copyright 2023 J.Marple
 /// @brief Base parser for FlexXlam Driver
 
-#include "communication/flexxlam_parser.hpp"
+#include "sbox/communication/flexxlam_parser.hpp"
 
 #include <glog/logging.h>
 
-#include "protocol/acknowledge/acknowledge_protocol.hpp"
-#include "protocol/acknowledge/ping_protocol.hpp"
-#include "protocol/base_protocol.hpp"
-#include "protocol/command/command_save_pcd_protocol.hpp"
-#include "protocol/push/push_odometry_protocol.hpp"
-#include "protocol/push/push_pointcloud_protocol.hpp"
-#include "protocol/request/request_ethernet_communication_config.hpp"
-#include "protocol/request/request_lidar_config.hpp"
-#include "protocol/request/request_mavlink_communication_config.hpp"
-#include "protocol/request/request_serial_communication_config.hpp"
-#include "protocol/response/response_ethernet_communication_config.hpp"
-#include "protocol/response/response_lidar_config.hpp"
-#include "protocol/response/response_mavlink_communication_config.hpp"
-#include "protocol/response/response_serial_communication_config.hpp"
-#include "protocol/set/set_ethernet_communication_config.hpp"
-#include "protocol/set/set_lidar_config.hpp"
-#include "protocol/set/set_mavlink_communication_config.hpp"
-#include "protocol/set/set_serial_communication_config.hpp"
-#include "utils/to_bytes.hpp"
+#include "sbox/protocol/acknowledge/acknowledge_protocol.hpp"
+#include "sbox/protocol/acknowledge/ping_protocol.hpp"
+#include "sbox/protocol/base_protocol.hpp"
+#include "sbox/protocol/command/command_save_pcd_protocol.hpp"
+#include "sbox/protocol/push/push_odometry_protocol.hpp"
+#include "sbox/protocol/push/push_pointcloud_protocol.hpp"
+#include "sbox/protocol/request/request_ethernet_communication_config.hpp"
+#include "sbox/protocol/request/request_lidar_config.hpp"
+#include "sbox/protocol/request/request_mavlink_communication_config.hpp"
+#include "sbox/protocol/request/request_serial_communication_config.hpp"
+#include "sbox/protocol/response/response_ethernet_communication_config.hpp"
+#include "sbox/protocol/response/response_lidar_config.hpp"
+#include "sbox/protocol/response/response_mavlink_communication_config.hpp"
+#include "sbox/protocol/response/response_serial_communication_config.hpp"
+#include "sbox/protocol/set/set_ethernet_communication_config.hpp"
+#include "sbox/protocol/set/set_lidar_config.hpp"
+#include "sbox/protocol/set/set_mavlink_communication_config.hpp"
+#include "sbox/protocol/set/set_serial_communication_config.hpp"
+#include "sbox/utils/to_bytes.hpp"
 
 namespace flexxlam {
 

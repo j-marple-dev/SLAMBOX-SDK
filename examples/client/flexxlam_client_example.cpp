@@ -8,7 +8,7 @@
 #include <glog/logging.h>
 #include <memory>
 
-#include <protocol/push/push_pointcloud_protocol.hpp>
+#include <sbox/protocol/push/push_pointcloud_protocol.hpp>
 
 namespace flexxlam {
 
