@@ -3,8 +3,8 @@
 /// @copyright 2023 J.Marple
 /// @brief Set lidar config protocol
 
-#ifndef FLEXXLAM_SDK_INCLUDE_PROTOCOL_SET_SET_LIDAR_CONFIG_HPP_
-#define FLEXXLAM_SDK_INCLUDE_PROTOCOL_SET_SET_LIDAR_CONFIG_HPP_
+#ifndef SLAMBOX_SDK_INCLUDE_SBOX_PROTOCOL_SET_SET_LIDAR_CONFIG_HPP_
+#define SLAMBOX_SDK_INCLUDE_SBOX_PROTOCOL_SET_SET_LIDAR_CONFIG_HPP_
 
 #include <string>
 #include <vector>
@@ -71,4 +71,4 @@ class SetLidarConfigProtocol : public BaseProtocol {
 };
 }  // namespace flexxlam
 
-#endif  // FLEXXLAM_SDK_INCLUDE_PROTOCOL_SET_SET_LIDAR_CONFIG_HPP_
+#endif  // SLAMBOX_SDK_INCLUDE_SBOX_PROTOCOL_SET_SET_LIDAR_CONFIG_HPP_

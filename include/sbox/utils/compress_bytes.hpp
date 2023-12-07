@@ -3,8 +3,8 @@
 /// @copyright 2023 J.Marple
 /// @brief Compress bytes
 
-#ifndef FLEXXLAM_SDK_INCLUDE_UTILS_COMPRESS_BYTES_HPP_
-#define FLEXXLAM_SDK_INCLUDE_UTILS_COMPRESS_BYTES_HPP_
+#ifndef SLAMBOX_SDK_INCLUDE_SBOX_UTILS_COMPRESS_BYTES_HPP_
+#define SLAMBOX_SDK_INCLUDE_SBOX_UTILS_COMPRESS_BYTES_HPP_
 
 #include <zlib.h>
 
@@ -32,4 +32,4 @@ vector<uint8_t> decompress_bytes(const vector<uint8_t> &bytes,
                                  uint32_t original_size = 0);
 }  // namespace flexxlam
 
-#endif  // FLEXXLAM_SDK_INCLUDE_UTILS_COMPRESS_BYTES_HPP_
+#endif  // SLAMBOX_SDK_INCLUDE_SBOX_UTILS_COMPRESS_BYTES_HPP_

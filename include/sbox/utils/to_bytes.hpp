@@ -3,8 +3,8 @@
 /// @copyright 2023 J.Marple
 /// @brief Converting data into byte array
 
-#ifndef FLEXXLAM_SDK_INCLUDE_UTILS_TO_BYTES_HPP_
-#define FLEXXLAM_SDK_INCLUDE_UTILS_TO_BYTES_HPP_
+#ifndef SLAMBOX_SDK_INCLUDE_SBOX_UTILS_TO_BYTES_HPP_
+#define SLAMBOX_SDK_INCLUDE_SBOX_UTILS_TO_BYTES_HPP_
 
 #include <cstdint>
 #include <string>
@@ -86,4 +86,4 @@ uint32_t to_int(vector<uint8_t> bytes);
 std::string to_string(vector<uint8_t> bytes, size_t offset = 0);
 }  // namespace flexxlam::from_bytes
 
-#endif  // FLEXXLAM_SDK_INCLUDE_UTILS_TO_BYTES_HPP_
+#endif  // SLAMBOX_SDK_INCLUDE_SBOX_UTILS_TO_BYTES_HPP_

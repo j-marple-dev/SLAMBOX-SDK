@@ -3,8 +3,8 @@
 /// @copyright 2023 J.Marple
 /// @brief Base protocol for communication
 
-#ifndef FLEXXLAM_SDK_INCLUDE_PROTOCOL_BASE_PROTOCOL_HPP_
-#define FLEXXLAM_SDK_INCLUDE_PROTOCOL_BASE_PROTOCOL_HPP_
+#ifndef SLAMBOX_SDK_INCLUDE_SBOX_PROTOCOL_BASE_PROTOCOL_HPP_
+#define SLAMBOX_SDK_INCLUDE_SBOX_PROTOCOL_BASE_PROTOCOL_HPP_
 
 #include <array>
 #include <cstring>
@@ -220,4 +220,4 @@ class BaseProtocol {
 };
 }  // namespace flexxlam
 
-#endif  // FLEXXLAM_SDK_INCLUDE_PROTOCOL_BASE_PROTOCOL_HPP_
+#endif  // SLAMBOX_SDK_INCLUDE_SBOX_PROTOCOL_BASE_PROTOCOL_HPP_
