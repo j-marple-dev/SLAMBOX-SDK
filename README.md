@@ -43,13 +43,13 @@ SLAMBOX SDK allows developers to effortlessly integrate and control SLAMBOX func
 
 1. Clone the SLAMBOX SDK repository:
 ```bash
-git clone https://github.com/j-marple-dev/SLAMBOX-SDK.git
+git clone https://github.com/j-marple-dev/slambox-sdk.git
 ```
 
 2. Build and install SLAMBOX SDK:
 ```bash
-mkdir -p SLAMBOX-SDK/build
-cd SLAMBOX-SDK/build
+mkdir -p slambox-sdk/build
+cd slambox-sdk/build
 cmake ..
 make -j
 sudo make install
