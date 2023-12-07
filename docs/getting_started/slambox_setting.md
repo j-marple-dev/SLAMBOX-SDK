@@ -6,7 +6,6 @@ The `SLAMBOX` configuration can be configured via *serial communication with asc
 
 ## Install Serial Communication Tools {#SLAMBOXSettingsWithSerial-InstallSerialCommunicationTools}
 
-
 <details open>
 <summary> Unix OS </summary>
 
@@ -132,6 +131,47 @@ $ETH_PORT 25180#
 
 # Change ethernet IP address of SLAMBOX
 $ETH_IP 192.168.1.50#
+```
+
+### Set Static IP for Ethernet Communication with SLAMBOX 
+
+- Using OTG port of SLAMBOX, then make your device's (pc or others) ip to static.
+
+- Type the commands below in your terminal
+
+```bash
+# Check the SLAMBOX device with ifconfig
+ifconfig
+
+enx1632cf7fcfc0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 16:32:cf:7f:cf:c0  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1  bytes 327 (327.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+```
+
+- Then the `enx1632cf7fcfc0` will be the SLAMBOX device connection
+
+- Set the `enx1632cf7fcfc0` to a static ip
+
+- Let the `server ip` is `192.168.101.50` then the `TARGET_IP` should be `192.168.101.xxx`. The `xxx` is `1` to `254` except 50
+
+```bash
+sudo ifconfig enx1632cf7fcfc0 down
+sudo ip addr add ${TARGET_IP}/24 dev enx1632cf7fcfc0
+sudo ifconfig enx1632cf7fcfc0 up
+
+# check the result
+ifconfig
+
+enx1632cf7fcfc0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.101.5  netmask 255.255.255.0  broadcast 0.0.0.0
+        ether 16:32:cf:7f:cf:c0  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 8  overruns 0  frame 0
+        TX packets 1  bytes 327 (327.0 B)
+        TX errors 1  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 
 ### SLAMBOX Mavlink Configuration {#SLAMBOXSettingsWithSerial-ConfigureSLAMBOX-SLAMBOXMavlinkConfiguration}
