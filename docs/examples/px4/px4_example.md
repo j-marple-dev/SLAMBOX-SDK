@@ -37,6 +37,7 @@
 ![Set Height Mode Parameter](px4/EKF2_HGT_MODE.png){width=100%}
 
 # 2. Connect PX4 with UART
+
 - To connect PX4 and companion board with uart, use usb-to-tts and connect it to `TEL1` on px4 board
 
 ![Connect Companion Board with PixHawk](companion_px4_connection.jpg){width=50%}
@@ -46,7 +47,26 @@
 ![Set Communication Port](px4/set_port.png){width=100%}
 
 - Setting baud rate as same as the SLAMBOX configuration
-- See how to configure SLAMBOX ([link](https://github.com/j-marple-dev/SLAMBOX_driver#122-server-configuration))
+
+- Check the [SLAM BOX setting](SLAMBOXSetting.html)
+
 - **NOTE**: the *SLAMBOX's baud rate* and *PX4's baud rate* should be **SAME**
 
 ![Set Baud Rate](px4/set_baud_rate.png){width=100%}
+
+# 3. Update SLAM BOX Setting
+
+- Update SLAMBOX Mavlink setting with command below
+
+- Check the details [here](SLAMBOXSetting.html#SLAMBOXSettingsWithSerial-ConfigureSLAMBOX-SLAMBOXMavlinkConfiguration)
+
+```
+# Enable Mavlink
+$MAVLINK_ENABLE 1#
+
+# Change baudrate
+$MAVLINK_BAUD 921600#
+
+# Set Mavlink type to px4
+$MAVLINK_TYPE 0#
+```
