@@ -12,8 +12,8 @@
 
 #include <sbox/communication/sbox_parser.hpp>
 #include <sbox/communication/udp_communication.hpp>
-#include <sbox/flexxlam_msgs/Odometry.hpp>
-#include <sbox/flexxlam_msgs/PointCloud2.hpp>
+#include <sbox/sbox_msgs/Odometry.hpp>
+#include <sbox/sbox_msgs/PointCloud2.hpp>
 
 /// @brief FlexXlam Driver Client
 class FlexXlamClientExample : public sbox::ParsedMessageInterface {

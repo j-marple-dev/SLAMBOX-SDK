@@ -3,8 +3,8 @@
 /// @copyright 2023 J.Marple
 /// @brief Equivalent message of nav_msgs/Odometry in ROS
 
-#ifndef SLAMBOX_SDK_INCLUDE_SBOX_FLEXXLAM_MSGS_ODOMETRY_HPP_
-#define SLAMBOX_SDK_INCLUDE_SBOX_FLEXXLAM_MSGS_ODOMETRY_HPP_
+#ifndef SLAMBOX_SDK_INCLUDE_SBOX_SBOX_MSGS_ODOMETRY_HPP_
+#define SLAMBOX_SDK_INCLUDE_SBOX_SBOX_MSGS_ODOMETRY_HPP_
 
 #include <array>
 #include <cstdint>
@@ -101,4 +101,4 @@ std::vector<uint8_t> serialize(const Odometry &odom);
 
 }  // namespace sbox_msgs
 
-#endif  // SLAMBOX_SDK_INCLUDE_SBOX_FLEXXLAM_MSGS_ODOMETRY_HPP_
+#endif  // SLAMBOX_SDK_INCLUDE_SBOX_SBOX_MSGS_ODOMETRY_HPP_

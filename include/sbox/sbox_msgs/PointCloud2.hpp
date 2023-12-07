@@ -3,8 +3,8 @@
 /// @copyright 2023 J.Marple
 /// @brief Equivalent message of sensor_msgs/PointCloud2 in ROS
 
-#ifndef SLAMBOX_SDK_INCLUDE_SBOX_FLEXXLAM_MSGS_POINTCLOUD2_HPP_
-#define SLAMBOX_SDK_INCLUDE_SBOX_FLEXXLAM_MSGS_POINTCLOUD2_HPP_
+#ifndef SLAMBOX_SDK_INCLUDE_SBOX_SBOX_MSGS_POINTCLOUD2_HPP_
+#define SLAMBOX_SDK_INCLUDE_SBOX_SBOX_MSGS_POINTCLOUD2_HPP_
 
 #include <cstdint>
 #include <string>
@@ -80,4 +80,4 @@ std::vector<uint8_t> serialize(const PointCloud2 &pointcloud,
 
 }  // namespace sbox_msgs
 
-#endif  // SLAMBOX_SDK_INCLUDE_SBOX_FLEXXLAM_MSGS_POINTCLOUD2_HPP_
+#endif  // SLAMBOX_SDK_INCLUDE_SBOX_SBOX_MSGS_POINTCLOUD2_HPP_

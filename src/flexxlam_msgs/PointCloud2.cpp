@@ -3,7 +3,7 @@
 /// @copyright 2023 J.Marple
 /// @brief Equivalent message of sensor_msgs/PointCloud2 in ROS
 
-#include "sbox/flexxlam_msgs/PointCloud2.hpp"
+#include "sbox/sbox_msgs/PointCloud2.hpp"
 
 #include <memory>
 

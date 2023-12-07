@@ -11,8 +11,8 @@
 #include <vector>
 
 #include "sbox/communication/sbox_parser.hpp"
-#include "sbox/flexxlam_msgs/Odometry.hpp"
 #include "sbox/protocol/base_protocol.hpp"
+#include "sbox/sbox_msgs/Odometry.hpp"
 #include "sbox/utils/to_bytes.hpp"
 
 namespace sbox {

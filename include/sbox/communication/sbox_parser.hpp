@@ -9,8 +9,8 @@
 #include <cstdint>
 #include <vector>
 
-#include "sbox/flexxlam_msgs/Odometry.hpp"
-#include "sbox/flexxlam_msgs/PointCloud2.hpp"
+#include "sbox/sbox_msgs/Odometry.hpp"
+#include "sbox/sbox_msgs/PointCloud2.hpp"
 
 using std::vector;
 

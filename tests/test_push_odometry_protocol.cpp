@@ -8,8 +8,8 @@
 #include <random>
 #include <vector>
 
-#include "sbox/flexxlam_msgs/Odometry.hpp"
 #include "sbox/protocol/push/push_odometry_protocol.hpp"
+#include "sbox/sbox_msgs/Odometry.hpp"
 
 using std::vector;
 
