@@ -6,61 +6,61 @@ on:
 
 jobs:
   docker-build:
-    runs-on: [self-hosted, flexxlam]
+    runs-on: [self-hosted, slambox]
     steps:
       - uses: actions/checkout@v3
         with:
           submodules: true
           ref: ${{ github.ref }}
       - name: Docker build
-        run: docker build . -t jmarpledev/flexxlam_sdk:github_action -f docker/Dockerfile  --build-arg UID=$(id -u) --build-arg GID=$(id -g)
+        run: docker build . -t jmarpledev/slambox_sdk:github_action -f docker/Dockerfile  --build-arg UID=$(id -u) --build-arg GID=$(id -g)
 
   format-lint:
-    runs-on: [self-hosted, flexxlam]
+    runs-on: [self-hosted, slambox]
     needs: docker-build
     steps:
       - name: format-and-lint
         uses: addnab/docker-run-action@v3
         with:
-          image: jmarpledev/flexxlam_sdk:github_action
+          image: jmarpledev/slambox_sdk:github_action
           shell: bash
-          options: -v ${{ github.workspace }}:/home/user/flexxlam_sdk
+          options: -v ${{ github.workspace }}:/home/user/slambox_sdk
           run: |
-            cd ~/flexxlam_sdk && \
+            cd ~/slambox_sdk && \
             export PATH=$PATH:/home/user/.local/bin && \
             ./run_check.sh all
 
   build-test:
-    runs-on: [self-hosted, flexxlam]
+    runs-on: [self-hosted, slambox]
     needs: docker-build
     steps:
       - name: build-test
         uses: addnab/docker-run-action@v3
         with:
-          image: jmarpledev/flexxlam_sdk:github_action
+          image: jmarpledev/slambox_sdk:github_action
           shell: bash
-          options: -v ${{ github.workspace }}:/home/user/flexxlam_sdk
+          options: -v ${{ github.workspace }}:/home/user/slambox_sdk
           run: |
-            rm -rf ~/flexxlam_sdk/build && \
-            mkdir -p ~/flexxlam_sdk/build && \
-            cd ~/flexxlam_sdk/build && \
+            rm -rf ~/slambox_sdk/build && \
+            mkdir -p ~/slambox_sdk/build && \
+            cd ~/slambox_sdk/build && \
             cmake .. && \
             make -j
 
   unit-test:
-    runs-on: [self-hosted, flexxlam]
+    runs-on: [self-hosted, slambox]
     needs: docker-build
     steps:
       - name: build-and-unittest
         uses: addnab/docker-run-action@v3
         with:
-          image: jmarpledev/flexxlam_sdk:github_action
+          image: jmarpledev/slambox_sdk:github_action
           shell: bash
-          options: -v ${{ github.workspace  }}:/home/user/flexxlam_sdk
+          options: -v ${{ github.workspace  }}:/home/user/slambox_sdk
           run: |
-            rm -rf ~/flexxlam_sdk/build && \
-            mkdir -p ~/flexxlam_sdk/build && \
-            cd ~/flexxlam_sdk/build && \
+            rm -rf ~/slambox_sdk/build && \
+            mkdir -p ~/slambox_sdk/build && \
+            cd ~/slambox_sdk/build && \
             cmake -Dtest=true .. && \
             make -j && \
             ctest
