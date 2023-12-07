@@ -1,13 +1,13 @@
 /// @file
 /// @author Jongkuk Lim <limjk@jmarple.ai>
 /// @copyright 2023 J.Marple
-/// @brief FlexXlam ROS Driver client node
+/// @brief SLAMBOX Client example
 
 #include <glog/logging.h>
 
-#include "include/flexxlam_client_example.hpp"
+#include "include/slambox_client_example.hpp"
 
-/// @brief Main node for FlexXlam Driver Server
+/// @brief Main node for SlamBox Driver Server
 /// @param argc Number of arguments
 /// @param argv arguments
 ///
@@ -17,9 +17,9 @@ int main(int argc, char **argv) {
   FLAGS_colorlogtostderr = true;
   google::InitGoogleLogging(argv[0]);
 
-  FlexXlamClientExample driver_client;
+  SlamBoxClientExample driver_client;
 
-  LOG(INFO) << "FlexXlam client node is running.";
+  LOG(INFO) << "SlamBox client node is running.";
 
   while (true) {
     std::this_thread::sleep_for(std::chrono::milliseconds(10));

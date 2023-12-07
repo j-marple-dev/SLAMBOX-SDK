@@ -1,16 +1,16 @@
 /// @file
 /// @author Jongkuk Lim <limjk@jmarple.ai>
 /// @copyright 2023 J.Marple
-/// @brief FlexXlam ROS Driver Client
+/// @brief SLAM BOX Client example
 
-#include "include/flexxlam_client_example.hpp"
+#include "include/slambox_client_example.hpp"
 
 #include <glog/logging.h>
 #include <memory>
 
 #include <sbox/protocol/push/push_pointcloud_protocol.hpp>
 
-FlexXlamClientExample::FlexXlamClientExample()
+SlamBoxClientExample::SlamBoxClientExample()
     : udp_parser_(131070), udp_ip_("127.0.0.1"), udp_port_(21580) {
   udp_communication_ =
       std::make_unique<sbox::UDPCommunication>(false, udp_ip_, udp_port_);
@@ -20,15 +20,15 @@ FlexXlamClientExample::FlexXlamClientExample()
   udp_communication_->write({0x01, 0x02, 0x03, 0x04, 0x05});
 }
 
-FlexXlamClientExample::~FlexXlamClientExample() {}
+SlamBoxClientExample::~SlamBoxClientExample() {}
 
-void FlexXlamClientExample::on_push_odometry(const sbox_msgs::Odometry &odom) {
+void SlamBoxClientExample::on_push_odometry(const sbox_msgs::Odometry &odom) {
   LOG(INFO) << "[odom] x: " << odom.pose.position.x
             << ", y: " << odom.pose.position.y
             << ", z: " << odom.pose.position.z;
 }
 
-void FlexXlamClientExample::on_push_pointcloud(
+void SlamBoxClientExample::on_push_pointcloud(
     const sbox_msgs::PointCloud2 &pointcloud) {
   LOG(INFO) << "pointcloud: " << pointcloud.data.size();
   sbox::PushPointCloudProtocol protocol(pointcloud,

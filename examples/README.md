@@ -1,3 +1,3 @@
-# FlexXlam SDK examples
+# SLAMBOX SDK examples
 
 

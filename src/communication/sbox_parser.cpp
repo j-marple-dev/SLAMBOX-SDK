@@ -1,7 +1,7 @@
 /// @file
 /// @author Jongkuk Lim <limjk@jmarple.ai>
 /// @copyright 2023 J.Marple
-/// @brief Base parser for FlexXlam Driver
+/// @brief Base parser for SLAM BOX
 
 #include "sbox/communication/sbox_parser.hpp"
 

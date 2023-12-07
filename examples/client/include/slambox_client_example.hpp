@@ -1,10 +1,10 @@
 /// @file
 /// @author Jongkuk Lim <limjk@jmarple.ai>
 /// @copyright 2023 J.Marple
-/// @brief FlexXlam ROS Driver Client
+/// @brief SLAMBOX Client example
 
-#ifndef SLAMBOX_SDK_EXAMPLES_CLIENT_INCLUDE_FLEXXLAM_CLIENT_EXAMPLE_HPP_
-#define SLAMBOX_SDK_EXAMPLES_CLIENT_INCLUDE_FLEXXLAM_CLIENT_EXAMPLE_HPP_
+#ifndef SLAMBOX_SDK_EXAMPLES_CLIENT_INCLUDE_SLAMBOX_CLIENT_EXAMPLE_HPP_
+#define SLAMBOX_SDK_EXAMPLES_CLIENT_INCLUDE_SLAMBOX_CLIENT_EXAMPLE_HPP_
 
 #include <memory>
 #include <string>
@@ -15,16 +15,16 @@
 #include <sbox/sbox_msgs/Odometry.hpp>
 #include <sbox/sbox_msgs/PointCloud2.hpp>
 
-/// @brief FlexXlam Driver Client
-class FlexXlamClientExample : public sbox::ParsedMessageInterface {
+/// @brief SlamBox Driver Client
+class SlamBoxClientExample : public sbox::ParsedMessageInterface {
  public:
   /// @brief Constructor
   /// @param nh ROS NodeHandle
   /// @param pnh ROS Private NodeHandle
-  FlexXlamClientExample();
+  SlamBoxClientExample();
 
   /// @brief Destructor
-  ~FlexXlamClientExample();
+  ~SlamBoxClientExample();
 
  private:
   /// @brief Callback function for odometry message
@@ -51,4 +51,4 @@ class FlexXlamClientExample : public sbox::ParsedMessageInterface {
   std::unique_ptr<sbox::UDPCommunication> udp_communication_ = nullptr;
 };
 
-#endif  // SLAMBOX_SDK_EXAMPLES_CLIENT_INCLUDE_FLEXXLAM_CLIENT_EXAMPLE_HPP_
+#endif  // SLAMBOX_SDK_EXAMPLES_CLIENT_INCLUDE_SLAMBOX_CLIENT_EXAMPLE_HPP_
