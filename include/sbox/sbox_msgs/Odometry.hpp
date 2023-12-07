@@ -10,7 +10,7 @@
 #include <cstdint>
 #include <vector>
 
-/// @brief FlexXlam Messages
+/// @brief SLAMBOX Messages
 namespace sbox_msgs {
 
 /// @brief Odometry message that is equivalent to nav_msgs/Odometry in ROS

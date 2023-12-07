@@ -1,7 +1,7 @@
 /// @file
 /// @author Jongkuk Lim <limjk@jmarple.ai>
 /// @copyright 2023 J.Marple
-/// @brief Base parser for FlexXlam Driver
+/// @brief Base parser for SLAMBOX
 
 #ifndef SLAMBOX_SDK_INCLUDE_SBOX_COMMUNICATION_SBOX_PARSER_HPP_
 #define SLAMBOX_SDK_INCLUDE_SBOX_COMMUNICATION_SBOX_PARSER_HPP_
@@ -14,7 +14,7 @@
 
 using std::vector;
 
-/// @brief FlexXlam Driver namespace
+/// @brief SLAMBOX Driver namespace
 namespace sbox {
 
 /// @brief Parsed message interface
@@ -109,7 +109,7 @@ struct ParsedMessageInterface {
                               uint8_t status) {}
 };
 
-/// @brief Protocol parser for FlexXlam Driver
+/// @brief Protocol parser for SLAMBOX Driver
 class SBoxParser {
  public:
   /// @brief Protocol parser constructor

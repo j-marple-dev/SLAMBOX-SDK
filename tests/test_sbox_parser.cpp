@@ -1,7 +1,7 @@
 /// @file
 /// @author Jongkuk Lim <limjk@jmarple.ai>
 /// @copyright 2023 J.Marple
-/// @brief Test for FlexXlam Parse
+/// @brief Test for SLAMBOX Parser
 
 #include <gtest/gtest.h>
 
