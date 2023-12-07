@@ -36,8 +36,7 @@ class FlexXlamClientExample : public sbox::ParsedMessageInterface {
   /// @brief Callback function for pointcloud message
   /// @param pointcloud Pointcloud message
   /// @details This function is called when pointcloud message is received.
-  void on_push_pointcloud(
-      const sbox_msgs::PointCloud2 &pointcloud) override;
+  void on_push_pointcloud(const sbox_msgs::PointCloud2 &pointcloud) override;
 
   /// @brief UDP port number
   int udp_port_;

@@ -27,8 +27,7 @@ struct ParsedMessageInterface {
   /// @brief Get pointcloud callback
   /// @param pointcloud pointcloud
   /// @details This function is called when pointcloud is parsed.
-  virtual void on_push_pointcloud(
-      const sbox_msgs::PointCloud2 &pointcloud) {}
+  virtual void on_push_pointcloud(const sbox_msgs::PointCloud2 &pointcloud) {}
 
   /// @brief Request communication config callback
   /// @param type communication type. Please refer to `protocol::kCommType*`

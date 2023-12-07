@@ -104,7 +104,7 @@ TEST(PushPointCloudProtocol, ConstructorTest) {
     sbox::PushPointCloudProtocol protocol2(bytes, /*payload_only=*/false);
     // Decapsulated bytes to Protocol
     sbox::PushPointCloudProtocol protocol3(protocol2.get_payload(),
-                                               /*payload_only=*/true);
+                                           /*payload_only=*/true);
 
     EXPECT_TRUE(protocol1.is_valid());
     EXPECT_TRUE(protocol2.is_valid());

@@ -22,8 +22,7 @@ FlexXlamClientExample::FlexXlamClientExample()
 
 FlexXlamClientExample::~FlexXlamClientExample() {}
 
-void FlexXlamClientExample::on_push_odometry(
-    const sbox_msgs::Odometry &odom) {
+void FlexXlamClientExample::on_push_odometry(const sbox_msgs::Odometry &odom) {
   LOG(INFO) << "[odom] x: " << odom.pose.position.x
             << ", y: " << odom.pose.position.y
             << ", z: " << odom.pose.position.z;
@@ -33,7 +32,7 @@ void FlexXlamClientExample::on_push_pointcloud(
     const sbox_msgs::PointCloud2 &pointcloud) {
   LOG(INFO) << "pointcloud: " << pointcloud.data.size();
   sbox::PushPointCloudProtocol protocol(pointcloud,
-                                            /*compress_payload=*/true);
+                                        /*compress_payload=*/true);
   std::vector<uint8_t> bytes = protocol.encapsulate();
   LOG(INFO) << "bytes: " << bytes.size();
 }

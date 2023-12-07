@@ -81,7 +81,7 @@ TEST(PushOdometryProtocol, ConstructorTest) {
 
     // Decapsulated bytes to protocol
     sbox::PushOdometryProtocol protocol3(protocol1.get_payload(),
-                                             /*payload_only=*/true);
+                                         /*payload_only=*/true);
 
     sbox_msgs::Odometry odom1 = protocol1.get_odometry();
     sbox_msgs::Odometry odom2 = protocol2.get_odometry();
