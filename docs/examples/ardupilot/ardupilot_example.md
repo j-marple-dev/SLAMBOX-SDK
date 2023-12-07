@@ -84,7 +84,7 @@
 
 - Update SLAMBOX Mavlink setting with command below
 
-- Check the details [here](SLAMBOXSetting.html#SLAMBOXSettingsWithSerial-ConfigureSLAMBOX-SLAMBOXMavlinkConfiguration)
+- Check the details [here](SLAMBOXSetting.html#SLAMBOXSetting-ConfigureSLAMBOX-SLAMBOXMavlinkConfiguration)
 
 ```
 # Enable Mavlink
