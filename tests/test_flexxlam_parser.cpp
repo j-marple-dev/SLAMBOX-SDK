@@ -8,7 +8,7 @@
 #include <random>
 #include <vector>
 
-#include "sbox/communication/flexxlam_parser.hpp"
+#include "sbox/communication/slambox_parser.hpp"
 #include "sbox/flexxlam_msgs/Odometry.hpp"
 #include "sbox/protocol/push/push_odometry_protocol.hpp"
 
@@ -38,14 +38,14 @@ bool is_odometry_same(sbox_msgs::Odometry a, sbox_msgs::Odometry b) {
   return true;
 }
 
-TEST(FlexXlamParser, PushOdometryProtocolParse) {
+TEST(SlamBoxParser, PushOdometryProtocolParse) {
   std::random_device rd;
   std::mt19937 gen(rd());
   std::uniform_real_distribution<double> dis(-1000, 1000);
   std::uniform_int_distribution<int> dis_int(0, 100);
   std::uniform_int_distribution<uint8_t> dis_uint8(0, 255);
 
-  sbox::FlexXlamParser parser;
+  sbox::SlamBoxParser parser;
   struct TestParsedMessageInterface : public sbox::ParsedMessageInterface {
     void on_push_odometry(const sbox_msgs::Odometry &odom) override {
       is_odometry_same(expected_odom, odom);
@@ -95,7 +95,7 @@ TEST(FlexXlamParser, PushOdometryProtocolParse) {
   }
 }
 
-TEST(FlexXlamParser, PushOdometryProtocolParseBatch) {
+TEST(SlamBoxParser, PushOdometryProtocolParseBatch) {
   std::random_device rd;
   std::mt19937 gen(rd());
 
@@ -103,7 +103,7 @@ TEST(FlexXlamParser, PushOdometryProtocolParseBatch) {
   std::uniform_int_distribution<int> dis_int(1, 100);
   std::uniform_int_distribution<uint8_t> dis_uint8(0, 255);
 
-  sbox::FlexXlamParser parser(102400);
+  sbox::SlamBoxParser parser(102400);
   struct TestParsedMessageInterface : public sbox::ParsedMessageInterface {
     void on_push_odometry(const sbox_msgs::Odometry &odom) override {
       is_odometry_same(expected_odoms[odom_idx++], odom);

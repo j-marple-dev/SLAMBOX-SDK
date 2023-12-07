@@ -3,7 +3,7 @@
 /// @copyright 2023 J.Marple
 /// @brief Base parser for FlexXlam Driver
 
-#include "sbox/communication/flexxlam_parser.hpp"
+#include "sbox/communication/slambox_parser.hpp"
 
 #include <glog/logging.h>
 
@@ -29,7 +29,7 @@
 
 namespace sbox {
 
-void FlexXlamParser::parse(vector<uint8_t> data) {
+void SlamBoxParser::parse(vector<uint8_t> data) {
   // 1. Add data to buffer
   this->buffer_.insert(this->buffer_.end(), data.begin(), data.end());
 
@@ -84,7 +84,7 @@ void FlexXlamParser::parse(vector<uint8_t> data) {
   }
 }
 
-bool FlexXlamParser::find_header_() {
+bool SlamBoxParser::find_header_() {
   bool is_header_found = false;
   while (this->buffer_.size() > 7) {
     std::vector<uint8_t> header_candidate(this->buffer_.begin(),
@@ -99,8 +99,8 @@ bool FlexXlamParser::find_header_() {
   return is_header_found;
 }
 
-void FlexXlamParser::decapsulate_payload_(const std::array<uint8_t, 2> &mode,
-                                          const vector<uint8_t> &payload) {
+void SlamBoxParser::decapsulate_payload_(const std::array<uint8_t, 2> &mode,
+                                         const vector<uint8_t> &payload) {
   /// TODO(jeikeilim): Refactor this function
   if (mode == protocol::kModePushOdometry) {
     PushOdometryProtocol(payload, /*payload_only=*/true)
@@ -158,8 +158,8 @@ void FlexXlamParser::decapsulate_payload_(const std::array<uint8_t, 2> &mode,
   }
 }
 
-bool FlexXlamParser::is_length_valid_(std::array<uint8_t, 2> mode,
-                                      uint16_t length) {
+bool SlamBoxParser::is_length_valid_(std::array<uint8_t, 2> mode,
+                                     uint16_t length) {
   if (protocol::kModeToPayloadLengthEq.find(mode) !=
       protocol::kModeToPayloadLengthEq.end()) {
     return length == protocol::kModeToPayloadLengthEq.at(mode);
@@ -171,7 +171,7 @@ bool FlexXlamParser::is_length_valid_(std::array<uint8_t, 2> mode,
   return false;
 }
 
-void FlexXlamParser::add_parsed_message_callback(
+void SlamBoxParser::add_parsed_message_callback(
     ParsedMessageInterface *parsed_message_interface) {
   this->parsed_message_interfaces_.push_back(parsed_message_interface);
 }
