@@ -17,8 +17,8 @@
 ``` shell
 # ex) Current Make version is 3.16.3
 cd ~
-wget https://github.com/Kitware/CMake/releases/download/v3.16.3/cmake-3.16.3-linux-x86_64.tar.gz
-tar -xzvf cmake-3.16.3-linux-x86_64.tar.gz
+wget https://github.com/Kitware/CMake/releases/download/v3.16.3/cmake-3.16.3-Linux-x86_64.tar.gz
+tar -xzvf cmake-3.16.3-Linux-x86_64.tar.gz
 
 # Backup previous CMake just in case
 sudo mv /usr/bin/cmake /usr/bin/cmake.old
@@ -26,9 +26,9 @@ sudo mv /usr/bin/ctest /usr/bin/ctest.old
 sudo mv /usr/bin/cpack /usr/bin/cpack.old
 
 # Make softlink to /usr/bin
-sudo ln -s ${HOME}/cmake-3.16.3-linux-x86_64/bin/cmake /usr/bin/cmake
-sudo ln -s ${HOME}/cmake-3.16.3-linux-x86_64/bin/ctest /usr/bin/ctest
-sudo ln -s ${HOME}/cmake-3.16.3-linux-x86_64/bin/cpack /usr/bin/cpack
+sudo ln -s ${HOME}/cmake-3.16.3-Linux-x86_64/bin/cmake /usr/bin/cmake
+sudo ln -s ${HOME}/cmake-3.16.3-Linux-x86_64/bin/ctest /usr/bin/ctest
+sudo ln -s ${HOME}/cmake-3.16.3-Linux-x86_64/bin/cpack /usr/bin/cpack
 ```
 
 ## 2.1. Formating

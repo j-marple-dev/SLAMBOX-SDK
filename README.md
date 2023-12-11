@@ -15,6 +15,7 @@ SLAMBOX SDK allows developers to effortlessly integrate and control SLAMBOX func
     - How to install:
     ```bash
     git clone https://github.com/google/glog.git -b v0.6.0
+    cd glog
     cmake -S . -B build -G "Unix Makefiles"
     cmake --build build
     sudo cmake --build build --target install
