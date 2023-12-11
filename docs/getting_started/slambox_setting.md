@@ -69,7 +69,7 @@ Working with Unix OS, use `minicom` to configure the **SLAMBOX**
 
 For your convinience, turn Local echo on by pressing `<Ctrl>+A z e`
 
-Then, start configuration as your needs by following [below section](#SLAMBOXSettingsWithSerial-ConfigureSLAMBOX).
+Then, start configuration as your needs by following [below section](#SLAMBOXSetting-ConfigureSLAMBOX).
 
 </details>
 
