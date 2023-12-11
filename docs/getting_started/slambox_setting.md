@@ -100,17 +100,45 @@ If you successfully open port, start configuration as your needs by following [b
 
 ## Configure SLAMBOX {#SLAMBOXSetting-ConfigureSLAMBOX}
 
-Using ascii command to change configuration of **SLAMBOX**
+Use ascii command to change configuration of **SLAMBOX**
 
 - The commands must be start with `$` and ends with `#` which is header and ender of the command
 
-- No matter using *upper case* or *lower case* it works
+- Either *upper case* or *lower case* can be used.
 
 - Regardless of changing configuration of **SLAMBOX**, the serial communication for settings operates
 
 - The following commands below, type the commands in *minicom* or *ComPortMaster*
 
-**NOTE** The **Baud rate** of serial connection for setting is fixed to **115200**
+**NOTE** The **Baudrate** of serial connection for setting is fixed to **115200**
+
+### Check current configuration status on SLAMBOX
+
+You can see current cofiguration status on SLAMBOX by following command.
+
+```
+$CONFIG#
+```
+
+- Example:
+    ```
+$CONFIG#
+[MAVLINK]
+ [enabled] false
+ [baudrate] 921600
+ [type] px4
+[Serial]
+ [enabled] true
+ [baudrate] 921600
+[Ethernet]
+ [enabled] false
+ [port] 21580
+ [IP] 192.168.101.101
+[Sensor]
+ [type] avia
+    ```
+
+
 
 ### SLAMBOX Serial Configuration {#SLAMBOXSetting-ConfigureSLAMBOX-SLAMBOXSerialConfiguration}
 
@@ -139,12 +167,13 @@ Using ascii command to change configuration of **SLAMBOX**
 |3500000|
 |4000000|
 
-```bash
-# Enable serial
-# Want to disable serial, then change 1 to 0
+**Example)** Enable serial communication
+```
 $SERIAL_ENABLE 1#
+```
 
-# Set baudrate of serial
+**Example)** Set baudrate of serial communication to 921600
+```
 $SERIAL_BAUD 921600#
 ```
 
@@ -159,15 +188,14 @@ $SERIAL_BAUD 921600#
 
 - `ETH_IP` with option *IP* of host. ex) 192.168.1.50
 
+**Example)** Enable ethernet communication
 ```
-# Enable ethernet communication
 $ETH_ENABLE 1#
+```
 
-# Change ethernet port number
-$ETH_PORT 25180#
-
-# Change ethernet IP address of SLAMBOX
-$ETH_IP 192.168.1.50#
+**Example)** Set ethernet communication port to 21580
+```
+$ETH_PORT 21580#
 ```
 
 **NOTE** If you set both `Serial` and `UDP` communication enabled, pointcloud will only be sent via `UDP` communication.
@@ -188,14 +216,18 @@ $ETH_IP 192.168.1.50#
 
 **NOTE** Please check the *Avaiable baud rate* table
 
+**Example)** Enable Mavlink communication
 ```
-# Enable Mavlink
 $MAVLINK_ENABLE 1#
+```
 
-# Set baudrate
+**Example)** Set baudrate of Mavlink communication
+```
 $MAVLINK_BAUD 921600#
+```
 
-# Set Mavlink mode for PX4
+**Example)** Set Mavlink type for PX4
+```
 $MAVLINK_TYPE 0#
 ```
 
@@ -210,10 +242,14 @@ $MAVLINK_TYPE 0#
 |  4  |  ouster128  |
 |  5  |  avia  |
 
+**Example)** Set LiDAR type to `mid360`
 ```
-# Set MID-360 LiDAR
 $LIDAR_TYPE 1#
 ```
+
+**NOTE** Once you have changed `LIDAR_TYPE` it requires to restart SLAMBOX device.
+Please send `$SAVE#` and restart device to take an effect.
+
 
 ### Save Configurations {#SLAMBOXSetting-ConfigureSLAMBOX-SaveConfigurations}
 
@@ -224,9 +260,7 @@ $LIDAR_TYPE 1#
 - The command `START` finish the configuration and start the *SLAMBOX*
 
 ```
-# save configuration
 $SAVE#
 
-# save and start SLAMBOX
 $START#
 ```
