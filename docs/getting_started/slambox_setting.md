@@ -144,7 +144,6 @@ $ETH_IP 192.168.1.50#
 ifconfig
 
 enx1632cf7fcfc0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
-        ether 16:32:cf:7f:cf:c0  txqueuelen 1000  (Ethernet)
         RX packets 0  bytes 0 (0.0 B)
         RX errors 0  dropped 0  overruns 0  frame 0
         TX packets 1  bytes 327 (327.0 B)
