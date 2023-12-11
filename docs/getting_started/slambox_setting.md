@@ -39,16 +39,38 @@ Working with Unix OS, use `minicom` to configure the **SLAMBOX**
 
     ![USB2TTL to PC](getting_started/slambox_setting/usb2ttl.JPG){width=50%}
 
-    Set the serial port and baudrate of your PC
+    Check device path.
+    ```shell
+    $ ls -lh /dev/ttyUSB*
+
+    crw-rw---- 1 root dialout 188, 0 Dec 11 14:43 /dev/ttyUSB0
+    ```
+
+    Set the serial port and baudrate of your PC. In this tutorial, `${SERIAL_PORT}` is `/dev/ttyUSB0`
 
     ```bash
     minicom -D ${SERIAL_PORT} -b 115200
     ```
 
-    And set Hardware Flow Control to `No`. It can be done by pressing `<Ctrl>+A o` -> Serial port setup -> Press `f`.
-    For your convinience, turn Local echo on by pressing `<Ctrl>+A z e`
+    Set Hardware Flow Control to `No`. It can be done by pressing `<Ctrl>+A o` -> Serial port setup -> Press `f`.
 
-    Then, start configuration as your needs by following [below section](#SLAMBOXSettingsWithSerial-ConfigureSLAMBOX).
+```
++------------------------------------------------+
+| A -    Serial Device      : /dev/ttyUSB0       |
+| B - Lockfile Location     : /var/lock          |
+| C -   Callin Program      :                    |
+| D -  Callout Program      :                    |
+| E -    Bps/Par/Bits       : 115200 8N1         |
+| F - Hardware Flow Control : No                 |
+| G - Software Flow Control : No                 |
+|                                                |
+|    Change which setting?                       |
++------------------------------------------------+
+```
+
+For your convinience, turn Local echo on by pressing `<Ctrl>+A z e`
+
+Then, start configuration as your needs by following [below section](#SLAMBOXSettingsWithSerial-ConfigureSLAMBOX).
 
 </details>
 
