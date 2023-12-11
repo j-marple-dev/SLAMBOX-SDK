@@ -1,12 +1,12 @@
-# Communication Setup {#CommunicationSetup}
+# Tutorial {#Tutorial}
 
 [TOC]
 
-# 1. Communication Setting {#CommunicationSetup-CommunicationSetting}
+# 1. Communication Setting {#Tutorial-CommunicationSetting}
 
 - To communicate with *SLAMBOX*, you need to setup the serial and ethernet of your **host PC**
 
-## 1.1. Serial {#CommunicationSetup-CommunicationSetting-Serial}
+## 1.1. Serial {#Tutorial-CommunicationSetting-Serial}
 
 - To get data from SLAMBOX through serial, check your **host PC's** serial communication port
 
@@ -33,11 +33,11 @@ sudo usermod -a -G dialout $USER
 newgrp dialout
 ```
 
-## 1.2. Ethernet (OTG) {#CommunicationSetup-CommunicationSetting-Ethernet}
+## 1.2. Ethernet (OTG) {#Tutorial-CommunicationSetting-Ethernet}
 
 To get data from *SLAMBOX* through etherent, then set your host PC's host IP like below.
 
-### 1.2.1. Set Static IP with Terminal {#CommunicationSetup-CommunicationSetting-Ethernet-SetStaticIPwithTerminal}
+### 1.2.1. Set Static IP with Terminal {#Tutorial-CommunicationSetting-Ethernet-SetStaticIPwithTerminal}
 
 To set static ip to your host PC, please follow the commands below
 
@@ -82,7 +82,7 @@ enx5ad1753eff84: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 
-### 1.2.2. Set Static IP with Ubuntu GUI {#CommunicationSetup-CommunicationSetting-Ethernet-SetStaticIPwithUbuntuGUI}
+### 1.2.2. Set Static IP with Ubuntu GUI {#Tutorial-CommunicationSetting-Ethernet-SetStaticIPwithUbuntuGUI}
 
 This part demonstrates how to set static ip to your host PC with ubuntu GUI.
 
@@ -94,15 +94,15 @@ Then, set the device IP like the screen shot below
 
 ![Set static ip of the host device](imgs/getting_started/communication_setup/setup_static_ip_gui.png){width=70%}
 
-# 2. LiDAR Setting {#CommunicationSetup-LiDARSetting}
+# 2. LiDAR Setting {#Tutorial-LiDARSetting}
 
 - Check how to setup LiDAR to *SLAMBOX*, please see here([LiDAR Setting](#LiDARSetting))
 
-# 3. SLAMBOX Setting {#CommunicationSetup-SLAMBOXSetting}
+# 3. SLAMBOX Setting {#Tutorial-SLAMBOXSetting}
 
 - Check how to setup *SLAMBOX* or how to configure *SLAMBOX*, please see here([SLAMBOX Setting](#SLAMBOXSetting))
 
-# 4. Advanced {#CommunicationSetup-Advanced}
+# 4. Advanced {#Tutorial-Advanced}
 
 We prefer you to check examples below
 
