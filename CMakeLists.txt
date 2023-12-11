@@ -109,7 +109,8 @@ endif()
 
 # Examples
 if (BUILD_EXAMPLES)
-  add_subdirectory(examples/client)
+  add_subdirectory(examples/serial_communication)
+  add_subdirectory(examples/udp_communication)
 endif()
 
 # Unit test
