@@ -3,6 +3,13 @@
 Welcome to the LiDAR Setting Manual for SLAMBOX.
 This guide will walk you through the necessary steps to successfully connect LiDAR with SLAMBOX.
 
+Please follow instructions on your LiDAR sensor.
+
+1. Livox [MID-360](#LiDARSetting-MID360)
+2. Livox [AVIA](#LiDARSetting-AVIA)
+3. Ouster [OS0 Family (OS0-32, OS0-64, and OS0-128)](#LIDARSetting-OusterOS0)
+
+
 [TOC]
 
 # 1. Livox MID-360 {#LiDARSetting-MID360}
