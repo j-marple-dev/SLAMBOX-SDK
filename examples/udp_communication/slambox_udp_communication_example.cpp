@@ -73,6 +73,7 @@ int main(int argc, char **argv) {
     udp_port = std::stoi(argv[2]);
   }
 
+  // cppcheck-suppress unreadVariable
   SBoxUdpClient sbox_udp_client(udp_addr, udp_port);
 
   while (true) {

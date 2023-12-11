@@ -48,7 +48,6 @@ bool SerialCommunication::open_() {
   return true;
 }
 
-// cppcheck-suppress unusedFunction
 bool SerialCommunication::set_baudrate(int baud_rate) {
   if (SerialCommunication::kBaudRateMap.find(baud_rate) ==
       SerialCommunication::kBaudRateMap.end()) {
