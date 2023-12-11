@@ -23,6 +23,16 @@ crw-rw---- 1 root dialout 188, 0 Dec 11 10:46 /dev/ttyUSB0
 
 The result means the serial communication port is `/dev/ttyUSB0`
 
+If your host PC account do not have a permission to `dialout` group, add the account to the group `dialout`
+
+```bash
+# add $USER to group dialout
+sudo usermod -a -G dialout $USER
+
+# activate the changes of group
+newgrp dialout
+```
+
 ## 1.2. Ethernet (OTG) {#CommunicationSetup-CommunicationSetting-Ethernet}
 
 To get data from *SLAMBOX* through etherent, then set your host PC's host IP like below.
@@ -40,6 +50,7 @@ ifconfig
 # result will show the ethernet port which connected with SLAMBOX
 enx5ad1753eff84: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         inet6 fe80::b045:854e:fa2e:21b3  prefixlen 64  scopeid 0x20<link>
+        ether xx:xx:xx:xx:xx:xx txqueuelen 1000  (Ethernet)
         RX packets 24  bytes 3121 (3.1 KB)
         RX errors 0  dropped 0  overruns 0  frame 0
         TX packets 42  bytes 7403 (7.4 KB)
@@ -63,6 +74,8 @@ ifconfig
 
 enx5ad1753eff84: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         inet 192.168.101.5 netmask 255.255.255.0 broadcast 0.0.0.0
+        inet6 fe80::b045:854e:fa2e:21b3  prefixlen 64  scopeid 0x20<link>
+        ether xx:xx:xx:xx:xx:xx txqueuelen 1000  (Ethernet)
         RX packets 24  bytes 3121 (3.1 KB)
         RX errors 0  dropped 0  overruns 0  frame 0
         TX packets 42  bytes 7403 (7.4 KB)
