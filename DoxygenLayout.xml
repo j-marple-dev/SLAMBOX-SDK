@@ -7,6 +7,7 @@
     <!-- Custom pages START -->
     <tab type="usergroup" visible="yes" title="Getting started">
       <tab type="user" url="@ref HardwareOverview" title="Hardware Overview"/>
+      <tab type="user" url="@ref Tutorial" visible="yes" title="Tutorial"/>
       <tab type="user" url="@ref LiDARSetting" title="LiDAR Setting"/>
       <tab type="user" url="@ref SLAMBOXSetting" title="SLAMBOX Setting"/>
     </tab>

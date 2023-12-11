@@ -4,8 +4,7 @@ The `SLAMBOX` configuration can be configured via *serial communication with asc
 
 [TOC]
 
-## Install Serial Communication Tools {#SLAMBOXSettingsWithSerial-InstallSerialCommunicationTools}
-
+## Install Serial Communication Tools {#SLAMBOXSetting-InstallSerialCommunicationTools}
 
 <details open>
 <summary> Unix OS </summary>
@@ -70,7 +69,7 @@ Working with Unix OS, use `minicom` to configure the **SLAMBOX**
 
 For your convinience, turn Local echo on by pressing `<Ctrl>+A z e`
 
-Then, start configuration as your needs by following [below section](#SLAMBOXSettingsWithSerial-ConfigureSLAMBOX).
+Then, start configuration as your needs by following [below section](#SLAMBOXSetting-ConfigureSLAMBOX).
 
 </details>
 
@@ -87,7 +86,7 @@ Then, start configuration as your needs by following [below section](#SLAMBOXSet
 
 </details>
 
-## Configure SLAMBOX {#SLAMBOXSettingsWithSerial-ConfigureSLAMBOX}
+## Configure SLAMBOX {#SLAMBOXSetting-ConfigureSLAMBOX}
 
 Using ascii command to change configuration of **SLAMBOX**
 
@@ -101,7 +100,7 @@ Using ascii command to change configuration of **SLAMBOX**
 
 **NOTE** The **Baud rate** of serial connection for setting is fixed to **115200**
 
-### SLAMBOX Serial Configuration {#SLAMBOXSettingsWithSerial-ConfigureSLAMBOX-SLAMBOXSerialConfiguration}
+### SLAMBOX Serial Configuration {#SLAMBOXSetting-ConfigureSLAMBOX-SLAMBOXSerialConfiguration}
 
 - `SERIAL_ENABLE` with option `0` or `1`. `0` means to disable and `1` means enable this option
 
@@ -137,7 +136,7 @@ $SERIAL_ENABLE 1#
 $SERIAL_BAUD 921600#
 ```
 
-### SLAMBOX Ethernet Configuration {#SLAMBOXSettingsWithSerial-ConfigureSLAMBOX-SLAMBOXEthernetConfiguration}
+### SLAMBOX Ethernet Configuration {#SLAMBOXSetting-ConfigureSLAMBOX-SLAMBOXEthernetConfiguration}
 
 - `ETH_ENABLE` with option `0` or `1`. `0` means to disable and `1` means enable this option
 
@@ -156,7 +155,7 @@ $ETH_PORT 25180#
 $ETH_IP 192.168.1.50#
 ```
 
-### SLAMBOX Mavlink Configuration {#SLAMBOXSettingsWithSerial-ConfigureSLAMBOX-SLAMBOXMavlinkConfiguration}
+### SLAMBOX Mavlink Configuration {#SLAMBOXSetting-ConfigureSLAMBOX-SLAMBOXMavlinkConfiguration}
 
 - `MAVLINK_ENABLE` with option `0` or `1`. `0` means to disable and `1` means enable this option
 
@@ -183,7 +182,7 @@ $MAVLINK_BAUD 921600#
 $MAVLINK_TYPE 0#
 ```
 
-### SLAMBOX Sensor Configuration {#SLAMBOXSettingsWithSerial-ConfigureSLAMBOX-SLAMBOXSensorConfiguration}
+### SLAMBOX Sensor Configuration {#SLAMBOXSetting-ConfigureSLAMBOX-SLAMBOXSensorConfiguration}
 - `LIDAR_TYPE` with option `0` to `5`
 
 |  option  | sensor |
@@ -199,7 +198,7 @@ $MAVLINK_TYPE 0#
 $LIDAR_TYPE 1#
 ```
 
-### Save Configurations {#SLAMBOXSettingsWithSerial-ConfigureSLAMBOX-SaveConfigurations}
+### Save Configurations {#SLAMBOXSetting-ConfigureSLAMBOX-SaveConfigurations}
 
 - Configurtaion can be saved by command `SAVE` or `START`
 
