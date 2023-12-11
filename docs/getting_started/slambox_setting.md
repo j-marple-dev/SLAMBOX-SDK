@@ -71,6 +71,10 @@ For your convinience, turn Local echo on by pressing `<Ctrl>+A z e`
 
 Then, start configuration as your needs by following [below section](#SLAMBOXSetting-ConfigureSLAMBOX).
 
+**NOTE** Once you have finished setup process, minicom must be exited in order to continue on next step.
+
+Minicom can be exited by pressing `<Ctrl>+A x` -> `<Enter>`
+
 </details>
 
 <details open>
@@ -82,8 +86,16 @@ Then, start configuration as your needs by following [below section](#SLAMBOXSet
 
     Install the *ComPortMaster* from the [link](http://withrobot.com/data/?mod=document&uid=12)
 
-    ![How to use ComPortMaster](getting_started/slambox_setting/comportmaster.png)
+2. Connect to SLAMBOX serial
 
+    Please follow settings as below screenshot. `Device` name might be different depending on your OS condition.
+
+![How to use ComPortMaster](getting_started/slambox_setting/comportmaster.png)
+
+If you successfully open port, start configuration as your needs by following [below section](#SLAMBOXSetting-ConfigureSLAMBOX).
+
+
+**NOTE** Once you have finished setup process, you must disconnect connection on ComPortMaster to continue on next step.
 </details>
 
 ## Configure SLAMBOX {#SLAMBOXSetting-ConfigureSLAMBOX}
@@ -136,6 +148,9 @@ $SERIAL_ENABLE 1#
 $SERIAL_BAUD 921600#
 ```
 
+**NOTE** If you set both `Serial` and `UDP` communication enabled, pointcloud will only be sent via `UDP` communication.
+
+
 ### SLAMBOX Ethernet Configuration {#SLAMBOXSetting-ConfigureSLAMBOX-SLAMBOXEthernetConfiguration}
 
 - `ETH_ENABLE` with option `0` or `1`. `0` means to disable and `1` means enable this option
@@ -154,6 +169,8 @@ $ETH_PORT 25180#
 # Change ethernet IP address of SLAMBOX
 $ETH_IP 192.168.1.50#
 ```
+
+**NOTE** If you set both `Serial` and `UDP` communication enabled, pointcloud will only be sent via `UDP` communication.
 
 ### SLAMBOX Mavlink Configuration {#SLAMBOXSetting-ConfigureSLAMBOX-SLAMBOXMavlinkConfiguration}
 
