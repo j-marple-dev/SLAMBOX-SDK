@@ -42,8 +42,19 @@ $extrastylesheet
     </a>
   </td>
   <!--END PROJECT_LOGO-->
+
+
   <td style="padding-left: 0.5em; text-align: right;">
-   <!--BEGIN PROJECT_NUMBER--><span id="projectnumber">Version: $projectnumber</span><!--END PROJECT_NUMBER-->
+    <!-- BEGIN VERSION SELECTOR -->
+    <select id="version-selector" onchange="window.location.href = this.value">
+      <option value="" disabled selected style="display:none;">Version</option>
+      <option value="/">Latest</option>
+      <option value="/v0.1.0">v0.1.0</option>
+    </select>
+    <!-- END VERSION SELECTOR -->
+    <!--BEGIN PROJECT_NUMBER-->
+    <span id="projectnumber">Version: $projectnumber</span>
+    <!--END PROJECT_NUMBER-->
   </td>
   <!--BEGIN DISABLE_INDEX-->
    <!--BEGIN SEARCHENGINE-->
