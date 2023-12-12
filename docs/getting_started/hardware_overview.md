@@ -13,7 +13,7 @@
 
 5. Mavlink UART port
 
-6. SLAM BOX UART port
+6. SLAMBOX UART port
 
 7. Ethernet port for LiDAR
 

@@ -1,7 +1,7 @@
 /// @file
 /// @author Jongkuk Lim <limjk@jmarple.ai>
 /// @copyright 2023 J.Marple
-/// @brief Base parser for SLAM BOX
+/// @brief Base parser for SLAMBOX
 
 #include "sbox/communication/sbox_parser.hpp"
 

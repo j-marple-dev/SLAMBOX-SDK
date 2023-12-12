@@ -80,7 +80,7 @@
 
 ![Set Parameters to get data from Ardupilot](ardupilot/SR_set_hz.png){width=100%}
 
-# 3. Update SLAM BOX Setting
+# 3. Update SLAMBOX Setting
 
 - Update SLAMBOX Mavlink setting with command below
 

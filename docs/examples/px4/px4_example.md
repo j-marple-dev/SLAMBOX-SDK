@@ -48,13 +48,13 @@
 
 - Setting baud rate as same as the SLAMBOX configuration
 
-- Check the [SLAM BOX setting](SLAMBOXSetting.html)
+- Check the [SLAMBOX setting](SLAMBOXSetting.html)
 
 - **NOTE**: the *SLAMBOX's baud rate* and *PX4's baud rate* should be **SAME**
 
 ![Set Baud Rate](px4/set_baud_rate.png){width=100%}
 
-# 3. Update SLAM BOX Setting
+# 3. Update SLAMBOX Setting
 
 - Update SLAMBOX Mavlink setting with command below
 
