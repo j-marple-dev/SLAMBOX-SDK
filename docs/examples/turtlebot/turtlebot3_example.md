@@ -123,7 +123,7 @@ $ roslaunch slambox_driver slambox_driver_client.launch
 ```
 
 # 3. Configure SLAMBOX Configurations
-- Check the [SLAM BOX setting](SLAMBOXSetting.html)
+- Check the [SLAMBOX setting](SLAMBOXSetting.html)
 
 ---
 
