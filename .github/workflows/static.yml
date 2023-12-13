@@ -29,14 +29,11 @@ jobs:
         with:
           submodules: recursive
 
+      - name: Install doxygen dependency
+        run: apt-get install -y graphviz
+
       - name: Install doxygen
-        run: git clone https://github.com/doxygen/doxygen.git -b Release_1_9_8 \
-              && mkdir -p doxygen/build \
-              && cd doxygen/build \
-              && cmake -G "Unix Makefiles" .. \
-              && make -j \
-              && sudo make install \
-              && sudo apt-get -y install graphviz
+        run: git clone -b Release_1_9_2 https://github.com/doxygen/doxygen.git /tmp/doxygen && cd /tmp/doxygen && mkdir build && cd build && cmake -G "Unix Makefiles" .. && make && make install
 
       - name: Generate documents
         run: ./generate_doxygen.sh
