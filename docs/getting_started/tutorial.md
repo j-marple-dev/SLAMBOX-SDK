@@ -86,13 +86,13 @@ enx5ad1753eff84: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 
 This part demonstrates how to set static ip to your host PC with ubuntu GUI.
 
-![Check the SLAMBOX connection](imgs/getting_started/communication_setup/ubuntu_ip_setup_gui.png)
+![Check the SLAMBOX connection](imgs/getting_started/communication_setup/ubuntu_ip_setup_gui.jpg)
 
 Click the **Setting** buttion(gear logo) then goto ipv4 tab
 
 Then, set the device IP like the screen shot below
 
-![Set static ip of the host device](imgs/getting_started/communication_setup/setup_static_ip_gui.png){width=70%}
+![Set static ip of the host device](imgs/getting_started/communication_setup/setup_static_ip_gui.jpg){width=70%}
 
 # 2. LiDAR Setting {#Tutorial-LiDARSetting}
 
