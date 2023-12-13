@@ -25,18 +25,18 @@ jobs:
   generate-doxygen:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup Graphviz
+        uses: ts-graphviz/setup-graphviz@v1
+
+      - name: Install doxygen
+        run: git clone -b Release_1_9_8 https://github.com/doxygen/doxygen.git /tmp/doxygen && cd /tmp/doxygen && mkdir build && cd build && cmake -G "Unix Makefiles" .. && make && make install
+
       - uses: actions/checkout@v3
         with:
           submodules: recursive
 
       - name: Getting tags
         run: git fetch --tags origin
-
-      - name: Setup Graphviz
-        uses: ts-graphviz/setup-graphviz@v1
-
-      - name: Install doxygen
-        run: git clone -b Release_1_9_2 https://github.com/doxygen/doxygen.git /tmp/doxygen && cd /tmp/doxygen && mkdir build && cd build && cmake -G "Unix Makefiles" .. && make && make install
 
       - name: Generate documents
         run: ./generate_doxygen.sh
