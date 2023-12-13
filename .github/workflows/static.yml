@@ -4,7 +4,7 @@ name: Deploy Doxyen to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches: ["main", "feature/doc_versioning"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -29,11 +29,17 @@ jobs:
         with:
           submodules: recursive
 
-      - name: Doxygen Action
-        uses: mattnotmitt/doxygen-action@edge
-        with:
-          doxyfile-path: "./Doxyfile"
-          working-directory: "."
+      - name: Install doxygen
+        run: git clone https://github.com/doxygen/doxygen.git -b Release_1_9_8 \
+              && mkdir -p doxygen/build \
+              && cd doxygen/build \
+              && cmake -G "Unix Makefiles" .. \
+              && make -j \
+              && sudo make install \
+              && sudo apt-get -y install graphviz
+
+      - name: Generate documents
+        run: ./generate_doxygen.sh
 
       - name: Add .nojekyll
         run: sudo touch ./html/.nojekyll
