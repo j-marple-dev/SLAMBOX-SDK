@@ -19,7 +19,7 @@
 - Click **Firmware** and upload the downloaded firmware
 
 
-![Select Firmware](px4/firmware_selection.png){width=100%}
+![Select Firmware](px4/firmware_selection.jpg){width=100%}
 
 
 - Setup the flight controller parameters
@@ -32,9 +32,9 @@
 
   `COM_OBS_AVOID` paramter to `0`
 
-![Set AID MASK Parameter](px4/EKF2_AID_MASK.png){width=100%}
+![Set AID MASK Parameter](px4/EKF2_AID_MASK.jpg){width=100%}
 
-![Set Height Mode Parameter](px4/EKF2_HGT_MODE.png){width=100%}
+![Set Height Mode Parameter](px4/EKF2_HGT_MODE.jpg){width=100%}
 
 # 2. Connect PX4 with UART
 
@@ -44,7 +44,7 @@
 
 - Then set the port with *QGroundContol*
 
-![Set Communication Port](px4/set_port.png){width=100%}
+![Set Communication Port](px4/set_port.jpg){width=100%}
 
 - Setting baud rate as same as the SLAMBOX configuration
 
@@ -52,7 +52,7 @@
 
 - **NOTE**: the *SLAMBOX's baud rate* and *PX4's baud rate* should be **SAME**
 
-![Set Baud Rate](px4/set_baud_rate.png){width=100%}
+![Set Baud Rate](px4/set_baud_rate.jpg){width=100%}
 
 # 3. Update SLAMBOX Setting
 

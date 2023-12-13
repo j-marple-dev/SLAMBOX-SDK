@@ -38,7 +38,7 @@ Set the computer's IP address according to the MID-360 default setting. The defa
 In this tutorial, we will set IP address to `192.168.1.50`
 
 
-![IP Address Setting](getting_started/lidar_setting/ip_setting_192_168_1_50.png){width=800px}
+![IP Address Setting](getting_started/lidar_setting/ip_setting_192_168_1_50.jpg){width=800px}
 
 Once you setup IP address, you may require to disable and re-enable in order to apply the configuration.
 
@@ -48,14 +48,14 @@ Once you setup IP address, you may require to disable and re-enable in order to 
 Extract Livox Viewer and launch Livox Viewer 2 via `LivoxViewer2.sh` script.
 Make sure the LiDAR is detected on Lidar List. Check if LiDAR is working as below screenshot.
 
-![Livox Viewer Visualization](getting_started/lidar_setting/Livox_Viewer_2_working.png)
+![Livox Viewer Visualization](getting_started/lidar_setting/Livox_Viewer_2_working.jpg)
 
 ### 1.2.5. Setting LiDAR IP Address
 
 Once the connection is established, click on Settings icon.
 Modify IP Settings as follow. Lidar IP: `192.168.1.100`, Subnet Mask: `255.255.255.0`, and Gateway Address: `192.168.1.1`
 
-![Modify IP Settings](getting_started/lidar_setting/Livox_Viewer_2_setting.png)
+![Modify IP Settings](getting_started/lidar_setting/Livox_Viewer_2_setting.jpg)
 
 Click on Confirm and REBOOT. Make sure the LiDAR connects after reboot procedure.
 Now MID-360 is ready to connect with SLAMBOX device. Connect MID-360 to SLAMBOX device via ethernet cable.
@@ -85,7 +85,7 @@ Connect the AVIA LiDAR to your computer using the Ethernet cable.
 Set the computer's IP address according to the AVIA default setting. The default setting of AVIA is to set your IP Address to `192.168.1.x`.
 In this tutorial, we will set IP address to `192.168.1.50`
 
-![IP Address Setting](getting_started/lidar_setting/ip_setting_192_168_1_50.png){width=800px}
+![IP Address Setting](getting_started/lidar_setting/ip_setting_192_168_1_50.jpg){width=800px}
 
 Once you setup IP address, you may require to disable and re-enable in order to apply the configuration.
 
@@ -94,18 +94,18 @@ Once you setup IP address, you may require to disable and re-enable in order to 
 
 Extract Livox Viewer and launch Livox Viewer via `livox_viewer.sh` script.
 
-![Livox Viewer](getting_started/lidar_setting/Livox_Viewer_0_10_init.png)
+![Livox Viewer](getting_started/lidar_setting/Livox_Viewer_0_10_init.jpg)
 
 Make sure the LiDAR is detected on Device Manager. Check if LiDAR is working as below screenshot.
 
-![Livox Viewer Visualization](getting_started/lidar_setting/Livox_Viewer_0_10_working.png)
+![Livox Viewer Visualization](getting_started/lidar_setting/Livox_Viewer_0_10_working.jpg)
 
 ### 2.2.5. Setting LiDAR IP Address
 
 Once the connection is established, click on Device Settings icon.
 Modify IP Settings to `Static IP` and IP Address: `192.168.1.100`, Subnet Mask: `255.255.255.0`, and Gateway: `192.168.1.1`
 
-![Modify IP Settings](getting_started/lidar_setting/Livox_Viewer_0_10_setting.png)
+![Modify IP Settings](getting_started/lidar_setting/Livox_Viewer_0_10_setting.jpg)
 
 
 Click on Confirm and REBOOT. Make sure the LiDAR connects after reboot procedure.
@@ -135,7 +135,7 @@ Connect the OS0 LiDAR to your computer using the Ethernet cable.
 
 Set the computer's IPv4 Method to Link-Local only.
 
-![IP Address Setting](getting_started/lidar_setting/ip_setting_link_local.png){width=800px}
+![IP Address Setting](getting_started/lidar_setting/ip_setting_link_local.jpg){width=800px}
 
 Once you setup IP address, you may require to disable and re-enable in order to apply the configuration.
 
@@ -145,7 +145,7 @@ Once you setup IP address, you may require to disable and re-enable in order to 
 Launch Ouster Studio downloaded from in 3.2.1.
 Make sure the LiDAR is detected on LIDAR SENSOR FOUND.
 
-![Setting LiDAR IP](getting_started/lidar_setting/Ouster_Studio_setting.png)
+![Setting LiDAR IP](getting_started/lidar_setting/Ouster_Studio_setting.jpg)
 
 ### 3.2.5. Setting LiDAR IP Address
 
@@ -155,13 +155,13 @@ Once the Lidar is found, enter IP address `192.168.1.100` and click Set.
 
 Set the computer's IP Address to `192.168.1.50`
 
-![IP Address Setting](getting_started/lidar_setting/ip_setting_192_168_1_50.png)
+![IP Address Setting](getting_started/lidar_setting/ip_setting_192_168_1_50.jpg)
 
 Once you setup IP address, you may require to disable and re-enable in order to apply the configuration.
 
 Select detected LiDAR on Ouster Studio and click Configure and visualize.
 Make sure LiDAR data is visible in Ouster Studio.
 
-![Ouster Studio visualization](getting_started/lidar_setting/Ouster_Studio_working.png)
+![Ouster Studio visualization](getting_started/lidar_setting/Ouster_Studio_working.jpg)
 
 Now OS0 is ready to connect with SLAMBOX device. Connect OS0 SLAMBOX device via ethernet cable.

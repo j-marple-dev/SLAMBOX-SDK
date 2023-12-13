@@ -25,15 +25,21 @@ jobs:
   generate-doxygen:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup Graphviz
+        uses: ts-graphviz/setup-graphviz@v1
+
+      - name: Install doxygen
+        run: git clone -b Release_1_9_8 https://github.com/doxygen/doxygen.git /tmp/doxygen && cd /tmp/doxygen && mkdir build && cd build && cmake -G "Unix Makefiles" .. && make -j && make install
+
       - uses: actions/checkout@v3
         with:
           submodules: recursive
 
-      - name: Doxygen Action
-        uses: mattnotmitt/doxygen-action@edge
-        with:
-          doxyfile-path: "./Doxyfile"
-          working-directory: "."
+      - name: Getting tags
+        run: git fetch --tags origin
+
+      - name: Generate documents
+        run: ./generate_doxygen.sh
 
       - name: Add .nojekyll
         run: sudo touch ./html/.nojekyll
