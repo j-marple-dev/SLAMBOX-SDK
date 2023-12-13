@@ -4,7 +4,7 @@ name: Deploy Doxyen to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main", "feature/doc_versioning"]
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -29,7 +29,7 @@ jobs:
         uses: ts-graphviz/setup-graphviz@v1
 
       - name: Install doxygen
-        run: git clone -b Release_1_9_8 https://github.com/doxygen/doxygen.git /tmp/doxygen && cd /tmp/doxygen && mkdir build && cd build && cmake -G "Unix Makefiles" .. && make && make install
+        run: git clone -b Release_1_9_8 https://github.com/doxygen/doxygen.git /tmp/doxygen && cd /tmp/doxygen && mkdir build && cd build && cmake -G "Unix Makefiles" .. && make -j && make install
 
       - uses: actions/checkout@v3
         with:
