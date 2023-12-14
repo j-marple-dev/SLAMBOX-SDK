@@ -51,7 +51,7 @@ Working with Unix OS, use `minicom` to configure the **SLAMBOX**
     minicom -D ${SERIAL_PORT} -b 115200
     ```
 
-    Set Hardware Flow Control to `No`. It can be done by pressing `<Ctrl>+A o` -> Serial port setup -> Press `f`.
+    Set Hardware Flow Control to `No`. It can be done by pressing `<Ctrl>+a` -> `o` -> Serial port setup -> Press `f`.
 
 ```
 +------------------------------------------------+
@@ -66,14 +66,16 @@ Working with Unix OS, use `minicom` to configure the **SLAMBOX**
 |    Change which setting?                       |
 +------------------------------------------------+
 ```
+    
+Once you set `Hardware Flow Control` to NO, presse `<Enter>` -> `<ESC>` to escape setting menu.
 
-For your convinience, turn Local echo on by pressing `<Ctrl>+A z e`
+For your convinience, turn Local echo on by pressing `<Ctrl>+a` -> `z` -> `e`. Minicom does not show you what you type if Local echo is off.
 
 Then, start configuration as your needs by following [below section](#SLAMBOXSetting-ConfigureSLAMBOX).
 
 **NOTE** Once you have finished setup process, minicom must be exited in order to continue on next step.
 
-Minicom can be exited by pressing `<Ctrl>+A x` -> `<Enter>`
+Minicom can be exited by pressing `<Ctrl>+a` -> `x` -> `<Enter>`
 
 </details>
 
@@ -103,10 +105,9 @@ If you successfully open port, start configuration as your needs by following [b
 Use ascii command to change configuration of **SLAMBOX**
 
 - The commands must be start with `$` and ends with `#` which is header and ender of the command
+    - example) If you want to check current configuration status, send `$CONFIG#`
 
-- Either *upper case* or *lower case* can be used.
-
-- Regardless of changing configuration of **SLAMBOX**, the serial communication for settings operates
+- The commands are case insensitive. You can use either *upper case* or *lower case*.
 
 - The following commands below, type the commands in *minicom* or *ComPortMaster*
 
@@ -149,6 +150,7 @@ $CONFIG#
 - Please check the available baud rate table below
 
 **NOTE**: The *maximum* and *minimum* baud rate could be different depands on your USB2TTL device.
+**NOTE** Regardless of whether you disable serial communication, this configuration mode will always work with baudrate 115200.
 
 |Available baud rate|
 |:---:|
@@ -247,20 +249,6 @@ $MAVLINK_TYPE 0#
 $LIDAR_TYPE 1#
 ```
 
-**NOTE** Once you have changed `LIDAR_TYPE` it requires to restart SLAMBOX device.
-Please send `$SAVE#` and restart device to take an effect.
+**NOTE** Once you have changed `LIDAR_TYPE`, restarting SLAMBOX device is required to take an effect.
 
-
-### Save Configurations {#SLAMBOXSetting-ConfigureSLAMBOX-SaveConfigurations}
-
-- Configurtaion can be saved by command `SAVE` or `START`
-
-- The command `SAVE` just save the configuration
-
-- The command `START` finish the configuration and start the *SLAMBOX*
-
-```
-$SAVE#
-
-$START#
-```
+**NOTE** If you are done with setting SLAMBOX, you must exit serial communication application.

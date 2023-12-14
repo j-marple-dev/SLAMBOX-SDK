@@ -1,6 +1,6 @@
 # Hardware Overview {#HardwareOverview}
 
-![SLAMBOX Hardware](getting_started/sbox_board_rev1_numbering.jpg){width=50%}
+![SLAMBOX Hardware](getting_started/sbox_board_rev2_numbering.png){width=50%}
 
 
 1. Power (3.8v ~ 40v)
@@ -9,11 +9,11 @@
 
 3. USB port (Currently disabled)
 
-4. Reboot switch
+4. Restart button
 
 5. Mavlink UART port
 
-6. SLAMBOX UART port
+6. SLAMBOX I/O UART port
 
 7. Ethernet port for LiDAR
 

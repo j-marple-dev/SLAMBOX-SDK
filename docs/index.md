@@ -1,19 +1,22 @@
 # Welcome
 Wecome to SLAMBOX documentation. SLAMBOX is your all-in-one solution for seamlessly connecting LiDAR devices, processing SLAM algorithms, and effortlessly transmitting results through serial or Ethernet communication. Designed with simplicity in mind, SLAMBOX empowers you to focus on your application, unleashing the true potential of LiDAR technology.
 
-![SLAMBOX](sbox_board_rev1.jpg){width=40%}
+![SLAMBOX](sbox_board_rev2.png){width=40%}
 
 # How do I get started?
 
-Ensure your [LiDAR settings](LiDARSetting.html) are configured.
-Customize [SLAMBOX settings](SLAMBOXSetting.html) as needed.
+[Configure SLAMBOX](SLAMBOXSetting.html) as your needs.
+Ensure your [LiDAR settings](LiDARSetting.html) are configured for SLAMBOX.
 Connect LiDAR to SLAMBOX using provided cables.
 You're now ready to dive into your project with seamless SLAM processing.
 
 ## Getting started on ROS1
 Please follow instructions on https://github.com/j-marple-dev/slambox_ros_driver
 
-## Getting started on your own
+## Getting started on ROS2
+Comming soon
+
+## Getting started on your own with C++ API
 Please look at [examples](https://github.com/j-marple-dev/SLAMBOX-SDK/tree/main/examples) on https://github.com/j-marple-dev/SLAMBOX-SDK for C++ development
 
 

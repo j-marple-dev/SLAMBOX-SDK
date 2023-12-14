@@ -1,10 +1,12 @@
 # Tutorial {#Tutorial}
 
+This tutorial guides you on how to setup SLAMBOX and your environment. [Chapter 1. Communication Setting](#Tutorial-CommunicationSetting) shows how to make communication available between SLAMBOX and your robot or PC.
+
 [TOC]
 
 # 1. Communication Setting {#Tutorial-CommunicationSetting}
 
-- To communicate with *SLAMBOX*, you need to setup the serial and ethernet of your **host PC**
+- To communicate with *SLAMBOX*, you need to setup the serial communication or ethernet communication of your **host PC**
 
 ## 1.1. Serial {#Tutorial-CommunicationSetting-Serial}
 
@@ -35,13 +37,13 @@ newgrp dialout
 
 ## 1.2. Ethernet (OTG) {#Tutorial-CommunicationSetting-Ethernet}
 
-To get data from *SLAMBOX* through etherent, then set your host PC's host IP like below.
+To get data from *SLAMBOX* through etherent, set your host PC's host IP like below. You set this up either via [CLI](#Tutorial-CommunicationSetting-Ethernet-SetStaticIPwithTerminal) or [GUI](#Tutorial-CommunicationSetting-Ethernet-SetStaticIPwithUbuntuGUI).
 
-### 1.2.1. Set Static IP with Terminal {#Tutorial-CommunicationSetting-Ethernet-SetStaticIPwithTerminal}
+### 1.2.1. Set Static IP with CLI {#Tutorial-CommunicationSetting-Ethernet-SetStaticIPwithTerminal}
 
 To set static ip to your host PC, please follow the commands below
 
-**NOTE**: The default IP address of OTG port of *SLAMBOX* is `192.168.101.101`
+**NOTE**: The default IP address of OTG port of *SLAMBOX* is `192.168.101.101`. You need to avoid using this IP address.
 
 ```bash
 # check the ethernet device
@@ -57,11 +59,11 @@ enx5ad1753eff84: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 
-The device name `enx5ad1753eff84` is the OTG ethernet connection of SLAMBOX
+The device name `enx5ad1753eff84` is the OTG ethernet connection of SLAMBOX.
 
-Then set the device's IP 
+Then set the device's IP.
 
-In this example, set the static IP to `192.168.101.5`
+In this example, we set the static IP to `192.168.101.5`
 
 ```bash
 # set device's IP
@@ -94,17 +96,19 @@ Then, set the device IP like the screen shot below
 
 ![Set static ip of the host device](imgs/getting_started/communication_setup/setup_static_ip_gui.png){width=70%}
 
-# 2. LiDAR Setting {#Tutorial-LiDARSetting}
-
-- Check how to setup LiDAR to *SLAMBOX*, please see here([LiDAR Setting](#LiDARSetting))
-
-# 3. SLAMBOX Setting {#Tutorial-SLAMBOXSetting}
+# 2. SLAMBOX Setting {#Tutorial-SLAMBOXSetting}
 
 - Check how to setup *SLAMBOX* or how to configure *SLAMBOX*, please see here([SLAMBOX Setting](#SLAMBOXSetting))
 
+# 3. LiDAR Setting {#Tutorial-LiDARSetting}
+
+- Check how to setup LiDAR to *SLAMBOX*, please see here([LiDAR Setting](#LiDARSetting))
+
 # 4. Advanced {#Tutorial-Advanced}
 
-We prefer you to check examples below
+Please check following pages for the next step.
+
+- [ROS example](https://github.com/j-marple-dev/slambox-ros)
 
 - [TurtleBot3 example](#TurtleBotExample)
 
@@ -112,4 +116,3 @@ We prefer you to check examples below
 
 - [Ardupilot example](#ArdupilotExample)
 
-- [ROS example](https://github.com/j-marple-dev/slambox-ros)
