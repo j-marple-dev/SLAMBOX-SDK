@@ -40,7 +40,7 @@ In this tutorial, we will set IP address to `192.168.1.50`
 
 ![IP Address Setting](getting_started/lidar_setting/ip_setting_192_168_1_50.jpg){width=800px}
 
-Once you setup IP address, you may require to disable and re-enable in order to apply the configuration.
+Once you setup IP address, you may require to disable and re-enable your ethernet in order to apply the configuration.
 
 
 ### 1.2.4. Launching LiDAR Viewer Software
@@ -87,7 +87,7 @@ In this tutorial, we will set IP address to `192.168.1.50`
 
 ![IP Address Setting](getting_started/lidar_setting/ip_setting_192_168_1_50.jpg){width=800px}
 
-Once you setup IP address, you may require to disable and re-enable in order to apply the configuration.
+Once you setup IP address, you may require to disable and re-enable your ethernet in order to apply the configuration.
 
 
 ### 2.2.4. Launching LiDAR Viewer Software
@@ -137,7 +137,7 @@ Set the computer's IPv4 Method to Link-Local only.
 
 ![IP Address Setting](getting_started/lidar_setting/ip_setting_link_local.jpg){width=800px}
 
-Once you setup IP address, you may require to disable and re-enable in order to apply the configuration.
+Once you setup IP address, you may require to disable and re-enable your ethernet in order to apply the configuration.
 
 
 ### 3.2.4. Launching LiDAR Viewer Software
@@ -157,7 +157,7 @@ Set the computer's IP Address to `192.168.1.50`
 
 ![IP Address Setting](getting_started/lidar_setting/ip_setting_192_168_1_50.jpg)
 
-Once you setup IP address, you may require to disable and re-enable in order to apply the configuration.
+Once you setup IP address, you may require to disable and re-enable your ethernet in order to apply the configuration.
 
 Select detected LiDAR on Ouster Studio and click Configure and visualize.
 Make sure LiDAR data is visible in Ouster Studio.
