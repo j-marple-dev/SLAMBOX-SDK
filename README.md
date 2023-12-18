@@ -1,5 +1,5 @@
 # SLAMBOX SDK
-SLAMBOX SDK is a C++ library specifically designed for seamless communication with the SLAMBOX device, aligning with the [SLAMBOX Protocol documentation](docs/SLAMBOX_Protocol_v0.1.0_R1.pdf).
+SLAMBOX SDK is a C++ library specifically designed for seamless communication with the SLAMBOX device, aligning with the [SLAMBOX Protocol documentation](docs/SLAMBOX_Protocol_v0.1.0_R2.pdf).
 The SLAMBOX device empowers LiDAR devices with simultaneous localization and mapping (SLAM) algorithms.
 SLAMBOX SDK allows developers to effortlessly integrate and control SLAMBOX functionality in their C++ applications, offering advanced spatial awareness and navigation capabilities.
 
