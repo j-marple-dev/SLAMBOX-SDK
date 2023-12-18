@@ -20,7 +20,7 @@ Comming Soon
 Please look at [examples](https://github.com/j-marple-dev/SLAMBOX-SDK/tree/main/examples) on https://github.com/j-marple-dev/SLAMBOX-SDK for C++ development.
 
 ## Getting started on your own
-Please look at [SLAMBOX protocol documentation](SLAMBOX_Protocol_v0.1.0_R1.pdf) to implement on your own environment.
+Please look at [SLAMBOX protocol documentation](SLAMBOX_Protocol_v0.1.0_R2.pdf) to implement on your own environment.
 
 
 # Key Features

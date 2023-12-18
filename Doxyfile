@@ -1371,7 +1371,7 @@ HTML_EXTRA_FILES       = docs/doxygen-awesome-css/doxygen-awesome-darkmode-toggl
                         docs/doxygen-awesome-css/doxygen-awesome-interactive-toc.js \
                         docs/doxygen-awesome-css/doxygen-awesome-paragraph-link.js \
                         docs/doxygen-awesome-css/doxygen-awesome-tabs.js \
-                        docs/SLAMBOX_Protocol_v0.1.0_R1.pdf
+                        docs/SLAMBOX_Protocol_v0.1.0_R2.pdf
 
 # The HTML_COLORSTYLE tag can be used to specify if the generated HTML output
 # should be rendered with a dark or light theme.
