@@ -165,3 +165,27 @@ Make sure LiDAR data is visible in Ouster Studio.
 ![Ouster Studio visualization](getting_started/lidar_setting/Ouster_Studio_working.jpg)
 
 Now OS0 is ready to connect with SLAMBOX device. Connect OS0 SLAMBOX device via ethernet cable.
+
+# 4. Velodyne Puck (VLP family) {$LIDARSetting-VelodynePuck}
+
+## 4.1. Preparing for LiDAR setup
+
+Before starting the setup process, make sure you have following:
+
+* Compudate with Ethernet ports (Ubuntu, MacOS, or Windows)
+
+## 4.2. Velodyne Configuration Steps
+
+### 4.2.1. Setting Computer IP Address
+
+Set the computer's IP Address to `192.168.1.50`
+
+![IP Address Setting](getting_started/lidar_setting/ip_setting_192_168_1_50.jpg)
+
+Then connect to configuration page with any web browser (chrome, firefox etc.)
+
+The default IP of Velodyne Puck is `192.168.1.201`
+
+![Velodyne configuration page example](getting_started/lidar_setting/velodyne_configuration_image.png)
+
+If the configuration pops up without any problems, then connect the LiDAR and SLAMBOX device via ethernet cable.
