@@ -243,6 +243,7 @@ $MAVLINK_TYPE 0#
 |  3  |  ouster64  |
 |  4  |  ouster128  |
 |  5  |  avia  |
+|  7  |  velodyne_puck  |
 
 **Example)** Set LiDAR type to `mid360`
 ```
