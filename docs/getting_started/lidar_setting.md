@@ -8,6 +8,7 @@ Please follow instructions on your LiDAR sensor.
 1. Livox [MID-360](#LiDARSetting-MID360)
 2. Livox [AVIA](#LiDARSetting-AVIA)
 3. Ouster [OS0 Family (OS0-32, OS0-64, and OS0-128)](#LIDARSetting-OusterOS0)
+4. Velodyne [Puck (Lite)](#LIDARSetting-VelodynePuck)
 
 
 [TOC]
@@ -165,3 +166,33 @@ Make sure LiDAR data is visible in Ouster Studio.
 ![Ouster Studio visualization](getting_started/lidar_setting/Ouster_Studio_working.jpg)
 
 Now OS0 is ready to connect with SLAMBOX device. Connect OS0 SLAMBOX device via ethernet cable.
+
+# 4. Velodyne Puck (VLP family) {#LIDARSetting-VelodynePuck}
+
+## 4.1. Preparing for LiDAR setup
+
+Before starting the setup process, make sure you have following:
+
+* Compudate with Ethernet ports (Ubuntu, MacOS, or Windows)
+
+## 4.2. Velodyne Configuration Steps
+
+### 4.2.1. Setting Computer IP Address
+
+Set the computer's IP Address to `192.168.1.50`
+
+![IP Address Setting](getting_started/lidar_setting/ip_setting_192_168_1_50.jpg)
+
+Then connect to configuration page with any web browser (chrome, firefox etc.)
+
+The default IP of Velodyne Puck is `192.168.1.201`
+
+![Velodyne configuration page example](getting_started/lidar_setting/velodyne_configuration_image.png)
+
+If the configuration pops up without any problems, then connect the LiDAR and SLAMBOX device via ethernet cable.
+
+**NOTE** Since Velodyne LiDAR does not include an IMU, an internal IMU built in SLAMBOX will be used. Therefore, SLAMBOX is required to align with Velodyne LiDAR as below picture.
+
+![Axis alignment with SLAMBOX and Velodyne LiDAR](getting_started/lidar_setting/velodyne_slambox_align.jpg){width=450px}
+
+**NOTE** The coordinate system of `Odometry` output is based on the LiDAR, however, we advise you to install SLAMBOX as close as possible to the LiDAR for better performance.

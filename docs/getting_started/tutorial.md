@@ -104,7 +104,13 @@ Then, set the device IP like the screen shot below
 
 - Check how to setup LiDAR to *SLAMBOX*, please see here([LiDAR Setting](#LiDARSetting))
 
-# 4. Advanced {#Tutorial-Advanced}
+# 4. Download Mapping File {#Tutorial-DownloadMappingFile}
+
+- Mapping results are saved periodically in the SLAMBOX device. The saved mapping file(.PCD) can be downloaded by visiting web URL (http://192.168.101.101:8080).
+
+    **NOTE** USB-C (OTG) cable must be plugged into your computer in order to access the URL.
+
+# 5. Advanced {#Tutorial-Advanced}
 
 Please check following pages for the next step.
 
