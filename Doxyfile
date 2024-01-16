@@ -48,7 +48,7 @@ PROJECT_NAME           = "SLAMBOX"
 # could be handy for archiving the generated documentation or if some version
 # control system is used.
 
-PROJECT_NUMBER         = 0.1.0a
+PROJECT_NUMBER         = 0.2.0
 
 # Using the PROJECT_BRIEF tag one can provide an optional one line description
 # for a project that appears at the top of each page and should give viewer a
@@ -1371,7 +1371,7 @@ HTML_EXTRA_FILES       = docs/doxygen-awesome-css/doxygen-awesome-darkmode-toggl
                         docs/doxygen-awesome-css/doxygen-awesome-interactive-toc.js \
                         docs/doxygen-awesome-css/doxygen-awesome-paragraph-link.js \
                         docs/doxygen-awesome-css/doxygen-awesome-tabs.js \
-                        docs/SLAMBOX_Protocol_v0.1.0_R2.pdf
+                        docs/SLAMBOX_Protocol.pdf
 
 # The HTML_COLORSTYLE tag can be used to specify if the generated HTML output
 # should be rendered with a dark or light theme.

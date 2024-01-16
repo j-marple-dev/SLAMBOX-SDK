@@ -11,7 +11,7 @@ Connect LiDAR to SLAMBOX using provided cables.
 You're now ready to dive into your project with seamless SLAM processing.
 
 ## Getting started on ROS1
-Please follow instructions on https://github.com/j-marple-dev/slambox_ros_driver
+Please follow instructions on https://github.com/j-marple-dev/slambox-ros
 
 ## Getting started on ROS2
 Comming Soon
@@ -20,7 +20,7 @@ Comming Soon
 Please look at [examples](https://github.com/j-marple-dev/SLAMBOX-SDK/tree/main/examples) on https://github.com/j-marple-dev/SLAMBOX-SDK for C++ development.
 
 ## Getting started on your own
-Please look at [SLAMBOX protocol documentation](SLAMBOX_Protocol_v0.1.0_R2.pdf) to implement on your own environment.
+Please look at [SLAMBOX protocol documentation](SLAMBOX_Protocol.pdf) to implement on your own environment.
 
 
 # Key Features

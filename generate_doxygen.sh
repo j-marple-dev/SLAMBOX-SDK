@@ -6,7 +6,7 @@
 # - Contact: limjk@jmarple.ai
 
 # Define versions
-versions=(v0.1.0 v0.1.0a)
+versions=(v0.1.0 v0.1.0a v0.2.0)
 
 current_branch=$(git branch --show-current)
 

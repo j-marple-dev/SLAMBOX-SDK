@@ -35,15 +35,21 @@ sudo usermod -a -G dialout $USER
 newgrp dialout
 ```
 
-## 1.2. Ethernet (OTG) {#Tutorial-CommunicationSetting-Ethernet}
+## 1.2. OTG {#Tutorial-CommunicationSetting-OTG}
 
-To get data from *SLAMBOX* through etherent, set your host PC's host IP like below. You set this up either via [CLI](#Tutorial-CommunicationSetting-Ethernet-SetStaticIPwithTerminal) or [GUI](#Tutorial-CommunicationSetting-Ethernet-SetStaticIPwithUbuntuGUI).
+Once you plug in OTG cable into your host computer, the IP address is automatically assigned via DHCP server built in SLAMBOX. Please check if the IP address has been acquired. If IP address is assigned, the host computer is ready to communicate via OTG cable.
+
+## 1.3. Ethernet {#Tutorial-CommunicationSetting-Ethernet}
+
+Some LiDARs, such as Unitree L1, requires to connect with USB. The OTG cable of the SLAMBOX will be disabled if you use such LiDARs. In that case, you can connect SLAMBOX via serial or ethernet communication.
+
+To get data from *SLAMBOX* through etherent, set your host computer IP as below. You set this up either via [CLI](#Tutorial-CommunicationSetting-Ethernet-SetStaticIPwithTerminal) or [GUI](#Tutorial-CommunicationSetting-Ethernet-SetStaticIPwithUbuntuGUI).
 
 ### 1.2.1. Set Static IP with CLI {#Tutorial-CommunicationSetting-Ethernet-SetStaticIPwithTerminal}
 
 To set static ip to your host PC, please follow the commands below
 
-**NOTE**: The default IP address of OTG port of *SLAMBOX* is `192.168.101.101`. You need to avoid using this IP address.
+**NOTE**: The default IP address of *SLAMBOX* is `192.168.101.101`. You need to avoid using this IP address.
 
 ```bash
 # check the ethernet device
@@ -58,8 +64,6 @@ enx5ad1753eff84: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         TX packets 42  bytes 7403 (7.4 KB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
-
-The device name `enx5ad1753eff84` is the OTG ethernet connection of SLAMBOX.
 
 Then set the device's IP.
 
@@ -108,7 +112,9 @@ Then, set the device IP like the screen shot below
 
 - Mapping results are saved periodically in the SLAMBOX device. The saved mapping file(.PCD) can be downloaded by visiting web URL (http://192.168.101.101:8080).
 
-    **NOTE** USB-C (OTG) cable must be plugged into your computer in order to access the URL.
+- The default user ID and password are `user` / `user`
+
+    **NOTE** USB-C (OTG) or ethernet cable must be plugged into your computer in order to access the URL.
 
 # 5. Advanced {#Tutorial-Advanced}
 
