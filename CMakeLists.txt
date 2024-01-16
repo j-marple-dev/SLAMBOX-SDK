@@ -13,10 +13,10 @@ write_basic_package_version_file(
 )
 
 option(test "Build unit tests." OFF)
+option(BUILD_EXAMPLES "Build examples" ON)
 
 set(INSTALL_STATIC "Install static library" ON)
 set(INSTALL_SHARED "Install shared library" ON)
-set(BUILD_EXAMPLES "Build examples" ON)
 
 set (CPACK_PACKAGE_NAME ${PROJECT_NAME})
 set (CPACK_PACKAGE_DESCRIPTION_SUMMARY "SLAMBOX SDK")
