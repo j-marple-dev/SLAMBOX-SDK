@@ -111,6 +111,7 @@ endif()
 if (BUILD_EXAMPLES)
   add_subdirectory(examples/serial_communication)
   add_subdirectory(examples/udp_communication)
+  add_subdirectory(examples/config_cli)
 endif()
 
 # Unit test

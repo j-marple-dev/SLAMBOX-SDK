@@ -1,0 +1,4 @@
+[submodule "examples/config_cli/libs/cli"]
+	path = examples/config_cli/libs/cli
+	url = https://github.com/daniele77/cli.git
+	branch = v2.1.0
