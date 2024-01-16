@@ -51,9 +51,14 @@ constexpr std::array<uint8_t, 2> kModeSetLidarConfig = {0x20, 0x10};
 
 /// @{
 /// Types of LiDAR
-constexpr uint8_t kLidarFlexx2 = 0x10;
-constexpr uint8_t kLidarOusterOS1 = 0x20;
-constexpr uint8_t kLidarLivoxMID360 = 0x30;
+constexpr uint8_t kLidarFlexx2 = 0x00;
+constexpr uint8_t kLidarMid360 = 0x01;
+constexpr uint8_t kLidarOuster32 = 0x02;
+constexpr uint8_t kLidarOuster64 = 0x03;
+constexpr uint8_t kLidarOuster128 = 0x04;
+constexpr uint8_t kLidarAvia = 0x05;
+constexpr uint8_t kLidarUnitreeL1 = 0x06;
+constexpr uint8_t kLidarVelodynePuck = 0x07;
 constexpr uint8_t kLidarUnknown = 0xFF;
 /// @}
 
@@ -65,16 +70,18 @@ constexpr uint8_t kStatusAckFailed = 0x01;
 
 /// Lidar type string to code
 const std::map<std::string, uint8_t> kLidarTypeToCode = {
-    {"Flexx2", kLidarFlexx2},
-    {"Ouster_os1", kLidarOusterOS1},
-    {"Livox_MID360", kLidarLivoxMID360},
+    {"flexx2", kLidarFlexx2},        {"mid360", kLidarMid360},
+    {"ouster32", kLidarOuster32},    {"ouster64", kLidarOuster64},
+    {"ouster128", kLidarOuster128},  {"avia", kLidarAvia},
+    {"unitree_l1", kLidarUnitreeL1}, {"velodyne_puck", kLidarVelodynePuck},
 };
 
 /// Reverse map of `kLidarTypeToCode`
 const std::map<uint8_t, std::string> kLidarCodeToType = {
-    {kLidarFlexx2, "Flexx2"},
-    {kLidarOusterOS1, "Ouster_os1"},
-    {kLidarLivoxMID360, "Livox_MID360"},
+    {kLidarFlexx2, "flexx2"},        {kLidarMid360, "mid360"},
+    {kLidarOuster32, "ouster32"},    {kLidarOuster64, "ouster64"},
+    {kLidarOuster128, "ouster128"},  {kLidarAvia, "avia"},
+    {kLidarUnitreeL1, "unitree_l1"}, {kLidarVelodynePuck, "velodyne_puck"},
 };
 
 /// Payload length of protocol (in bytes) where length is equal to
@@ -85,14 +92,17 @@ const std::map<std::array<uint8_t, 2>, uint16_t> kModeToPayloadLengthEq = {
     {kModeCmdRestartLIO, 0},
     {kModeCmdSavePCD, 2},
     {kModePushOdometry, 348},
+    // Requests
     {kModeReqMavlinkCommConfig, 0},
     {kModeReqSerialCommConfig, 0},
     {kModeReqEthernetCommConfig, 0},
+    // Responses
     {kModeReqLidarConfig, 0},
     {kModeResMavlinkCommConfig, 5},
     {kModeResSerialCommConfig, 5},
     {kModeResEthernetCommConfig, 5},
     {kModeResLidarConfig, 1},
+    // Sets
     {kModeSetMavlinkCommConfig, 5},
     {kModeSetSerialCommConfig, 5},
     {kModeSetEthernetCommConfig, 5},
