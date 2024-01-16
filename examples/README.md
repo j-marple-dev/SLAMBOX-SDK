@@ -8,3 +8,5 @@ This directory includes C++ example codes using [slambox-sdk](https://github.com
 # 2. UDP Communication
   * [udp_communication](udp_communication) directory includes SLAMBOX UDP communication using [slambox-sdk](https://github.com/j-marple-dev/slambox-sdk) with `class` inheritance.
 
+# 3. CLI Configuration
+  * [config_cli](config_cli) directory includes SLAMBOX configuration using [slambox-sdk](https://github.com/j-marple-dev/slambox-sdk).

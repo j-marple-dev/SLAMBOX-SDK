@@ -8,7 +8,8 @@ Please follow instructions on your LiDAR sensor.
 1. Livox [MID-360](#LiDARSetting-MID360)
 2. Livox [AVIA](#LiDARSetting-AVIA)
 3. Ouster [OS0 Family (OS0-32, OS0-64, and OS0-128)](#LIDARSetting-OusterOS0)
-4. Velodyne [Puck (Lite)](#LIDARSetting-VelodynePuck)
+4. Unitree L1 [Unitree L1](#LIDARSetting-Unitree-L1)
+5. Velodyne [Puck (Lite)](#LIDARSetting-VelodynePuck)
 
 
 [TOC]
@@ -167,17 +168,21 @@ Make sure LiDAR data is visible in Ouster Studio.
 
 Now OS0 is ready to connect with SLAMBOX device. Connect OS0 SLAMBOX device via ethernet cable.
 
-# 4. Velodyne Puck (VLP family) {#LIDARSetting-VelodynePuck}
+# 4. Unitree L1 {#LIDARSetting-Unitree-L1}
 
-## 4.1. Preparing for LiDAR setup
+There is nothing to configure Unitree L1 LiDAR, however, OTG port of the SLAMBOX will be disabled. Please use ethernet port to communicate with SLAMBOX for this case. The documentation of communicating via ethernet cable can be found on [here](#Tutorial-CommunicationSetting-Ethernet).
+
+# 5. Velodyne Puck (VLP family) {#LIDARSetting-VelodynePuck}
+
+## 5.1. Preparing for LiDAR setup
 
 Before starting the setup process, make sure you have following:
 
 * Compudate with Ethernet ports (Ubuntu, MacOS, or Windows)
 
-## 4.2. Velodyne Configuration Steps
+## 5.2. Velodyne Configuration Steps
 
-### 4.2.1. Setting Computer IP Address
+### 5.2.1. Setting Computer IP Address
 
 Set the computer's IP Address to `192.168.1.50`
 

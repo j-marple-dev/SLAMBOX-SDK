@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(slambox_sdk
-  VERSION 0.1.0
+  VERSION 0.2.0
   LANGUAGES CXX
   )
 
@@ -111,6 +111,7 @@ endif()
 if (BUILD_EXAMPLES)
   add_subdirectory(examples/serial_communication)
   add_subdirectory(examples/udp_communication)
+  add_subdirectory(examples/config_cli)
 endif()
 
 # Unit test

@@ -19,7 +19,7 @@ function run_cmd_on_source() {
         if [ $retVal -ne 0 ]; then
             exitCode=$retVal
         fi
-    done < <(find . -not -path './libs/*' -not -path './build/*' -regex '.*\.\(cpp\|hpp\|h\|cc\|cxx\)' -print0)
+    done < <(find . -not -path './libs/*' -not -path './examples/config_cli/libs/*' -not -path './build/*' -regex '.*\.\(cpp\|hpp\|h\|cc\|cxx\)' -print0)
 
     echo "$exitCode"
 }
@@ -55,7 +55,7 @@ exitCode=0
 for cmd in "${run_cmd[@]}"; do
 
     if [ "$cmd" = "cppcheck" ]; then
-        cppcheck --quiet --inline-suppr --language=c++ --enable=all -I include --suppress=missingIncludeSystem --template "{file}({line}): {severity} ({id}): {message}" ./src ./examples
+        cppcheck --quiet --inline-suppr --language=c++ --enable=all -I include --suppress=missingIncludeSystem --template "{file}({line}): {severity} ({id}): {message}" -iexamples/config_cli/libs ./src ./examples
         result=$?
     elif [ "$cmd" = "doc_check" ]; then
         eval $CMD_DOC_CHECK
