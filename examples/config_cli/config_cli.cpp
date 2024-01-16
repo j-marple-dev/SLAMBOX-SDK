@@ -13,9 +13,11 @@
 
 /// @brief Print application usage
 /// @param argv arguments
-void print_usage(const char **argv) {
-  std::cout << "Usage: " << argv[0] << " <serial_port> <baudrate>" << std::endl;
-  std::cout << "     ex) " << argv[0] << " /dev/ttyUSB0 1500000" << std::endl;
+void print_usage(const std::string &binary_name) {
+  std::cout << "Usage: " << binary_name << " <serial_port> <baudrate>"
+            << std::endl;
+  std::cout << "     ex) " << binary_name << " /dev/ttyUSB0 1500000"
+            << std::endl;
 }
 
 /// @brief Process arguments and set port name and baudrate
@@ -37,7 +39,7 @@ int handle_arguments(int argc, char **argv, std::string *port_name,
       std::cout << "Error parsing baudrate " << argv[2] << std::endl;
       std::cout << "Reason: " << e.what() << std::endl;
 
-      print_usage(argv);
+      print_usage(argv[0]);
       return 1;
     }
   }
@@ -48,7 +50,7 @@ int handle_arguments(int argc, char **argv, std::string *port_name,
 int main(int argc, char **argv) {
   // Handle arguments exception
   if (argc < 2 || argc > 3) {
-    print_usage(argv);
+    print_usage(argv[0]);
     return 1;
   }
 
