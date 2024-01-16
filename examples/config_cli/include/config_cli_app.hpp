@@ -3,8 +3,8 @@
 /// @copyright 2023 J.Marple
 /// @brief SLAMBOX CLI configurator application logic
 
-#ifndef SLAMBOX_ROS_INCLUDE_APPLICATIONS_CONFIG_CLI_APP_HPP_
-#define SLAMBOX_ROS_INCLUDE_APPLICATIONS_CONFIG_CLI_APP_HPP_
+#ifndef SLAMBOX_SDK_EXAMPLES_CONFIG_CLI_INCLUDE_CONFIG_CLI_APP_HPP_
+#define SLAMBOX_SDK_EXAMPLES_CONFIG_CLI_INCLUDE_CONFIG_CLI_APP_HPP_
 
 #include <cli/cli.h>
 #include <cli/clilocalsession.h>
@@ -155,4 +155,4 @@ class ConfigCLIApp : public ParsedMessageInterface {
 };
 }  // namespace sbox
 
-#endif  // SLAMBOX_ROS_INCLUDE_APPLICATIONS_CONFIG_CLI_APP_HPP_
+#endif  // SLAMBOX_SDK_EXAMPLES_CONFIG_CLI_INCLUDE_CONFIG_CLI_APP_HPP_

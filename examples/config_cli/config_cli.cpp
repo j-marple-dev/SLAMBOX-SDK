@@ -9,13 +9,12 @@
 #include <cli/loopscheduler.h>
 #include <glog/logging.h>
 
-#include "config_cli_app.hpp"
+#include "include/config_cli_app.hpp"
 
 /// @brief Print application usage
 /// @param argv arguments
-void print_usage(char **argv) {
-  std::cout << "Usage: " << argv[0] << " <serial_port> <baudrate>"
-            << std::endl;
+void print_usage(const char **argv) {
+  std::cout << "Usage: " << argv[0] << " <serial_port> <baudrate>" << std::endl;
   std::cout << "     ex) " << argv[0] << " /dev/ttyUSB0 1500000" << std::endl;
 }
 

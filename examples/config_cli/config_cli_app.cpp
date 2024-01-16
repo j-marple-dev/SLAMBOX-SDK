@@ -3,7 +3,7 @@
 /// @copyright 2023 J.Marple
 /// @brief SLAMBOX CLI configurator application logic
 
-#include "config_cli_app.hpp"
+#include "include/config_cli_app.hpp"
 
 #include <memory>
 #include <sbox/protocol/acknowledge/acknowledge_protocol.hpp>
@@ -30,7 +30,6 @@ ConfigCLIApp::ConfigCLIApp(const std::string &serial_port_name,
   serial_communication_.set_callback(&SBoxParser::parse, &serial_parser_);
 }
 
-// cppcheck-suppress unusedFunction
 void ConfigCLIApp::on_response_mavlink_communication_config(bool enabled,
                                                             uint32_t baudrate) {
   session_->OutStream() << "[mavlink] " << (enabled ? "Enabled" : "Disabled")
@@ -38,14 +37,13 @@ void ConfigCLIApp::on_response_mavlink_communication_config(bool enabled,
   this->prompt_();
 }
 
-// cppcheck-suppress unusedFunction
 void ConfigCLIApp::on_response_serial_communication_config(bool enabled,
                                                            uint32_t baudrate) {
   session_->OutStream() << "[serial] " << (enabled ? "Enabled" : "Disabled")
                         << ", baudrate: " << baudrate << std::endl;
   this->prompt_();
 }
-// cppcheck-suppress unusedFunction
+
 void ConfigCLIApp::on_response_ethernet_communication_config(bool enabled,
                                                              uint32_t port) {
   session_->OutStream() << "[ethernet] " << (enabled ? "Enabled" : "Disabled")
@@ -53,7 +51,6 @@ void ConfigCLIApp::on_response_ethernet_communication_config(bool enabled,
   this->prompt_();
 }
 
-// cppcheck-suppress unusedFunction
 void ConfigCLIApp::on_response_lidar_config(uint8_t type) {
   if (protocol::kLidarCodeToType.find(type) !=
       protocol::kLidarCodeToType.end()) {
@@ -65,7 +62,6 @@ void ConfigCLIApp::on_response_lidar_config(uint8_t type) {
   this->prompt_();
 }
 
-// cppcheck-suppress unusedFunction
 void ConfigCLIApp::on_acknowledge(std::array<uint8_t, 2> requested_mode,
                                   uint8_t status) {
   if (requested_mode == protocol::kModeAckPing) {
@@ -219,7 +215,7 @@ void ConfigCLIApp::create_root_menu_(cli::Menu *root_menu) {
       "Get current config of lidar");
   set_menu->Insert(
       "lidar",
-      [this](std::ostream &out, std::string type) {
+      [this](std::ostream &out, const std::string &type) {
         serial_communication_.write(SetLidarConfigProtocol(type).encapsulate());
       },
       "Set lidar type", {"Type (string)"});
