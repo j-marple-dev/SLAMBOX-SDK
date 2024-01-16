@@ -13,7 +13,7 @@ write_basic_package_version_file(
 )
 
 option(test "Build unit tests." OFF)
-option(BUILD_EXAMPLES "Build examples" ON)
+option(BUILD_EXAMPLES "Build examples" OFF)
 
 set(INSTALL_STATIC "Install static library" ON)
 set(INSTALL_SHARED "Install shared library" ON)
