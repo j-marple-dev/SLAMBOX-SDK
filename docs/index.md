@@ -14,7 +14,7 @@ You're now ready to dive into your project with seamless SLAM processing.
 Please follow instructions on https://github.com/j-marple-dev/slambox-ros
 
 ## Getting started on ROS2
-Comming Soon
+Please follow instructions on https://github.com/j-marple-dev/slambox-ros2
 
 ## Getting started on your own with C++ API
 Please look at [examples](https://github.com/j-marple-dev/SLAMBOX-SDK/tree/main/examples) on https://github.com/j-marple-dev/SLAMBOX-SDK for C++ development.
