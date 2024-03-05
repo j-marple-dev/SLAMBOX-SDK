@@ -10,6 +10,7 @@
       <tab type="user" url="@ref Tutorial" visible="yes" title="Tutorial"/>
       <tab type="user" url="@ref SLAMBOXSetting" title="SLAMBOX Setting"/>
       <tab type="user" url="@ref LiDARSetting" title="LiDAR Setting"/>
+      <tab type="user" url="@ref FirmwareUpdate" title="Firmware Update"/>
     </tab>
     <!-- <tab type="user" url="todo.html" visible="yes" title="TODO"/> -->
     <tab type="usergroup" visible="yes" title="Examples">
