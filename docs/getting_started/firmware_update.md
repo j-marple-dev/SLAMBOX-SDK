@@ -14,8 +14,7 @@ The firmware update process is described below.
 ## Step 3: Upload firmware file to the SLAMBOX
 - Visit http://192.168.101.101:8080 for file managing system.
 - The default user ID and password are `user` / `user`
-- Create `update` directory in the root.
-- Upload the firmware file, named according to the version (e.g., `slambox_firmware_v0.x.x.tar`), to the `update` directory.
+- Upload the firmware file, named according to the version (e.g., `slambox_firmware_v0.x.x.tar`), to the root directory.
 
 
 ## Step 4: Apply firmware update
