@@ -10,6 +10,7 @@ Please follow instructions on your LiDAR sensor.
 3. Ouster [OS0 Family (OS0-32, OS0-64, and OS0-128)](#LIDARSetting-OusterOS0)
 4. Unitree L1 [Unitree L1](#LIDARSetting-Unitree-L1)
 5. Velodyne [Puck (Lite)](#LIDARSetting-VelodynePuck)
+6. SOSLab [ML-X-120](#LIDARSetting-SOSLabMLX120)
 
 
 [TOC]
@@ -201,3 +202,11 @@ If the configuration pops up without any problems, then connect the LiDAR and SL
 ![Axis alignment with SLAMBOX and Velodyne LiDAR](getting_started/lidar_setting/velodyne_slambox_align.jpg){width=450px}
 
 **NOTE** The coordinate system of `Odometry` output is based on the LiDAR, however, we advise you to install SLAMBOX as close as possible to the LiDAR for better performance.
+
+# 6. SOSLab ML-X-120 {#LIDARSetting-SOSLabMLX120}
+
+## 5.1. Preparing for LiDAR setup
+
+The SOSLab ML-X-120 LiDAR's default IP address is `192.168.1.10`. So, you do not need to set the LiDAR device ip.
+
+If you need to set custom IP to LiDAR, please make sure to set the IP address to `192.168.1.x` and connect to the SLAMBOX device via ethernet cable.
