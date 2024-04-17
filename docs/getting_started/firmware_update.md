@@ -31,13 +31,19 @@ The firmware update process is described below.
 Congratulations! You have successfully updated the firmware of your SLAMBOX device. For further assistance or inquiries, please refer to the user manual or contact our support team.
 
 ## Version history
-### v0.2.2 (latest)
-- Change saving PCD mapping file regardless of the connection status of the host.
-- Fix an issue where config changes do not apply.
+
+### v0.2.3 (latest)
+- Change savine PCD method. The PCD files will be saved in 10-second intervals.
+- Add ML-X LiDAR support.
 
 ### Previous versions
 <details close>
 <summary>Click to show</summary>
+
+<H2>v0.2.2</H2>
+- Change saving PCD mapping file regardless of the connection status of the host.
+- Fix an issue where config changes do not apply.
+
 <H2>v0.2.0</H2>
 - Add firmware update function.
 - Add a file managing system.
