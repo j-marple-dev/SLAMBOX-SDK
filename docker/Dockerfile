@@ -14,7 +14,7 @@ ARG GID=1000
 RUN groupadd -g $GID -o user && useradd -m -u $UID -g $GID -o -s /bin/bash user
 
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-RUN apt-get clean && rm -rf /var/lib/apt/lists/* 
+RUN until apt-get update --fix-missing; do echo "Retrying"; done
 RUN apt-get update && apt-get install -y sudo dialog apt-utils tzdata
 RUN echo "%sudo ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers && echo "user:user" | chpasswd && adduser user sudo
 
