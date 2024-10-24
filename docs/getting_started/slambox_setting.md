@@ -234,7 +234,7 @@ $MAVLINK_TYPE 0#
 ```
 
 ### SLAMBOX Sensor Configuration {#SLAMBOXSetting-ConfigureSLAMBOX-SLAMBOXSensorConfiguration}
-- `LIDAR_TYPE` with option `0` to `5`
+- `LIDAR_TYPE` with option `1` to `8`
 
 |  option  | sensor |
 |:--------:|:-------:| 
